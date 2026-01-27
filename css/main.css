@@ -1,0 +1,393 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: inter;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5fc2ff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+  font-weight: normal;
+  line-height: 1.1;
+  font-size: 110px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.color-accent {
+  color: #5fc2ff;
+}
+
+/* --- Header --- */
+
+.container-header {
+  position: relative;
+  z-index: 999;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+
+.site-branding img {
+  width: 80px;
+}
+
+.main-navigation ul {
+  gap: 50px;
+  justify-content: center;
+}
+
+#primary-menu a {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.call-header-link {
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.9);
+  height: 41px;
+  display: block;
+  border-radius: 50px;
+}
+
+.call-header-link img {
+  transition: transform 0.3s ease; /* Плавный переход масштабирования */
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.9);
+  border-radius: 50px;
+}
+
+.call-header-link:hover img {
+  transform: scale(1.1); /* Увеличение на 10% при наведении */
+}
+
+.header-bottom {
+  padding: 20px 0;
+}
+
+.header-bottom,
+.header-work,
+.header-adress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.adress-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #5fc2ff;
+  padding: 5px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.9);
+}
+
+.adress-link:hover {
+  color: #212121;
+  transform: scale(1.01);
+}
+
+/* --- HERO --- */
+
+.hero {
+  background: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-top: -202px;
+  /* position: absolute; */
+  top: 0;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  display: block;
+  background-color: rgba(10, 7, 29, 0.85);
+  position: absolute;
+  top: 0;
+}
+
+.container-hero {
+  position: relative;
+  z-index: 999;
+  top: 500px;
+  display: flex;
+}
+
+.hero-title-block {
+  flex: 1;
+}
+
+.hero-description {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.hero-info-block {
+  flex: 1;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: end;
+}
+
+.info-block-models {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.info-block-desc {
+  text-align: end;
+  font-size: 20px;
+  padding-left: 250px;
+}
+
+.block-models-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 2px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #5fc2ff;
+  font-weight: 600;
+  border: 1px solid;
+  border-color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.block-models-link:hover {
+  background: #5fc2ff;
+  color: #fff;
+  border-color: #5fc2ff;
+}
+
+.info-block-button {
+  display: flex;
+  align-items: center;
+  padding: 15px 200px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  background: #5fc2ff;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.info-block-button:hover {
+  color: #212121;
+  transform: scale(1.01);
+}
+
+/* --- REFIT --- */
+
+.refit-models {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background: url(../img/bg-refit.png);
+  width: 100%;
+  height: 685px;
+  background-size: cover;
+}
+
+.container-refit {
+  display: grid;
+  grid-template-columns: 40% 20% 35%;
+  position: relative;
+  gap: 20px;
+}
+
+.refit-models-item {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.refit-models-item.three {
+  border-right: none;
+}
+
+.refit-card {
+  border-radius: 60px;
+  padding: 80px 40px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgb(0 0 0 / 63%);
+  transition: background-color 0.3s ease;
+}
+
+.refit-card:hover {
+  background-color: #007bffb3; /* Синий цвет фона */
+}
+
+.refit-card:hover .refit-card-buttom {
+  background-color: #5fc2ff; /* Тёмно-синий фон кнопки */
+  color: white; /* Белый текст кнопки */
+}
+
+.all-auto {
+  position: absolute;
+  width: 358px;
+  height: 585px;
+  left: 330px;
+}
+
+.infiniti-auto {
+  position: absolute;
+  width: 358px;
+  height: 585px;
+  left: 2px;
+}
+
+.nissan-auto {
+  position: absolute;
+  width: 358px;
+  height: 585px;
+  right: 270px;
+}
+
+.refit-card-title {
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.refit-card-buttom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 50px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* --- MARKET --- */
+
+.title-market {
+  margin: 50px 0;
+}
+
+.questions-market {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions-block {
+  width: 55%;
+}
+
+.questions-title p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  padding: 5px 25px;
+  border-radius: 20px;
+}
+
+.questions-title .arrow {
+  padding-top: 5px;
+}
+
+.questions-block-item {
+  display: flex;
+  gap: 25px;
+}
+
+.num {
+  font-size: 24px;
+}
+
+.questions-block-text {
+  border-bottom: 1px solid;
+}
+
+.questions-block-item:first-child .questions-block-text {
+  border-top: 1px solid #fff;
+}
+
+.questions-block-title {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.questions-block-deck {
+  padding-bottom: 15px;
+}
+
+.market-button {
+  display: block;
+  margin-top: 50px;
+  margin-left: 50px;
+  align-items: center;
+  padding: 15px 50px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  background: #5fc2ff;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 65%;
+  text-align: center;
+}
+
+.market-button:hover {
+  color: #212121;
+  transform: scale(1.01);
+}
+
+.servises {
+  margin-top: 100px;
+}

@@ -38,6 +38,7 @@ p {
 
 .color-accent {
   color: #5fc2ff;
+  padding-right: 10px;
 }
 
 /* --- Header --- */
@@ -534,8 +535,56 @@ p {
 }
 
 .servises-photo-logo {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  display: block;
+}
+
+/* --- ABOUT  --- */
+
+.about {
+  margin-top: 75px;
+}
+
+.about-title {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  width: 28%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-title .servises-arrow {
+  padding-left: 20px;
+  padding-top: 0px;
+}
+
+.about-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+}
+
+.about-difference-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+}
+
+.mapsyandex {
+  margin-top: 75px;
+}
+
+.difference-block-title {
+  color: #5fc2ff;
+  text-transform: uppercase;
+  padding: 20px 0;
+  font-weight: 800;
+  font-size: 14px;
 }

@@ -118,7 +118,7 @@ get_header();
 </section>
 <section class="servises">
     <div class="container">
-        <p class="servises-title"><span class="color-accent">Наши</span> услуги <span class="servises-arrow">
+        <p class="servises-title"><span class="color-accent">Наши</span>  услуги <span class="servises-arrow">
                 <svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_86_1257)">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9928 14.3891L7.97868 6.37499L9.98184 4.37183L16.9943 11.3843L24.0068 4.37183L26.01 6.37499L17.9959 14.3891C17.7303 14.6547 17.37 14.8039 16.9943 14.8039C16.6187 14.8039 16.2584 14.6547 15.9928 14.3891Z" fill="white" fill-opacity="0.5" />
@@ -324,7 +324,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/img/transmiss-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Трансмиссия автомобиля</h3>
                 <ul class="servises-card-list">
-                    <li>Прокачка контура  сцепления</li>
+                    <li>Прокачка контура сцепления</li>
                     <li>Замена МКПП</li>
                 </ul>
                 <div class="servises-card-button-block">
@@ -366,6 +366,61 @@ get_header();
     <div class="container">
         <img src="<?php echo get_template_directory_uri() . '/img/photo-logo.png' ?>" alt="Логотип Автосервиса ИнфинитиМаркет" class="servises-photo-logo">
         <img src="<?php echo get_template_directory_uri() . '/img/photo-logo-img.png' ?>" alt="Фоторгафии Автосервиса ИнфинитиМаркет" class="servises-photo-img">
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <h2 class="about-title"><span class="color-accent">Об </span> автосервисе
+            <span class="servises-arrow">
+                <svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_86_1257)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9928 14.3891L7.97868 6.37499L9.98184 4.37183L16.9943 11.3843L24.0068 4.37183L26.01 6.37499L17.9959 14.3891C17.7303 14.6547 17.37 14.8039 16.9943 14.8039C16.6187 14.8039 16.2584 14.6547 15.9928 14.3891Z" fill="white" fill-opacity="0.5"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_86_1257">
+                            <rect width="17" height="34" fill="white" transform="translate(34 1.48619e-06) rotate(90)"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </span>
+        </h2>
+        <div class="about-block">
+            <div class="about-description">
+                <div class="about-description-text">
+                    <p>nfiniti Market - это мультибрендовый (для всех авто) сервис с особенными возможностями для Infiniti и Nissan</p>
+                    <p>Особенные возможности - это диллерское диагностическое оборудование Consilt III+, буквально все запчасти в наличии и особая экспертиза, которая позволяет диагностировать и исправлять даже самые непонятные и деликатные ситуации, встречающиеся на инфинити и ниссан</p>
+                </div>
+                <div class="about-description-form">
+                    Форма записи
+                </div>
+            </div>
+            <div class="about-difference">
+                <div class="about-difference-block">
+                    <div class="difference-block-item">
+                        <img src="<?php echo get_template_directory_uri() . '/img/about-icon1.png' ?>" alt="Иконка">
+                        <p class="difference-block-title">Высокий уровень</p>
+                        <p class="difference-block-deck">Сервис уровня диллера по разумной цене</p>
+                    </div>
+                    <div class="difference-block-item">
+                        <img src="<?php echo get_template_directory_uri() . '/img/about-icon2.png' ?>" alt="Иконка">
+                        <p class="difference-block-title">Доступность</p>
+                        <p class="difference-block-deck">Оптимальное сочетание стоимости и качества</p>
+                    </div>
+                    <div class="difference-block-item">
+                        <img src="<?php echo get_template_directory_uri() . '/img/about-icon3.png' ?>" alt="Иконка">
+                        <p class="difference-block-title">Честность</p>
+                        <p class="difference-block-deck">Озвучиваем цены до начала ремонта</p>
+                    </div>
+                    <div class="difference-block-item">
+                        <img src="<?php echo get_template_directory_uri() . '/img/about-icon4.png' ?>" alt="Иконка">
+                        <p class="difference-block-title">Безопастность</p>
+                        <p class="difference-block-deck">Отвечаем за результат и даем гарантию</p>
+                    </div>
+                </div>
+                <img src="<?php echo get_template_directory_uri() . '/img/maps-yandex.png' ?>" alt="ЯндекаКарты" class="mapsyandex">
+            </div>
+        </div>
     </div>
 </section>
 

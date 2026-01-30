@@ -362,6 +362,12 @@ get_header();
         <a href="#" class="button-close" style="display:none;">Свернуть категории услуг</a>
     </div>
 </section>
+<section class="servises-photo">
+    <div class="container">
+        <img src="<?php echo get_template_directory_uri() . '/img/photo-logo.png' ?>" alt="Логотип Автосервиса ИнфинитиМаркет" class="servises-photo-logo">
+        <img src="<?php echo get_template_directory_uri() . '/img/photo-logo-img.png' ?>" alt="Фоторгафии Автосервиса ИнфинитиМаркет" class="servises-photo-img">
+    </div>
+</section>
 
 <?php
 // get_sidebar();

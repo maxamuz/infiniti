@@ -526,3 +526,16 @@ p {
   text-align: center;
   font-weight: 600;
 }
+
+/* --- SERVISES PHOTO  --- */
+
+.servises-photo {
+  margin-top: 100px;
+}
+
+.servises-photo-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    display: block;
+}

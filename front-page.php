@@ -118,7 +118,7 @@ get_header();
 </section>
 <section class="servises">
     <div class="container">
-        <p class="servises-title"><span class="color-accent">Наши</span>  услуги <span class="servises-arrow">
+        <p class="servises-title"><span class="color-accent">Наши</span> услуги <span class="servises-arrow">
                 <svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_86_1257)">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9928 14.3891L7.97868 6.37499L9.98184 4.37183L16.9943 11.3843L24.0068 4.37183L26.01 6.37499L17.9959 14.3891C17.7303 14.6547 17.37 14.8039 16.9943 14.8039C16.6187 14.8039 16.2584 14.6547 15.9928 14.3891Z" fill="white" fill-opacity="0.5" />
@@ -423,7 +423,120 @@ get_header();
         </div>
     </div>
 </section>
+<section class="faq">
+    <div class="container">
+        <div class="questions-market">
+            <div class="questions-title">
+                <p class="sticky-element"><span class="color-accent">FAQ</span>(Часто задаваемые вопросы) <span class="arrow"><svg width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3891 18.0072L6.37499 26.0213L4.37183 24.0182L11.3843 17.0057L4.37183 9.99316L6.37499 7.98999L14.3891 16.0041C14.6547 16.2697 14.8039 16.63 14.8039 17.0057C14.8039 17.3813 14.6547 17.7416 14.3891 18.0072Z" fill="white" fill-opacity="0.5" />
+                        </svg>
+                    </span> </p>
+            </div>
+            <div class="questions-block">
+                <div class="questions-block-item">
+                    <div class="num color-accent">01</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Работаете ли вы с автомобилями других марок, кроме Infiniti и Nissan?</p>
+                        <p class="questions-block-deck">Да, мы оказываем услуги по ремонту и техническому обслуживанию автомобилей всех марок, включая европейские, корейские, китайские и американские. Однако наша специализация — премиальные и надёжные японские марки.</p>
+                    </div>
+                </div>
+                <div class="questions-block-item">
+                    <div class="num color-accent">02</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Можете ли вы выполнить ремонт подвески на Infiniti QX56/QX60?</p>
+                        <p class="questions-block-deck">Конечно! Мы располагаем опытом и оборудованием для диагностики и ремонта подвески любых моделей Infiniti. Наши мастера проведут комплексную проверку и заменят изношенные элементы с использованием качественных запасных частей.</p>
+                    </div>
+                </div>
+                <div class="questions-block-item">
+                    <div class="num color-accent">03</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Предоставляете ли вы гарантию на выполненные работы?</p>
+                        <p class="questions-block-deck">Да, на все виды работ мы предоставляем официальную гарантию. Срок гарантии зависит от характера неисправности и типа выполняемых работ — уточняйте у менеджера при оформлении заказа.</p>
+                    </div>
+                </div>
+                <div class="questions-block-item">
+                    <div class="num color-accent">04</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Как часто нужно проходить ТО на Nissan?</p>
+                        <p class="questions-block-deck">Рекомендуемое межсервисное обслуживание для автомобилей Nissan составляет 10 000–15 000 км пробега или раз в 12 месяцев. Точный интервал указан в сервисной книжке конкретной модели.</p>
+                    </div>
+                </div>
+                <div class="questions-block-item">
+                    <div class="num color-accent">05</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Выполняете ли вы чип-тюнинг двигателей?</p>
+                        <p class="questions-block-deck">Да, мы предлагаем услуги по чип-тюнингу двигателей, включая модели Nissan и Infiniti. Это позволяет повысить мощность, улучшить динамику и, при грамотном подходе, снизить расход топлива.</p>
+                    </div>
+                </div>
+                <div class="questions-block-item">
+                    <div class="num color-accent">06</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Можно ли записаться на диагностику в выходной день?</p>
+                        <p class="questions-block-deck">Да, мы работаем по предварительной записи, в том числе и в выходные дни. Заблаговременное бронирование позволяет нам выделить нужное время для вашего автомобиля и избежать ожидания .</p>
+                    </div>
+                </div>
+                <div class="questions-block-item">
+                    <div class="num color-accent">07</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Используете ли вы оригинальные запчасти?</p>
+                        <p class="questions-block-deck">Мы можем использовать как оригинальные запчасти, так и качественные аналоги, в зависимости от ваших предпочтений и бюджета. При необходимости мы сами закажем запчасти, проконсультировав вас по срокам и стоимости.</p>
+                    </div>
+                </div>
+                <a href="#" class="market-button">Записаться</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contacts">
+    <div class="container">
+        <div class="contacts-title">
+            <p class="contacts-element"><span class="color-accent">Контакты</span>
+                <span class="servises-arrow">
+                    <svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_86_1257)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9928 14.3891L7.97868 6.37499L9.98184 4.37183L16.9943 11.3843L24.0068 4.37183L26.01 6.37499L17.9959 14.3891C17.7303 14.6547 17.37 14.8039 16.9943 14.8039C16.6187 14.8039 16.2584 14.6547 15.9928 14.3891Z" fill="white" fill-opacity="0.5"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_86_1257">
+                                <rect width="17" height="34" fill="white" transform="translate(34 1.48619e-06) rotate(90)"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
 
+                </span>
+            </p>
+        </div>
+        <div class="contacts-grid">
+            <div class="contacts-grid-item">
+                <img src="<?php echo get_template_directory_uri() . '/img/symbols_call.png' ?>" alt="Иконка" class="contact-phone-img">
+                <p class="contact-title">Телефон</p>
+                <p class="contact-content">84991122731</p>
+            </div>
+            <div class="contacts-grid-item">
+                <img src="<?php echo get_template_directory_uri() . '/img/whatsapp-fill.png' ?>" alt="Иконка" class="contact-wt-img">
+                <p class="contact-title">WHATSAPP</p>
+                <p class="contact-content">89773337677</p>
+            </div>
+            <div class="contacts-grid-item">
+                <img src="<?php echo get_template_directory_uri() . '/img/mdi_location.png' ?>" alt="Иконка" class="contact-address-img">
+                <p class="contact-title">Адрес</p>
+                <p class="contact-content">Загородное ш., 7А, стр. 3, Москва</p>
+            </div>
+            <div class="contacts-grid-item">
+                <img src="<?php echo get_template_directory_uri() . '/img/solar_calendar-bold.png' ?>" alt="Иконка" class="contact-works-img">
+                <p class="contact-title">Режим работы</p>
+                <p class="contact-content">Пн–Пт с 11:00 до 20:00; <br>Cб-Вс — по договорённости</p>
+            </div>
+        </div>
+        <div class="contacts-map">
+            <img src="<?php echo get_template_directory_uri() . '/img/map-contact.webp' ?>" alt="Карта автосервиса Infiniti">
+        </div>
+        <div class="contacts-button">
+            <a href="#" class="contacts-button-start"><img src="https://infinitimarket.loc/wp-content/themes/infiniti/img/gis_route.png" alt="Иконка маршрута">Начать поездку</a>
+            <a href="#" class="contacts-button-action">Записаться</a>
+        </div>
+    </div>
+</section>
 <?php
 // get_sidebar();
 get_footer();

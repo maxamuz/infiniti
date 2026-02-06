@@ -48,6 +48,10 @@ p {
   z-index: 999;
 }
 
+.container-header-mobile {
+  display: none;
+}
+
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -235,9 +239,9 @@ p {
 
 .container-refit {
   display: grid;
-  grid-template-columns: 40% 20% 35%;
-  position: relative;
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  /* position: relative;   */
+  gap: 90px;
 }
 
 .refit-models-item {
@@ -272,22 +276,22 @@ p {
 
 .all-auto {
   position: absolute;
-  width: 358px;
+  /* width: 358px; */
   height: 585px;
-  left: 330px;
+  left: -26px;
 }
 
 .infiniti-auto {
-  position: absolute;
-  width: 358px;
+  /* position: absolute; */
+  width: 380px;
   height: 585px;
-  left: 2px;
+  left: -18px;
 }
 
 .nissan-auto {
-  position: absolute;
-  width: 358px;
-  height: 585px;
+  /* position: absolute; */
+  /* width: 358px; */
+  /* height: 585px; */
   right: 270px;
 }
 
@@ -347,7 +351,6 @@ p {
 .questions-title p {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-transform: uppercase;
   border: 1px solid #fff;
   padding: 5px 25px;

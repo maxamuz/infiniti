@@ -76,3 +76,53 @@
 				</div>
 			</div>
 		</div>
+		<div class="container container-header container-header-mobile">
+			<header id="masthead" class="site-header">
+				<div class="site-branding">
+					<?php
+					the_custom_logo();
+					if (is_front_page() && is_home()) :
+					?>
+						<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+					<?php
+					else :
+					?>
+						<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
+					<?php
+					endif;
+					$infiniti_description = get_bloginfo('description', 'display');
+					if ($infiniti_description || is_customize_preview()) :
+					?>
+						<p class="site-description"><?php echo $infiniti_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+													?></p>
+					<?php endif; ?>
+				</div><!-- .site-branding -->
+				<nav id="site-navigation" class="main-navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+						&#9776; <!-- Символ гамбургера -->
+					</button>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						)
+					);
+					?>
+				</nav>
+				<div class="call-header">
+
+					<a class="adress-link" href="#"><img src="<?php echo get_template_directory_uri() . '/img/gis_route.png' ?>" alt="Иконка маршрута">Начать поездку</a>
+				</div>
+			</header><!-- #masthead -->
+			<div class="header-bottom">
+				<div class="header-work">
+					<img src="<?php echo get_template_directory_uri() . '/img/solar_calendar-bold.png' ?>" alt="Иконка часов работы">
+					<p class="work-description">Пн–Пт с 11:00 до 20:00; Cб-Вс — по договорённости</p>
+				</div>
+				<div class="header-adress">
+					<p class="adress-description">г. Москва, Загородное шоссе, 7Ас3</p>
+
+				</div>
+			</div>
+		</div>

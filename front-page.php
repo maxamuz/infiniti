@@ -29,7 +29,7 @@ get_header();
 </section>
 
 <section class="refit-models">
-    <div class="container-refit">
+    <div class="container container-refit">
         <div class="refit-models-item">
             <div class="refit-card all-auto">
                 <h2 class="refit-card-title">Ремонт любых авто</h2>

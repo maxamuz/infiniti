@@ -145,6 +145,7 @@ function infiniti_scripts()
 {
 	wp_enqueue_style('infiniti-style', get_stylesheet_uri(), array(), _S_VERSION);
 	wp_enqueue_style('infiniti-main-style', get_template_directory_uri() . '/css/main.css');
+	wp_enqueue_style('infiniti-media-style', get_template_directory_uri() . '/css/media.css');
 	wp_style_add_data('infiniti-style', 'rtl', 'replace');
 
 	wp_enqueue_script('infiniti-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);

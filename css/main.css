@@ -686,3 +686,22 @@ p {
   color: #212121;
   transform: scale(1.01);
 }
+
+/* --- FOOTER  --- */
+
+.site-footer {
+  margin-top: 80px;
+}
+
+.company-info {
+  margin: 25px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #fff;
+  opacity: 50%;
+  gap: 70px;
+}
+
+.site-info {
+  opacity: 50%;
+}

@@ -155,6 +155,10 @@
     max-width: 640px;
   }
 
+  .hero {
+    margin-top: -206px;
+  }
+
   .container-header {
     display: none;
   }
@@ -170,7 +174,7 @@
 
   .menu-toggle,
   .main-navigation.toggled ul {
-    display: block;
+    display: block !important;
   }
 
   .main-navigation ul {
@@ -179,5 +183,54 @@
 
   .call-header {
     order: 2;
+  }
+
+  .refit-models {
+    height: 1985px !important;
+    background: url(../img/mobile-car.png);
+    background-size: cover;
+  }
+
+  .container-refit {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .refit-card {
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .all-auto {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .infiniti-auto {
+    margin-top: -20px;
+  }
+
+  .nissan-auto {
+    height: 585px;
+    width: 100%;
+    margin-top: -62px;
+  }
+
+  .refit-card-title {
+    text-align: center;
+  }
+
+  .refit-card-desc {
+    text-align: center;
+    flex: 1;
+    margin-top: 50px;
+    font-size: 26px;
+  }
+
+  .refit-card-buttom {
+    margin-bottom: 50px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

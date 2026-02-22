@@ -91,7 +91,7 @@
   }
 
   .hero {
-    margin-top: -240px;
+    margin-top: -208px;
   }
 
   .main-navigation ul {
@@ -145,18 +145,135 @@
     width: 33%;
   }
 
+  .contacts-button {
+    left: 27%;
+  }
+
   .contacts-title p {
     width: 17%;
   }
 }
 
+/* Десктопная версия скрытия меню*/
+@media screen and (min-width: 769px) {
+  .container-header {
+    display: block;
+  }
+
+  .container-header-mobile {
+    display: none;
+  }
+
+  .container-footer {
+    display: block;
+  }
+
+  .container-footer-mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
+  /*  Здесь стили мобального меню */
+
+  /* Скрываем десктопное меню, показываем мобильное */
+  .container-header {
+    display: none;
+  }
+
+  .container-header-mobile {
+    display: block;
+  }
+
+  /* Стили для гамбургер меню */
+  .container-header-mobile .main-navigation {
+    position: relative;
+  }
+
+  .container-header-mobile .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  .container-header-mobile .menu-toggle[aria-expanded="true"] {
+    transform: rotate(90deg);
+  }
+
+  /* Стили для мобильного меню */
+  .container-header-mobile #primary-menu {
+    display: none;
+    position: absolute;
+    top: 103%;
+    left: -550px;
+    right: 0;
+    background: #fff;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    flex-direction: column;
+    width: 638px;
+  }
+
+  .container-header-mobile #primary-menu.toggled {
+    display: flex;
+  }
+
+  .container-header-mobile #primary-menu li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .container-header-mobile #primary-menu a {
+    display: block;
+    padding: 12px 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+  }
+
+  .container-header-mobile #primary-menu a:hover {
+    background-color: #f5f5f5;
+  }
+
+  .container-header-mobile #primary-menu li:last-child a {
+    border-bottom: none;
+  }
+
+  /* Анимация появления */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .container-header-mobile #primary-menu.toggled {
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  /*  Здесь стили мобального меню */
+
   .container {
     max-width: 640px;
   }
 
   .hero {
     margin-top: -206px;
+    position: relative;
+    z-index: 1;
   }
 
   .container-header {
@@ -232,5 +349,301 @@
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .questions-market {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .questions-title p {
+    display: inline-flex;
+  }
+
+  .sticky-element .arrow svg {
+    transform: rotate(90deg);
+  }
+
+  .questions-block {
+    width: 100%;
+  }
+
+  .market-button {
+    width: 93%;
+  }
+
+  .servises-title {
+    width: 32%;
+    justify-content: start;
+  }
+
+  .servises-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servises-card-title {
+    width: 100%;
+  }
+
+  .about-title {
+    width: 100%;
+  }
+
+  .about-title {
+    width: 55%;
+  }
+
+  .about-block {
+    grid-template-columns: 1fr;
+  }
+
+  .about-difference {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .difference-block-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p.difference-block-deck {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .contacts-title p {
+    width: 26%;
+  }
+
+  .contacts-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .contacts-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-button {
+    left: 20%;
+  }
+
+  .company-info {
+    gap: 20px;
+  }
+
+  /* Footer Menu*/
+
+  /* Стили для футера */
+
+  .container-footer {
+    display: none;
+  }
+
+  .container-footer-mobile {
+    display: block;
+  }
+
+  .container-footer-mobile .site-footer {
+    padding: 30px 15px;
+  }
+
+  /* Стили для мобильного меню в футере */
+  .container-footer-mobile .main-navigation {
+    position: relative;
+  }
+
+  .container-footer-mobile .menu-toggle {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .container-footer-mobile .menu-toggle span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background: #333;
+    border-radius: 3px;
+    opacity: 1;
+    left: 7px;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  .container-footer-mobile .menu-toggle span:nth-child(1) {
+    top: 10px;
+  }
+
+  .container-footer-mobile .menu-toggle span:nth-child(2) {
+    top: 18px;
+  }
+
+  .container-footer-mobile .menu-toggle span:nth-child(3) {
+    top: 26px;
+  }
+
+  .container-footer-mobile
+    .menu-toggle[aria-expanded="true"]
+    span:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+  }
+
+  .container-footer-mobile
+    .menu-toggle[aria-expanded="true"]
+    span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+
+  .container-footer-mobile
+    .menu-toggle[aria-expanded="true"]
+    span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+  }
+
+  /* Стили для мобильного меню */
+  .container-footer-mobile #footer-menu-mobile {
+    display: none;
+    list-style: none;
+    padding: 20px 0;
+    margin: 20px 0 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    position: absolute;
+    top: -140px;
+    right: 65px;
+    width: 515px;
+    background: #fff;
+    z-index: 999;
+  }
+
+  .container-footer-mobile #footer-menu-mobile.toggled {
+    display: block;
+  }
+
+  .container-footer-mobile #footer-menu-mobile li {
+    margin: 0;
+  }
+
+  .container-footer-mobile #footer-menu-mobile a {
+    display: block;
+    padding: 12px 15px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .container-footer-mobile #footer-menu-mobile a:hover {
+    background-color: #f9f9f9;
+  }
+
+  .container-footer-mobile #footer-menu-mobile li:last-child a {
+    border-bottom: none;
+  }
+
+  /* Контактная информация в мобильном футере */
+  .container-footer-mobile .footer-contact-info {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee91;
+    text-align: center;
+  }
+
+  .container-footer-mobile .footer-contact-info .header-work,
+  .container-footer-mobile .footer-contact-info .header-address {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .container-footer-mobile .footer-contact-info img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .container-footer-mobile .footer-contact-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* Стили для кнопок в мобильном футере */
+  .container-footer-mobile .call-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .container-footer-mobile .address-link,
+  .container-footer-mobile .phone-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+
+  .container-footer-mobile .address-link img,
+  .container-footer-mobile .phone-link img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Компактное отображение информации о компании */
+  .container-footer-mobile .company-info {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+  }
+
+  .container-footer-mobile .company-info-item {
+    margin: 8px 0;
+  }
+
+  .container-footer-mobile .site-info {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+  }
+
+  /* Анимация для меню */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .container-footer-mobile #footer-menu-mobile.toggled {
+    animation: slideDown 0.3s ease forwards;
   }
 }

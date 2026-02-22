@@ -493,6 +493,10 @@ p {
   font-weight: 700;
 }
 
+.card-button-item:visited {
+  color: #000;
+}
+
 .card-button-item:hover {
   transform: scale(1.01);
 }

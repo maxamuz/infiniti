@@ -647,3 +647,409 @@
     animation: slideDown 0.3s ease forwards;
   }
 }
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 460px;
+  }
+
+  .hero-description {
+    width: 60%;
+  }
+
+  .container-header-mobile #primary-menu {
+    top: 120%;
+    left: -389px;
+    width: 460px;
+  }
+
+  h1 {
+    font-size: 64px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .info-block-desc {
+    padding-right: 0;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .info-block-button {
+    width: 100%;
+  }
+
+  .servises-title {
+    width: 43%;
+  }
+
+  .about-title {
+    width: 67%;
+  }
+
+  .contacts-title p {
+    width: 37%;
+  }
+
+  p.contact-content {
+    font-size: 14px;
+  }
+
+  .contacts-button {
+    left: 13%;
+    gap: 20px;
+  }
+
+  .company-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container-footer-mobile #footer-menu-mobile {
+    right: 50px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    max-width: 380px;
+  }
+
+  .hero {
+    margin-top: -250px;
+  }
+
+  .container-header-mobile #primary-menu {
+    top: 113%;
+    left: -265px;
+    width: 316px;
+  }
+
+  .site-header {
+    padding: 5px 25px;
+  }
+
+  .adress-link {
+    padding: 10px 8px;
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  p.work-description {
+    text-align: center;
+  }
+
+  .color-accent {
+    padding-right: 0;
+  }
+
+  h1 {
+    font-size: 45px;
+    margin-top: 58px;
+  }
+
+  .hero-description {
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 85%;
+    margin-top: 40px;
+  }
+
+  .hero-info-block {
+    margin-top: 40px;
+  }
+
+  .info-block-desc {
+    padding-top: 40px;
+  }
+
+  .info-block-button {
+    padding: 15px 100px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .refit-models {
+    height: 1466px !important;
+  }
+
+  .refit-card {
+    padding: 5px 25px;
+  }
+
+  .all-auto {
+    height: 400px;
+  }
+
+  .infiniti-auto {
+    height: 400px;
+  }
+
+  .nissan-auto {
+    height: 400px;
+    margin-top: -50px;
+  }
+
+  .refit-card-title {
+    font-size: 32px;
+  }
+
+  .refit-card-desc {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+
+  .questions-title p {
+    padding: 5px 15px;
+  }
+
+  .questions-title p span {
+    padding-right: 5px;
+  }
+
+  .market-button {
+    width: 85%;
+    margin-left: 25px;
+  }
+
+  .servises-card-img {
+    top: -100px;
+  }
+
+  .servises-title {
+    width: 58%;
+  }
+
+  .servises-card-title {
+    font-size: 22px;
+    padding-left: 24px;
+  }
+
+  .servises-card-list li {
+    font-size: 14 px;
+  }
+
+  .servises-card-button-block {
+    margin-left: 20px;
+  }
+
+  .button-open,
+  .button-close {
+    width: 280px;
+  }
+
+  .about-title {
+    width: 93%;
+  }
+
+  .about-difference-block {
+    grid-template-columns: 1fr;
+  }
+
+  .questions-market .questions-title p span {
+    display: none;
+  }
+
+  .questions-market .questions-title p span.arrow {
+    display: block;
+  }
+
+  .contacts-title p {
+    width: 52%;
+  }
+
+  .contacts-button {
+    left: 15%;
+    bottom: 42px;
+  }
+
+  .contacts-button-start {
+    font-size: 14px;
+    gap: 5px;
+    padding: 8px 7px;
+  }
+
+  .contacts-button-action {
+    font-size: 14px;
+    padding: 8px 25px;
+  }
+
+  #masthead-footer-mobile.site-header {
+    margin-top: 0;
+  }
+
+  p.contact-content {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .container-footer-mobile #footer-menu-mobile {
+    right: 24px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .hero {
+    margin-top: -250px;
+  }
+
+  .site-header {
+    padding: 5px 25px;
+  }
+
+  .adress-link {
+    padding: 10px 8px;
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  p.work-description {
+    text-align: center;
+  }
+
+  .color-accent {
+    padding-right: 0;
+  }
+
+  h1 {
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .info-block-desc {
+    padding-top: 20px;
+    font-size: 18px;
+  }
+
+  .hero-description {
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 85%;
+    margin-top: 15px;
+  }
+
+  .info-block-button {
+    padding: 15px 100px;
+  }
+
+  .refit-models {
+    height: 1466px !important;
+  }
+
+  .refit-card {
+    padding: 5px 25px;
+  }
+
+  .all-auto {
+    height: 400px;
+  }
+
+  .infiniti-auto {
+    height: 400px;
+  }
+
+  .nissan-auto {
+    height: 400px;
+    margin-top: -50px;
+  }
+
+  .refit-card-title {
+    font-size: 32px;
+  }
+
+  .refit-card-desc {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+
+  .questions-title p {
+    padding: 5px 6px;
+  }
+
+  .questions-title p span {
+    padding-right: 5px;
+  }
+
+  .market-button {
+    width: 85%;
+    margin-left: 25px;
+  }
+
+  .servises-title {
+    width: 58%;
+  }
+
+  .servises-card-title {
+    font-size: 22px;
+    padding-left: 24px;
+  }
+
+  .servises-card-list li {
+    font-size: 12px;
+  }
+
+  .servises-card-button-block {
+    margin-left: 20px;
+  }
+
+  .button-open,
+  .button-close {
+    width: 280px;
+  }
+
+  .about-title {
+    width: 93%;
+  }
+
+  .about-difference-block {
+    grid-template-columns: 1fr;
+  }
+
+  .questions-market .questions-title p span {
+    display: none;
+  }
+
+  .questions-market .questions-title p span.arrow {
+    display: block;
+  }
+
+  .contacts-title p {
+    width: 52%;
+  }
+
+  .contacts-button {
+    left: 9%;
+    bottom: 42px;
+  }
+
+  .contacts-button-start {
+    font-size: 14px;
+    gap: 5px;
+    padding: 8px 7px;
+  }
+
+  .contacts-button-action {
+    font-size: 14px;
+    padding: 8px 25px;
+  }
+
+  #masthead-footer-mobile.site-header {
+    margin-top: 0;
+  }
+
+  p.contact-content {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .container-footer-mobile #footer-menu-mobile {
+    right: 24px;
+    width: 250px;
+  }
+}

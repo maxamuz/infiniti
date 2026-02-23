@@ -14,7 +14,7 @@ a:hover {
 }
 
 a:visited {
-  color: #fff;
+  color: #1e1e1e;
 }
 
 h1 {
@@ -200,6 +200,10 @@ p {
   border-color: #fff;
   text-transform: uppercase;
   font-size: 14px;
+}
+
+.block-models-link:visited {
+  color: #fff;
 }
 
 .block-models-link:hover {
@@ -535,6 +539,11 @@ p {
   font-weight: 600;
 }
 
+.button-open:visited,
+.button-close:visited {
+  color: #fff;
+}
+
 /* --- SERVISES PHOTO  --- */
 
 .servises-photo {
@@ -711,4 +720,8 @@ p {
 
 .site-info {
   opacity: 50%;
+}
+
+.container-footer a:visited {
+  color: #989898;
 }

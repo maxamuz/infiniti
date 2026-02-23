@@ -76,6 +76,14 @@ p {
   font-weight: 700;
 }
 
+#primary-menu a:visited {
+  color: #fff;
+}
+
+#primary-menu a:hover {
+  color: #5fc2ff;
+}
+
 .call-header-link {
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.9);
   height: 41px;

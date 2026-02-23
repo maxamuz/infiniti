@@ -993,7 +993,7 @@
   }
 
   .servises-card-title {
-    font-size: 22px;
+    font-size: 18px;
     padding: 0 20px;
   }
 
@@ -1003,6 +1003,10 @@
 
   .servises-card-button-block {
     margin-left: 44px;
+  }
+
+  .servises-card-img {
+    top: -110px;
   }
 
   .button-open,

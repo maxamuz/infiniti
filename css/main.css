@@ -725,3 +725,7 @@ p {
 .container-footer a:visited {
   color: #989898;
 }
+
+.container-footer-mobile .company-info-item:visited {
+  color: #686666;
+}

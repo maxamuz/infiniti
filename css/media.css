@@ -1064,3 +1064,14 @@
     width: 250px;
   }
 }
+
+@media (max-width: 360px) {
+ .info-block-button {
+  margin-top: 5px;
+ }
+
+ .info-block-desc {
+  padding-top: 0;
+  padding-bottom: 0;
+ }
+}

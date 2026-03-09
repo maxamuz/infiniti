@@ -611,6 +611,94 @@ p {
   font-size: 14px;
 }
 
+.about-description-form {
+  margin-top: 50px;
+  font-size: 20px;
+  padding: 50px 60px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 60px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  position: relative;
+  z-index: 1;
+  color: white;
+  overflow: hidden; /* Важно! */
+}
+
+.about-description-form::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: 0px;
+  bottom: -20px;
+  background-image: url(../img/fone-form.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 105% -20px;
+  filter: blur(15px) brightness(0.7); /* Размытие + затемнение */
+  -webkit-filter: blur(10px) brightness(0.7);
+  z-index: -1;
+}
+
+.about-description-form form {
+  margin-top: 50px;
+}
+
+.about-description-form form p {
+  margin-bottom: 25px;
+}
+
+.about-description-form form p:nth-of-type(3) {
+  margin: 0;
+}
+
+.about-description-form form p:last-of-type {
+  margin: 0;
+}
+
+.about-description-form form input {
+  height: 50px;
+  width: 100%;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.about-description-form form input[type="submit"] {
+  height: 65px;
+  background: #5fc2ff;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+
+.about-description-form form input[type="submit"]:hover {
+  color: #212121;
+  transform: scale(1.01);
+}
+
+.about-description-form form input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.about-description-form form span[data-name="acceptance-323"] {
+  font-size: 14px;
+}
+
+.wpcf7-list-item {
+  margin: 0;
+}
+
+.wpcf7-list-item label {
+  display: flex;
+}
+
+.form-title {
+  text-transform: uppercase;
+}
+
 /* --- FAQ  --- */
 
 .faq {

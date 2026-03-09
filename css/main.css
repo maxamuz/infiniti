@@ -599,6 +599,10 @@ p {
   gap: 75px;
 }
 
+.about-description-text p {
+  margin-bottom: 10px;
+}
+
 .mapsyandex {
   margin-top: 75px;
 }

@@ -68,7 +68,13 @@
 			<div class="header-bottom">
 				<div class="header-work">
 					<img src="<?php echo get_template_directory_uri() . '/img/solar_calendar-bold.png' ?>" alt="Иконка часов работы">
-					<p class="work-description">Пн–Пт с 11:00 до 20:00; Cб-Вс — по договорённости</p>
+					<p class="work-description">
+						<?php
+						if (function_exists('theme_settings_get_work_hours')) {
+							echo theme_settings_get_work_hours();
+						}
+						?>
+					</p>
 				</div>
 				<div class="header-adress">
 					<p class="adress-description">г. Москва, Загородное шоссе, 7Ас3</p>

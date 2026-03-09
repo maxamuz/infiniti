@@ -157,6 +157,18 @@ function infiniti_scripts()
 }
 add_action('wp_enqueue_scripts', 'infiniti_scripts');
 
+
+
+function infiniti_get_copyright()
+{
+	return get_option('infiniti_copyright_text', '© ' . date('Y') . ' Infiniti Market. Все права защищены.');
+}
+
+function infiniti_get_map_link()
+{
+	return get_option('infiniti_map_link', '');
+}
+
 /**
  * Implement the Custom Header feature.
  */

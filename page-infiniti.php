@@ -72,37 +72,18 @@ get_header();
                     </span> </p>
             </div>
             <div class="questions-block">
+
                 <?php
-                // Получаем данные из OpenFields
-                $top_items = cofld_get_field('field_top');
+                // Получаем данные из TOP группы
+                $top_items = get_post_meta(get_the_ID(), 'infiniti_faq_top_group', true);
 
-                // Отладка (можно удалить после проверки)
-                // echo '<pre>'; print_r($top_items); echo '</pre>';
-
-                if (!empty($top_items) && is_array($top_items)) :
+                if (! empty($top_items) && is_array($top_items)) :
                     $counter = 1;
                     foreach ($top_items as $item) :
-                        // Определяем вопрос и ответ
-                        $question = '';
-                        $answer = '';
+                        $question = isset($item['question']) ? $item['question'] : '';
+                        $answer   = isset($item['answer']) ? $item['answer'] : '';
 
-                        if (is_array($item)) {
-                            // Проверяем разные возможные ключи
-                            if (isset($item['question'])) {
-                                $question = $item['question'];
-                            } elseif (isset($item['field_top_question'])) {
-                                $question = $item['field_top_question'];
-                            }
-
-                            if (isset($item['answer'])) {
-                                $answer = $item['answer'];
-                            } elseif (isset($item['field_top_answer'])) {
-                                $answer = $item['field_top_answer'];
-                            }
-                        }
-
-                        // Если вопрос и ответ найдены, выводим
-                        if (!empty($question) && !empty($answer)) :
+                        if (! empty($question) && ! empty($answer)) :
                 ?>
                             <div class="questions-block-item">
                                 <div class="num color-accent"><?php echo str_pad($counter, 2, '0', STR_PAD_LEFT); ?></div>
@@ -115,75 +96,9 @@ get_header();
                             $counter++;
                         endif;
                     endforeach;
-                endif;
-
-                // Если нет данных или вывелось меньше 6 элементов, показываем запасные
-                if (!isset($counter) || $counter == 1) :
+                else :
+                    // Запасной контент для TOP группы
                     ?>
-                    <!-- Запасные элементы на случай, если данных мало -->
-                    <?php if ($counter == 1) : // Если есть первый элемент из OpenFields, начинаем со второго 
-                    ?>
-                        <?php $counter = 2; ?>
-                    <?php else : // Если совсем нет данных, показываем все 6 
-                    ?>
-                        <div class="questions-block-item">
-                            <div class="num color-accent">01</div>
-                            <div class="questions-block-text">
-                                <p class="questions-block-title color-accent">Один автосервис для всех ваших машин</p>
-                                <p class="questions-block-deck">Вам не нужно держать в телефоне 5 разных СТО — мы закрываем все типы работ по большинству марок.</p>
-                            </div>
-                        </div>
-                        <?php $counter = 2; ?>
-                    <?php endif; ?>
-
-                    <div class="questions-block-item">
-                        <div class="num color-accent"><?php echo str_pad($counter, 2, '0', STR_PAD_LEFT); ?></div>
-                        <div class="questions-block-text">
-                            <p class="questions-block-title color-accent">Собственный большой склад запчастей</p>
-                            <p class="questions-block-deck">В 92% случаев не придется искать/ждать запчасти. На нашем складе есть всё для большинства марок и моделей автомобилей.</p>
-                        </div>
-                    </div>
-
-                    <?php $counter++; ?>
-                    <div class="questions-block-item">
-                        <div class="num color-accent"><?php echo str_pad($counter, 2, '0', STR_PAD_LEFT); ?></div>
-                        <div class="questions-block-text">
-                            <p class="questions-block-title color-accent">Внушительный опыт мастеров</p>
-                            <p class="questions-block-deck">Наши мастера находят решения даже в самых не понятных ситуациях, за счет внушительного опыта каждого от 5 до 15 лет</p>
-                        </div>
-                    </div>
-
-                    <?php $counter++; ?>
-                    <div class="questions-block-item">
-                        <div class="num color-accent"><?php echo str_pad($counter, 2, '0', STR_PAD_LEFT); ?></div>
-                        <div class="questions-block-text">
-                            <p class="questions-block-title color-accent">Оптимальное сочетание цены и качества</p>
-                            <p class="questions-block-deck">Приезжайте и убедитесь сами. Это касается как стоимости услуг в автосервисе, так и автозапчастей с нашего склада.</p>
-                        </div>
-                    </div>
-
-                    <?php $counter++; ?>
-                    <div class="questions-block-item">
-                        <div class="num color-accent"><?php echo str_pad($counter, 2, '0', STR_PAD_LEFT); ?></div>
-                        <div class="questions-block-text">
-                            <p class="questions-block-title color-accent">Прозрачная коммуникация</p>
-                            <p class="questions-block-deck">Нормальный человеческий разговор вместо «такая политика сервиса».</p>
-                        </div>
-                    </div>
-
-                    <?php $counter++; ?>
-                    <div class="questions-block-item">
-                        <div class="num color-accent"><?php echo str_pad($counter, 2, '0', STR_PAD_LEFT); ?></div>
-                        <div class="questions-block-text">
-                            <p class="questions-block-title color-accent">Гарантия и документы</p>
-                            <p class="questions-block-deck">Все работы фиксируются в заказ-наряде, есть гарантия на работы и установленные запчасти.</p>
-                        </div>
-                    </div>
-                <?php endif; ?>
-
-                <a href="#about-form" class="market-button">Записаться</a>
-            </div>
-            <!-- <div class="questions-block">
                     <div class="questions-block-item">
                         <div class="num color-accent">01</div>
                         <div class="questions-block-text">
@@ -191,43 +106,54 @@ get_header();
                             <p class="questions-block-deck">Вам не нужно держать в телефоне 5 разных СТО — мы закрываем все типы работ по большинству марок.</p>
                         </div>
                     </div>
-                    <div class="questions-block-item">
-                        <div class="num color-accent">02</div>
-                        <div class="questions-block-text">
-                            <p class="questions-block-title color-accent">Собственный большой скалад запчастей</p>
-                            <p class="questions-block-deck">В 92% случаев не придется искать/ждать запчасти. На нашем складе есть всё для большинства марок и моделей автомобилей.</p>
-                        </div>
+                    <!-- ... остальные запасные элементы ... -->
+                <?php endif; ?>
+            </div>
+            <!-- <div class="questions-block">
+                <div class="questions-block-item">
+                    <div class="num color-accent">01</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Один автосервис для всех ваших машин</p>
+                        <p class="questions-block-deck">Вам не нужно держать в телефоне 5 разных СТО — мы закрываем все типы работ по большинству марок.</p>
                     </div>
-                    <div class="questions-block-item">
-                        <div class="num color-accent">03</div>
-                        <div class="questions-block-text">
-                            <p class="questions-block-title color-accent">Внушительный опыт мастеров</p>
-                            <p class="questions-block-deck">Наши мастера находят решения даже в самых не понятных ситуациях, за счет внушительного опыта каждого от 5 до 15 лет</p>
-                        </div>
+                </div>
+                <div class="questions-block-item">
+                    <div class="num color-accent">02</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Собственный большой скалад запчастей</p>
+                        <p class="questions-block-deck">В 92% случаев не придется искать/ждать запчасти. На нашем складе есть всё для большинства марок и моделей автомобилей.</p>
                     </div>
-                    <div class="questions-block-item">
-                        <div class="num color-accent">04</div>
-                        <div class="questions-block-text">
-                            <p class="questions-block-title color-accent">Оптимальное сочетание цены и качества</p>
-                            <p class="questions-block-deck">Приезжайте и убедитесь сами. Это касается как стоимости услуг в автосервисе, так и автозапчастей с нашего склада. </p>
-                        </div>
+                </div>
+                <div class="questions-block-item">
+                    <div class="num color-accent">03</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Внушительный опыт мастеров</p>
+                        <p class="questions-block-deck">Наши мастера находят решения даже в самых не понятных ситуациях, за счет внушительного опыта каждого от 5 до 15 лет</p>
                     </div>
-                    <div class="questions-block-item">
-                        <div class="num color-accent">05</div>
-                        <div class="questions-block-text">
-                            <p class="questions-block-title color-accent">Прозрачная коммуникация</p>
-                            <p class="questions-block-deck">Нормальный человеческий разговор вместо «такая политика сервиса».</p>
-                        </div>
+                </div>
+                <div class="questions-block-item">
+                    <div class="num color-accent">04</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Оптимальное сочетание цены и качества</p>
+                        <p class="questions-block-deck">Приезжайте и убедитесь сами. Это касается как стоимости услуг в автосервисе, так и автозапчастей с нашего склада. </p>
                     </div>
-                    <div class="questions-block-item">
-                        <div class="num color-accent">06</div>
-                        <div class="questions-block-text">
-                            <p class="questions-block-title color-accent">Гарантия и документы</p>
-                            <p class="questions-block-deck">Все работы фиксируются в заказ-наряде, есть гарантия на работы и установленные запчасти.</p>
-                        </div>
+                </div>
+                <div class="questions-block-item">
+                    <div class="num color-accent">05</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Прозрачная коммуникация</p>
+                        <p class="questions-block-deck">Нормальный человеческий разговор вместо «такая политика сервиса».</p>
                     </div>
-                    <a href="#" class="market-button">Записаться</a>
-                </div> -->
+                </div>
+                <div class="questions-block-item">
+                    <div class="num color-accent">06</div>
+                    <div class="questions-block-text">
+                        <p class="questions-block-title color-accent">Гарантия и документы</p>
+                        <p class="questions-block-deck">Все работы фиксируются в заказ-наряде, есть гарантия на работы и установленные запчасти.</p>
+                    </div>
+                </div>
+                <a href="#" class="market-button">Записаться</a>
+            </div> -->
         </div>
     </div>
 </section>
@@ -539,97 +465,8 @@ get_header();
         </div>
     </div>
 </section>
+
 <section class="faq">
-    <div class="container">
-        <div class="questions-market">
-            <div class="questions-title">
-                <p class="sticky-element">
-                    <span class="color-accent">FAQ</span>(Часто задаваемые вопросы)
-                    <span class="arrow">
-                        <svg width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3891 18.0072L6.37499 26.0213L4.37183 24.0182L11.3843 17.0057L4.37183 9.99316L6.37499 7.98999L14.3891 16.0041C14.6547 16.2697 14.8039 16.63 14.8039 17.0057C14.8039 17.3813 14.6547 17.7416 14.3891 18.0072Z" fill="white" fill-opacity="0.5" />
-                        </svg>
-                    </span>
-                </p>
-            </div>
-
-            <div class="questions-block">
-                <?php
-                // Получаем вопросы и ответы из OpenFields
-                $faq_questions = cofld_get_field('faq_questions');
-                $faq_answers   = cofld_get_field('faq_answers');
-
-                // Или если используете repeater
-                $faq_items = cofld_get_field('faq_items');
-
-                // Вариант 1: Если используете отдельные поля для вопросов и ответов
-                if (! empty($faq_questions) && is_array($faq_questions)) :
-                    $counter = 1;
-                    foreach ($faq_questions as $index => $question) :
-                        $answer = isset($faq_answers[$index]) ? $faq_answers[$index] : '';
-
-                        if (! empty($question) && ! empty($answer)) :
-                ?>
-                            <div class="questions-block-item">
-                                <div class="num color-accent"><?php echo str_pad($counter, 2, '0', STR_PAD_LEFT); ?></div>
-                                <div class="questions-block-text">
-                                    <p class="questions-block-title color-accent"><?php echo esc_html($question); ?></p>
-                                    <p class="questions-block-deck"><?php echo wp_kses_post($answer); ?></p>
-                                </div>
-                            </div>
-                        <?php
-                            $counter++;
-                        endif;
-                    endforeach;
-
-                // Вариант 2: Если используете repeater с группами
-                elseif (! empty($faq_items) && is_array($faq_items)) :
-                    $counter = 1;
-                    foreach ($faq_items as $item) :
-                        $question = isset($item['question']) ? $item['question'] : '';
-                        $answer   = isset($item['answer']) ? $item['answer'] : '';
-
-                        if (! empty($question) && ! empty($answer)) :
-                        ?>
-                            <div class="questions-block-item">
-                                <div class="num color-accent"><?php echo str_pad($counter, 2, '0', STR_PAD_LEFT); ?></div>
-                                <div class="questions-block-text">
-                                    <p class="questions-block-title color-accent"><?php echo esc_html($question); ?></p>
-                                    <p class="questions-block-deck"><?php echo wp_kses_post($answer); ?></p>
-                                </div>
-                            </div>
-                        <?php
-                            $counter++;
-                        endif;
-                    endforeach;
-
-                // Вариант 3: Если используете старые поля с нумерацией
-                else :
-                    for ($i = 1; $i <= 10; $i++) :
-                        $question = get_post_meta(get_the_ID(), 'faq_question_' . $i, true);
-                        $answer   = get_post_meta(get_the_ID(), 'faq_answer_' . $i, true);
-
-                        if (! empty($question) && ! empty($answer)) :
-                        ?>
-                            <div class="questions-block-item">
-                                <div class="num color-accent"><?php echo str_pad($i, 2, '0', STR_PAD_LEFT); ?></div>
-                                <div class="questions-block-text">
-                                    <p class="questions-block-title color-accent"><?php echo esc_html($question); ?></p>
-                                    <p class="questions-block-deck"><?php echo wp_kses_post($answer); ?></p>
-                                </div>
-                            </div>
-                <?php
-                        endif;
-                    endfor;
-                endif;
-                ?>
-
-                <a href="#" class="market-button">Записаться</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- <section class="faq">
     <div class="container">
         <div class="questions-market">
             <div class="questions-title">
@@ -639,6 +476,46 @@ get_header();
                     </span> </p>
             </div>
             <div class="questions-block">
+                <?php
+                // Получаем данные из группы FAQ
+                $faq_items = get_post_meta(get_the_ID(), 'infiniti_faq_group', true);
+
+                if (! empty($faq_items) && is_array($faq_items)) :
+                    $counter = 1;
+                    foreach ($faq_items as $item) :
+                        $question = isset($item['question']) ? $item['question'] : '';
+                        $answer   = isset($item['answer']) ? $item['answer'] : '';
+
+                        if (! empty($question) && ! empty($answer)) :
+                ?>
+                            <div class="questions-block-item">
+                                <div class="num color-accent"><?php echo str_pad($counter, 2, '0', STR_PAD_LEFT); ?></div>
+                                <div class="questions-block-text">
+                                    <p class="questions-block-title color-accent"><?php echo esc_html($question); ?></p>
+                                    <div class="questions-block-deck"><?php echo wp_kses_post($answer); ?></div>
+                                </div>
+                            </div>
+                    <?php
+                            $counter++;
+                        endif;
+                    endforeach;
+                else :
+                    // Запасной контент, если данные не заполнены
+                    ?>
+                    <!-- Здесь ваши стандартные 6 вопросов-ответов -->
+                    <div class="questions-block-item">
+                        <div class="num color-accent">01</div>
+                        <div class="questions-block-text">
+                            <p class="questions-block-title color-accent">Один автосервис для всех ваших машин</p>
+                            <p class="questions-block-deck">Вам не нужно держать в телефоне 5 разных СТО — мы закрываем все типы работ по большинству марок.</p>
+                        </div>
+                    </div>
+                    <!-- ... остальные 5 элементов ... -->
+                <?php endif; ?>
+
+                <a href="#" class="market-button">Записаться</a>
+            </div>
+            <!-- <div class="questions-block">
                 <div class="questions-block-item">
                     <div class="num color-accent">01</div>
                     <div class="questions-block-text">
@@ -689,10 +566,10 @@ get_header();
                     </div>
                 </div>
                 <a href="#" class="market-button">Записаться</a>
-            </div>
+            </div> -->
         </div>
     </div>
-</section> -->
+</section>
 <section class="contacts">
     <div class="container">
         <div class="contacts-title">

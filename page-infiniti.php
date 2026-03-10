@@ -12,7 +12,7 @@ get_header();
     <div class="container container-hero">
         <div class="hero-title-block">
             <p class="hero-description">
-                <span class="color-accent">СОБСТВЕННЫЙ БОЛЬШОЙ</span> СКЛАД АВТОЗАПЧАСТЕЙ
+                <span class="color-accent">СОБСТВЕННЫЙ БОЛЬШОЙ</span>СКЛАД АВТОЗАПЧАСТЕЙ
             </p>
             <h1 class="hero-title">
                 Автосервис в Москве

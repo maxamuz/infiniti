@@ -181,10 +181,10 @@ add_action('cmb2_admin_init', 'infiniti_faq_metabox');
 
 function infiniti_faq_metabox()
 {
-	// Создаем метабокс только для страницы с шаблоном Infiniti
+	// Создаем метабокс только для страницы 
 	$cmb = new_cmb2_box(array(
 		'id'           => 'infiniti_faq_metabox',
-		'title'        => __('FAQ по ремонту Infiniti', 'infiniti'),
+		'title'        => __('FAQ по ремонту', 'infiniti'),
 		'object_types' => array('page'), // Показывать на страницах
 		'show_on'      => array(
 			'key'   => 'page-template',
@@ -205,6 +205,7 @@ function infiniti_faq_metabox()
 		'show_on'      => array(
 			'key'   => 'page-template',
 			'value' => 'page-infiniti.php', // Только для шаблона Infiniti
+			'value' => 'page-nissan.php', // Только для шаблона Nissan
 		),
 		'context'      => 'normal',
 		'priority'     => 'high', // Высокий приоритет - будет выше
@@ -231,6 +232,7 @@ function infiniti_faq_metabox()
 		'desc'       => __('Введите заголовок преимущества', 'infiniti'),
 		'attributes' => array(
 			'placeholder' => 'Например: Один автосервис для всех ваших машин',
+			'style' => 'width:100%;',
 		),
 	));
 

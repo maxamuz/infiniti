@@ -15,7 +15,7 @@ get_header();
                 <span class="color-accent">СОБСТВЕННЫЙ БОЛЬШОЙ</span>СКЛАД АВТОЗАПЧАСТЕЙ
             </p>
             <h1 class="hero-title">
-                Автосервис в Москве
+                <?php the_title(); ?>
             </h1>
         </div>
         <div class="hero-info-block">

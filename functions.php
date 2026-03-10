@@ -189,6 +189,7 @@ function infiniti_faq_metabox()
 		'show_on'      => array(
 			'key'   => 'page-template',
 			'value' => 'page-infiniti.php', // Только для шаблона Infiniti
+			'value' => 'page-nissan.php', // Только для шаблона Nissan
 		),
 		'context'      => 'normal',
 		'priority'     => 'high',

@@ -61,15 +61,20 @@
             <p class="company-info-item">© Infiniti Market <?php echo date('Y'); ?></p>
             <p class="company-info-item">ИП Иванов Иван Иванович</p>
             <p class="company-info-item">Реквизиты: 4100000000000041</p>
-            <a href="#" class="company-info-item">Политика конфиденциальности</a>
+            <!-- <a href="#" class="company-info-item">Политика конфиденциальности</a> -->
         </div>
-
+        <div class="column-politics">
+            <a href="/politika-obrabotki-personalnyh-dannyh-i-konfidenczialnosti/" target="_blank">Политика обработки персональных данных и конфиденциальности</a>
+            <a href="/soglasie-na-obrabotku-personalnyh-dannyh/" target="_blank">Согласие на обработку персональных</a>
+            <a href="/soglasie-na-obraboku-personalnyh-dannyh-v-czelyah-polucheniya-informaczii-i-uvedomlenij/" target="_blank">Согласие на обработку персональных данных в целях получения информации и уведомлений</a>
+        </div>
         <div class="site-info">
             <?php
             /* translators: 1: Theme name, 2: Theme author. */
             printf(esc_html__('Разработано: %2$s.', 'infiniti'), 'infiniti', '<a href="https://bizsoul.ru/">Маркетинговое агентство BizSoul</a>');
             ?>
         </div><!-- .site-info -->
+
     </footer><!-- #colophon -->
 </div>
 
@@ -139,6 +144,7 @@
             printf(esc_html__('Разработано: %2$s.', 'infiniti'), 'infiniti', '<a href="https://bizsoul.ru/">Маркетинговое агентство BizSoul</a>');
             ?>
         </div><!-- .site-info -->
+
     </footer><!-- #colophon-mobile -->
 </div>
 

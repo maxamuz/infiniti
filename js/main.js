@@ -370,3 +370,71 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// JavaScript для управления cookie-согласием
+document.addEventListener("DOMContentLoaded", function () {
+  const cookieConsent = document.getElementById("cookieConsent");
+  const cookieDocument = document.getElementById("cookieDocument");
+  const cookieOverlay = document.getElementById("cookieOverlay");
+  const acceptBtn = document.getElementById("acceptCookies");
+  const declineBtn = document.getElementById("declineCookies");
+  const documentBtn = document.getElementById("cookieDocumentBtn");
+  const acceptFromDocument = document.getElementById("acceptFromDocument");
+
+  // Проверяем, было ли уже дано согласие
+  if (
+    !localStorage.getItem("cookiesAccepted") &&
+    !localStorage.getItem("cookiesDeclined")
+  ) {
+    setTimeout(() => {
+      cookieConsent.classList.add("visible");
+    }, 1000);
+  }
+
+  // Принять cookies
+  function acceptCookies() {
+    localStorage.setItem("cookiesAccepted", "true");
+    localStorage.removeItem("cookiesDeclined");
+    cookieConsent.classList.remove("visible");
+    closeDocument();
+  }
+
+  // Отклонить cookies
+  function declineCookies() {
+    localStorage.setItem("cookiesDeclined", "true");
+    localStorage.removeItem("cookiesAccepted");
+    cookieConsent.classList.remove("visible");
+    closeDocument();
+  }
+
+  // Открыть документ
+  function openDocument() {
+    cookieDocument.classList.add("active");
+    cookieOverlay.classList.add("active");
+  }
+
+  // Закрыть документ
+  function closeDocument() {
+    cookieDocument.classList.remove("active");
+    cookieOverlay.classList.remove("active");
+  }
+
+  // Обработчики событий
+  acceptBtn.addEventListener("click", acceptCookies);
+  declineBtn.addEventListener("click", declineCookies);
+  documentBtn.addEventListener("click", openDocument);
+  acceptFromDocument.addEventListener("click", function () {
+    acceptCookies();
+    closeDocument();
+  });
+
+  // Закрытие документа по клику на оверлей
+  cookieOverlay.addEventListener("click", closeDocument);
+
+  // Закрытие по клавише Escape
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && cookieDocument.classList.contains("active")) {
+      closeDocument();
+    }
+  });
+});

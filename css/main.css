@@ -167,7 +167,7 @@ p {
 .container-hero {
   position: relative;
   z-index: 999;
-  top: 500px;
+  top: 350px;
   display: flex;
 }
 

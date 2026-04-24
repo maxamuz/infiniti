@@ -713,6 +713,10 @@ form.about-description-form p:last-of-type {
   margin: 0;
 }
 
+a.link-obr:visited {
+  color: #fff;
+}
+
 .about-description-form form input {
   height: 50px;
   width: 100%;

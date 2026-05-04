@@ -443,11 +443,15 @@ p {
 /* --- SERVISES  --- */
 
 .page-uslugi .hero {
-  margin-top: -203px;
+  margin-top: -230px;
 }
 
 .page-uslugi .container-hero {
   top: 400px;
+}
+
+.page-uslugi h1 {
+  font-size: 87px;
 }
 
 .servises {
@@ -902,6 +906,11 @@ form.about-description-form span[data-name="acceptance-323"] {
   color: #fff;
   opacity: 50%;
   gap: 70px;
+}
+
+.company-info-item {
+    display: flex;
+    gap: 10px;
 }
 
 .site-info {

@@ -24,7 +24,7 @@ get_header();
                 <a href="#" class="block-models-link">Infiniti</a>
             </div>
             <p class="info-block-desc">
-                Ремонт и полное обслуживаниеа втомобилей марки <span class="color-accent">INFININI</span> в сервисе уровня диллера по адекватным ценам
+                Ремонт и полное обслуживание автомобилей марки <span class="color-accent">INFINITI</span> в сервисе уровня диллера по адекватным ценам
             </p>
             <a href="#about-form" class="info-block-button">Записаться</a>
         </div>

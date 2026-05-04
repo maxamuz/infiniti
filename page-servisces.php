@@ -518,7 +518,13 @@ get_header();
                 <div class="contacts-grid-item">
                     <img src="<?php echo get_template_directory_uri() . '/img/solar_calendar-bold.png' ?>" alt="Иконка" class="contact-works-img">
                     <p class="contact-title">Режим работы</p>
-                    <p class="contact-content">Пн–Пт с 11:00 до 20:00; <br>Cб-Вс — по договорённости</p>
+                    <p class="contact-content">
+                        <?php
+                        if (function_exists('theme_settings_get_work_hours')) {
+                            echo theme_settings_get_work_hours();
+                        }
+                        ?>
+                    </p>
                 </div>
             </div>
             <div class="contacts-map">

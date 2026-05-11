@@ -897,6 +897,10 @@ form.about-description-form span[data-name="acceptance-323"] {
   transform: scale(1.01);
 }
 
+.page-template-page-servisces h1 {
+  font-size: 85px;
+}
+
 /* --- FOOTER  --- */
 
 .site-footer {
@@ -913,8 +917,8 @@ form.about-description-form span[data-name="acceptance-323"] {
 }
 
 .company-info-item {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .site-info {

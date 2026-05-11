@@ -21,7 +21,7 @@ get_header();
                 <a href="#" class="block-models-link">Все авто</a>
             </div>
             <p class="info-block-desc">
-                Ремонт и полное обслуживание всех марок автомобилей и особые возможности для <span class="color-accent">INFININI и NISSAN</span>
+                Ремонт и полное обслуживание всех марок автомобилей и особые возможности для <span class="color-accent">INFINITI и NISSAN</span>
             </p>
             <a href="#about-form" class="info-block-button">Записаться</a>
         </div>
@@ -42,7 +42,7 @@ get_header();
             <div class="refit-card infiniti-auto">
                 <h2 class="refit-card-title">Ремонт Infiniti</h2>
                 <hr>
-                <p class="refit-card-desc">Ремонт и полное обслуживание <span class="color-accent">infiniti</span> с особыми возможностями</p>
+                <p class="refit-card-desc">Ремонт и полное обслуживание <span class="color-accent">Infiniti</span> с особыми возможностями</p>
                 <a href="#" class="refit-card-buttom">Подробнее</a>
             </div>
         </div>
@@ -50,7 +50,7 @@ get_header();
             <div class="refit-card nissan-auto">
                 <h2 class="refit-card-title">Ремонт Nissan</h2>
                 <hr>
-                <p class="refit-card-desc">Ремонт и полное обслуживание <span class="color-accent">nissan</span> с особыми возможностями</p>
+                <p class="refit-card-desc">Ремонт и полное обслуживание <span class="color-accent">Nissan</span> с особыми возможностями</p>
                 <a href="#" class="refit-card-buttom">Подробнее</a>
             </div>
         </div>
@@ -395,7 +395,7 @@ get_header();
             <div class="about-description">
                 <div class="about-description-text">
                     <p><span class="color-accent">Infiniti Market</span>- это мультибрендовый (для всех авто) сервис с особенными возможностями <span class="color-accent">для Infiniti и Nissan</span></p>
-                    <p>Особенные возможности - это диллерское диагностическое оборудование Consilt III+, буквально все запчасти в наличии и особая экспертиза, которая позволяет диагностировать и исправлять даже самые непонятные и деликатные ситуации, встречающиеся<span class="color-accent"> на инфинити и ниссан</span></p>
+                    <p>Особенные возможности - это диллерское диагностическое оборудование Consilt III+, буквально все запчасти в наличии и особая экспертиза, которая позволяет диагностировать и исправлять даже самые непонятные и деликатные ситуации, встречающиеся<span class="color-accent"> на Инфинити и Ниссан</span></p>
                 </div>
                 <div id="about-form" class="about-description-form">
                     <p class="form-title"><span class="color-accent">Получите скидку 5%</span>на наши услуги при записи через сайт</p>

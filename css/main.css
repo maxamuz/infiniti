@@ -265,6 +265,19 @@ p {
   transform: scale(1.01);
 }
 
+/* --- FREE-DIAGNOST --- */
+
+.free-diagnost {
+  margin-top: 120px;
+}
+
+.free-diagnost-title {
+  font-size: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
 /* --- REFIT --- */
 
 .refit-models {

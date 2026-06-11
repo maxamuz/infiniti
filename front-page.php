@@ -28,6 +28,16 @@ get_header();
     </div>
 </section>
 
+<section class="free-diagnost">
+    <div class="container">
+        <div class="free-diagnost-title">
+            <p class="sticky-element"><span class="color-accent">Комплекстная диагностика 4 в 1</span> бесплатно!<span class="arrow">
+                </span> </p>
+        </div>
+    </div>
+
+</section>
+
 <section class="market">
     <div class="container">
         <div class="title-market">

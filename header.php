@@ -94,7 +94,9 @@
 					?>
 				</nav><!-- #site-navigation -->
 				<div class="call-header">
-					<a class="call-header-link" href="#"><img src="<?php echo get_template_directory_uri() . '/img/icon-call.png' ?>" alt="Иконка телефонной трубки"></a>
+					<a class="call-header-link" href="https://t.me/InfinitiMRKT"><img src="<?php echo get_template_directory_uri() . '/img/tg.png' ?>" alt="Иконка мессендера Telegram"></a>
+					<a class="call-header-link" href="https://max.ru/u/f9LHodD0cOL4nEp-jeXEMKgWVl6s_sKnhIhJ7vBSUHpoWPmTLEFw_nMfTJA"><img src="<?php echo get_template_directory_uri() . '/img/max2.png' ?>" alt="Иконка мессендера NAX"></a>
+					<a class="call-header-link" href="tel:+74991122731"><img src="<?php echo get_template_directory_uri() . '/img/icon-call.png' ?>" alt="Иконка телефонной трубки"></a>
 				</div>
 			</header><!-- #masthead -->
 			<div class="header-bottom">

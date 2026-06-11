@@ -28,34 +28,6 @@ get_header();
     </div>
 </section>
 
-<section class="refit-models">
-    <div class="container container-refit">
-        <div class="refit-models-item">
-            <div class="refit-card all-auto">
-                <h2 class="refit-card-title">Ремонт любых авто</h2>
-                <hr>
-                <p class="refit-card-desc">Ремонт и полное обслуживание всех марок автомобилей</p>
-                <a href="#" class="refit-card-buttom">Подробнее</a>
-            </div>
-        </div>
-        <div class="refit-models-item">
-            <div class="refit-card infiniti-auto">
-                <h2 class="refit-card-title">Ремонт Infiniti</h2>
-                <hr>
-                <p class="refit-card-desc">Ремонт и полное обслуживание <span class="color-accent">Infiniti</span> с особыми возможностями</p>
-                <a href="#" class="refit-card-buttom">Подробнее</a>
-            </div>
-        </div>
-        <div class="refit-models-item three">
-            <div class="refit-card nissan-auto">
-                <h2 class="refit-card-title">Ремонт Nissan</h2>
-                <hr>
-                <p class="refit-card-desc">Ремонт и полное обслуживание <span class="color-accent">Nissan</span> с особыми возможностями</p>
-                <a href="#" class="refit-card-buttom">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</section>
 <section class="market">
     <div class="container">
         <div class="title-market">

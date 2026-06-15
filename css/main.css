@@ -269,13 +269,51 @@ p {
 
 .free-diagnost {
   margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.free-diagnost .color-accent {
+  padding-right: 0;
 }
 
 .free-diagnost-title {
-  font-size: 46px;
+  font-size: 74px;
   text-align: center;
+  font-family: "Exo 2", sans-serif;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
+}
+
+.free-diagnost-description {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+
+.free-diagnost-description span {
+  display: block;
+}
+
+.free-diagnost-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.free-diagnost-block-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.free-diagnost-block-img {
+  border-radius: 50%;
+  border: 5px solid #2196f3;
+  box-shadow: 0 0 15px rgba(33, 150, 243, 0.8);
 }
 
 /* --- REFIT --- */

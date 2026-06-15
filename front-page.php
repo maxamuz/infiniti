@@ -31,8 +31,29 @@ get_header();
 <section class="free-diagnost">
     <div class="container">
         <div class="free-diagnost-title">
-            <p class="sticky-element"><span class="color-accent">Комплекстная диагностика 4 в 1</span> бесплатно!<span class="arrow">
-                </span> </p>
+            <span class="color-accent">Комплекстная диагностика 4 в 1</span> бесплатно*</span>
+        </div>
+        <div class="free-diagnost-description">
+            <span class="color-accent">Узкая специализация автосервиса на моделях INFINITI, NISSAN и 10- летний опыт мастеров позволяет безошибочно находить неисправности автомобилей.
+            </span>*при выполнении любых работ в сервисе.</span>
+        </div>
+        <div class="free-diagnost-block">
+            <div class="free-diagnost-block-item">
+                <img class="free-diagnost-block-img" src="<?php echo get_template_directory_uri() . '/img/d.png' ?>" alt="Иконка">
+                <p class="free-diagnost-block-title">Диагностика двигателя</p>
+            </div>
+            <div class="free-diagnost-block-item">
+                <img class="free-diagnost-block-img" src="<?php echo get_template_directory_uri() . '/img/h.png' ?>" alt="Иконка">
+                <p class="free-diagnost-block-title">Диагностика ходовой части</p>
+            </div>
+            <div class="free-diagnost-block-item">
+                <img class="free-diagnost-block-img" src="<?php echo get_template_directory_uri() . '/img/ps.png' ?>" alt="Иконка">
+                <p class="free-diagnost-block-title">Диагностика тормозной системы</p>
+            </div>
+            <div class="free-diagnost-block-item">
+                <img class="free-diagnost-block-img" src="<?php echo get_template_directory_uri() . '/img/m.jpg' ?>" alt="Иконка">
+                <p class="free-diagnost-block-title">Диагностика течей агрегатов</p>
+            </div>
         </div>
     </div>
 

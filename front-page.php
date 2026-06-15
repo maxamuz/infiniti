@@ -401,7 +401,7 @@ get_header();
                     <p>Особенные возможности - это диллерское диагностическое оборудование Consilt III+, буквально все запчасти в наличии и особая экспертиза, которая позволяет диагностировать и исправлять даже самые непонятные и деликатные ситуации, встречающиеся<span class="color-accent"> на Инфинити и Ниссан</span></p>
                 </div>
                 <div id="about-form" class="about-description-form">
-                    <p class="form-title"><span class="color-accent">Получите скидку 5%</span>на наши услуги при записи через сайт</p>
+                    <p class="form-title"><span class="color-accent">Запишись на комплексную диагностику</span>4 в 1 в подарок</p>
                     <?php echo do_shortcode('[contact-form-7 id="975045c" title="Главная форма"]') ?>
                 </div>
             </div>

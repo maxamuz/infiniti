@@ -696,6 +696,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 75px;
+  margin-bottom: 50px;
 }
 
 .about-description-text p {
@@ -703,7 +704,7 @@ p {
 }
 
 .mapsyandex {
-  margin-top: 75px;
+  margin-top: 60px;
 }
 
 .difference-block-title {

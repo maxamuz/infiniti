@@ -428,6 +428,10 @@ get_header();
                         <p class="difference-block-deck">Отвечаем за результат и даем гарантию</p>
                     </div>
                 </div>
+                <div class="call-header">
+                    <a class="call-header-link" href="https://t.me/InfinitiMRKT"><img src="<?php echo get_template_directory_uri() . '/img/tg.png' ?>" alt="Иконка мессендера Telegram"></a>
+                    <a class="call-header-link" href="https://max.ru/u/f9LHodD0cOL4nEp-jeXEMKgWVl6s_sKnhIhJ7vBSUHpoWPmTLEFw_nMfTJA"><img src="<?php echo get_template_directory_uri() . '/img/max2.png' ?>" alt="Иконка мессендера NAX"></a>
+                </div>
                 <img src="<?php echo get_template_directory_uri() . '/img/maps-yandex.png' ?>" alt="ЯндекаКарты" class="mapsyandex">
             </div>
         </div>

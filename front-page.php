@@ -66,10 +66,15 @@ get_header();
         </div>
         <div class="questions-market">
             <div class="questions-title">
-                <p class="sticky-element"><span class="color-accent">6 причин,</span> почему вам к нам? <span class="arrow"><svg width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3891 18.0072L6.37499 26.0213L4.37183 24.0182L11.3843 17.0057L4.37183 9.99316L6.37499 7.98999L14.3891 16.0041C14.6547 16.2697 14.8039 16.63 14.8039 17.0057C14.8039 17.3813 14.6547 17.7416 14.3891 18.0072Z" fill="white" fill-opacity="0.5" />
-                        </svg>
-                    </span> </p>
+                <div class="questions-title-block sticky-element">
+                    <p>
+                        <span class="color-accent">6 причин,</span> почему вам к нам? <span class="arrow"><svg width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3891 18.0072L6.37499 26.0213L4.37183 24.0182L11.3843 17.0057L4.37183 9.99316L6.37499 7.98999L14.3891 16.0041C14.6547 16.2697 14.8039 16.63 14.8039 17.0057C14.8039 17.3813 14.6547 17.7416 14.3891 18.0072Z" fill="white" fill-opacity="0.5" />
+                            </svg>
+                        </span>
+                    </p>
+                    <img src="<?php echo get_template_directory_uri() . '/img/orig.jpg' ?>" alt="Мерседес" class="questions-img">
+                </div>
             </div>
             <div class="questions-block">
                 <div class="questions-block-item">
@@ -432,7 +437,7 @@ get_header();
                         <p class="difference-block-deck">Отвечаем за результат и даем гарантию</p>
                     </div>
                 </div>
-                <div class="call-header">
+                <div class="call-header call-form">
                     <a class="call-header-link" href="https://t.me/InfinitiMRKT"><img src="<?php echo get_template_directory_uri() . '/img/tg.png' ?>" alt="Иконка мессендера Telegram"></a>
                     <a class="call-header-link" href="https://max.ru/u/f9LHodD0cOL4nEp-jeXEMKgWVl6s_sKnhIhJ7vBSUHpoWPmTLEFw_nMfTJA"><img src="<?php echo get_template_directory_uri() . '/img/max2.png' ?>" alt="Иконка мессендера NAX"></a>
                 </div>

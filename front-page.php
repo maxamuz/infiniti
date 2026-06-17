@@ -577,7 +577,7 @@ get_header();
             </div>
             <div class="contacts-grid-item">
                 <a href="https://max.ru/u/f9LHodD0cOL4nEp-jeXEMKgWVl6s_sKnhIhJ7vBSUHpoWPmTLEFw_nMfTJA">
-                    <img src="https://infinitimarket.loc/wp-content/themes/infiniti/img/max2.png" class="contact-max-img" alt="Иконка мессендера NAX">
+                    <img src="<?php echo get_template_directory_uri() . '/img/max2.png' ?>" class="contact-max-img" alt="Иконка мессендера NAX">
                     <p class="contact-title">MAX</p>
                 </a>
             </div>

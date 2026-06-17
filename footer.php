@@ -176,6 +176,17 @@
 
 <?php wp_footer(); ?>
 
+<!-- Плавающий виджет быстрой связи -->
+<div class="floating-contact-widget">
+    <a href="https://t.me/InfinitiMRKT" target="_blank" class="contact-button telegram-btn" title="Мессенджер Telegram">
+        <img src="<?php echo get_template_directory_uri() . '/img/tg.png' ?>" alt="Иконка мессендера Telegram">
+    </a>
+    <a href="https://max.ru/u/f9LHodD0cOL4nEp-jeXEMKgWVl6s_sKnhIhJ7vBSUHpoWPmTLEFw_nMfTJA" target="_blank" class="contact-button whatsapp-btn" title="Мессенджер Макс">
+        <img src="<?php echo get_template_directory_uri() . '/img/max2.png' ?>" class="widget-max-img" alt="Иконка мессендера NAX">
+    </a>
+</div>
+
+
 </body>
 
 </html>

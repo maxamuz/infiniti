@@ -1219,3 +1219,97 @@ form.about-description-form span[data-name="acceptance-323"] {
 .slick-next:before {
   font-size: 55px !important;
 }
+
+/* Стили для плавающего виджета */
+.floating-contact-widget {
+  position: fixed; /* Фиксируем положение относительно окна браузера */
+  bottom: 210px; /* Отступ от нижнего края окна */
+  right: 260px; /* Отступ от правого края окна */
+  display: flex; /* Располагаем кнопки в ряд */
+  flex-direction: column; /* Вертикально */
+  gap: 15px; /* Расстояние между кнопками */
+  z-index: 1000; /* Высокий z-index, чтобы виджет был поверх других элементов */
+}
+
+.contact-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Круглая кнопка */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Убираем подчеркивание у ссылки */
+  color: white; /* Цвет иконки */
+  font-size: 24px; /* Размер иконки */
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease; /* Плавные переходы для эффектов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень */
+}
+
+.contact-button:hover {
+  transform: scale(1.1); /* Легкий масштаб при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Более заметная тень при наведении */
+}
+
+/* Определение анимации пульсации */
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Исходный размер */
+  }
+  50% {
+    transform: scale(1.1); /* Увеличение на 10% */
+  }
+  100% {
+    transform: scale(1); /* Возврат к исходному размеру */
+  }
+}
+
+.floating-contact-widget img {
+  width: 100%; /* Убедитесь, что изображение занимает всю область кнопки */
+  height: auto;
+  display: block; /* Убирает возможные пробелы под изображением */
+  animation: pulse 2s infinite ease-in-out; /* Применение анимации */
+}
+
+/* Если вы хотите, чтобы каждая иконка пульсировала немного в другое время (эффект волны), */
+/* можно использовать разные задержки: */
+.telegram-btn img {
+  animation-delay: 0s; /* Telegram начинает сразу */
+}
+
+.whatsapp-btn img {
+  animation-delay: 0.5s; /* MAX начинает с задержкой */
+}
+
+/* Опционально: При наведении можно остановить анимацию */
+.contact-button:hover img {
+  animation-play-state: paused;
+}
+
+/* Дополнительно: Можно добавить медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .floating-contact-widget {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .contact-button {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-contact-widget {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .contact-button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}

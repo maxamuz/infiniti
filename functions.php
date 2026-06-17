@@ -149,6 +149,7 @@ function infiniti_scripts()
 	wp_style_add_data('infiniti-style', 'rtl', 'replace');
 
 	wp_enqueue_script('infiniti-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
+	wp_enqueue_script('slider-init', get_template_directory_uri() . '/js/slider-init.js', array('jquery', 'slick-js'), '1.0.0', true);
 	wp_enqueue_script('infiniti-js', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -156,6 +157,21 @@ function infiniti_scripts()
 	}
 }
 add_action('wp_enqueue_scripts', 'infiniti_scripts');
+
+function enqueue_slider_scripts()
+{
+	// Подключаем jQuery (если не подключен явно, обычно делается в header)
+	// wp_enqueue_script('jquery'); // Обычно уже включено в wp_head()
+
+	// Подключаем стили Slick
+	wp_enqueue_style('slick-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1');
+	// Опционально - дополнительные стили для темы (стрелки, точки и т.д.)
+	wp_enqueue_style('slick-theme-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array('slick-css'), '1.8.1');
+
+	// Подключаем скрипт Slick
+	wp_enqueue_script('slick-js', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), '1.8.1', true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_slider_scripts');
 
 
 
@@ -181,111 +197,111 @@ add_action('cmb2_admin_init', 'infiniti_faq_metabox');
 
 function infiniti_faq_metabox()
 {
-    // Создаем метабокс для основного FAQ
-    $cmb = new_cmb2_box(array(
-        'id'           => 'infiniti_faq_metabox',
-        'title'        => __('FAQ по ремонту', 'infiniti'),
-        'object_types' => array('page'),
-        'show_on'      => array(
-            'key'   => 'page-template',
-            'value' => array(
-                'page-infiniti.php',
-                'page-nissan.php',
-                'page-servisces.php',
-            ),
-        ),
-        'context'      => 'normal',
-        'priority'     => 'high',
-    ));
+	// Создаем метабокс для основного FAQ
+	$cmb = new_cmb2_box(array(
+		'id'           => 'infiniti_faq_metabox',
+		'title'        => __('FAQ по ремонту', 'infiniti'),
+		'object_types' => array('page'),
+		'show_on'      => array(
+			'key'   => 'page-template',
+			'value' => array(
+				'page-infiniti.php',
+				'page-nissan.php',
+				'page-servisces.php',
+			),
+		),
+		'context'      => 'normal',
+		'priority'     => 'high',
+	));
 
-    // === ПЕРВАЯ ГРУППА (верхняя) - FAQ TOP ===
-    $cmb_top = new_cmb2_box(array(
-        'id'           => 'infiniti_faq_top_metabox',
-        'title'        => __('FAQ TOP - Преимущества', 'infiniti'),
-        'object_types' => array('page'),
-        'show_on'      => array(
-            'key'   => 'page-template',
-            'value' => array(
-                'page-infiniti.php',
-                'page-nissan.php',
-            ),
-        ),
-        'context'      => 'normal',
-        'priority'     => 'high',
-    ));
+	// === ПЕРВАЯ ГРУППА (верхняя) - FAQ TOP ===
+	$cmb_top = new_cmb2_box(array(
+		'id'           => 'infiniti_faq_top_metabox',
+		'title'        => __('FAQ TOP - Преимущества', 'infiniti'),
+		'object_types' => array('page'),
+		'show_on'      => array(
+			'key'   => 'page-template',
+			'value' => array(
+				'page-infiniti.php',
+				'page-nissan.php',
+			),
+		),
+		'context'      => 'normal',
+		'priority'     => 'high',
+	));
 
-    // Группа повторяющихся полей для FAQ TOP
-    $top_group_field_id = $cmb_top->add_field(array(
-        'id'         => 'infiniti_faq_top_group',
-        'type'       => 'group',
-        'repeatable' => true,
-        'options'    => array(
-            'group_title'   => __('Преимущество {#}', 'infiniti'),
-            'add_button'    => __('Добавить преимущество', 'infiniti'),
-            'remove_button' => __('Удалить', 'infiniti'),
-            'sortable'      => true,
-        ),
-    ));
+	// Группа повторяющихся полей для FAQ TOP
+	$top_group_field_id = $cmb_top->add_field(array(
+		'id'         => 'infiniti_faq_top_group',
+		'type'       => 'group',
+		'repeatable' => true,
+		'options'    => array(
+			'group_title'   => __('Преимущество {#}', 'infiniti'),
+			'add_button'    => __('Добавить преимущество', 'infiniti'),
+			'remove_button' => __('Удалить', 'infiniti'),
+			'sortable'      => true,
+		),
+	));
 
-    // Поле заголовка для TOP группы
-    $cmb_top->add_group_field($top_group_field_id, array(
-        'name'       => __('Заголовок', 'infiniti'),
-        'id'         => 'question',
-        'type'       => 'text',
-        'desc'       => __('Введите заголовок преимущества', 'infiniti'),
-        'attributes' => array(
-            'placeholder' => 'Например: Один автосервис для всех ваших машин',
-            'style' => 'width:100%;',
-        ),
-    ));
+	// Поле заголовка для TOP группы
+	$cmb_top->add_group_field($top_group_field_id, array(
+		'name'       => __('Заголовок', 'infiniti'),
+		'id'         => 'question',
+		'type'       => 'text',
+		'desc'       => __('Введите заголовок преимущества', 'infiniti'),
+		'attributes' => array(
+			'placeholder' => 'Например: Один автосервис для всех ваших машин',
+			'style' => 'width:100%;',
+		),
+	));
 
-    // Поле описания для TOP группы
-    $cmb_top->add_group_field($top_group_field_id, array(
-        'name'       => __('Описание', 'infiniti'),
-        'id'         => 'answer',
-        'type'       => 'textarea',
-        'desc'       => __('Введите описание преимущества', 'infiniti'),
-        'attributes' => array(
-            'rows' => 2,
-            'style' => 'width:100%;',
-            'placeholder' => 'Например: Вам не нужно держать в телефоне 5 разных СТО — мы закрываем все типы работ по большинству марок.',
-        ),
-    ));
+	// Поле описания для TOP группы
+	$cmb_top->add_group_field($top_group_field_id, array(
+		'name'       => __('Описание', 'infiniti'),
+		'id'         => 'answer',
+		'type'       => 'textarea',
+		'desc'       => __('Введите описание преимущества', 'infiniti'),
+		'attributes' => array(
+			'rows' => 2,
+			'style' => 'width:100%;',
+			'placeholder' => 'Например: Вам не нужно держать в телефоне 5 разных СТО — мы закрываем все типы работ по большинству марок.',
+		),
+	));
 
-    // Группа для основного FAQ (вопросы-ответы)
-    $group_field_id = $cmb->add_field(array(
-        'id'         => 'infiniti_faq_group',
-        'type'       => 'group',
-        'repeatable' => true,
-        'options'    => array(
-            'group_title'   => __('Вопрос {#}', 'infiniti'),
-            'add_button'    => __('Добавить еще вопрос', 'infiniti'),
-            'remove_button' => __('Удалить', 'infiniti'),
-            'sortable'      => true,
-        ),
-    ));
+	// Группа для основного FAQ (вопросы-ответы)
+	$group_field_id = $cmb->add_field(array(
+		'id'         => 'infiniti_faq_group',
+		'type'       => 'group',
+		'repeatable' => true,
+		'options'    => array(
+			'group_title'   => __('Вопрос {#}', 'infiniti'),
+			'add_button'    => __('Добавить еще вопрос', 'infiniti'),
+			'remove_button' => __('Удалить', 'infiniti'),
+			'sortable'      => true,
+		),
+	));
 
-    // Поле вопроса
-    $cmb->add_group_field($group_field_id, array(
-        'name' => __('Вопрос', 'infiniti'),
-        'id'   => 'question',
-        'type' => 'text',
-        'desc' => __('Введите вопрос', 'infiniti'),
-        'attributes' => array(
-            'style' => 'width:80%;',
-        ),
-    ));
+	// Поле вопроса
+	$cmb->add_group_field($group_field_id, array(
+		'name' => __('Вопрос', 'infiniti'),
+		'id'   => 'question',
+		'type' => 'text',
+		'desc' => __('Введите вопрос', 'infiniti'),
+		'attributes' => array(
+			'style' => 'width:80%;',
+		),
+	));
 
-    // Поле ответа
-    $cmb->add_group_field($group_field_id, array(
-        'name' => __('Ответ', 'infiniti'),
-        'id'   => 'answer',
-        'type' => 'textarea',
-        'attributes' => array(
-            'rows' => 2,
-            'style' => 'width:80%;',
-        ),
-    ));
+	// Поле ответа
+	$cmb->add_group_field($group_field_id, array(
+		'name' => __('Ответ', 'infiniti'),
+		'id'   => 'answer',
+		'type' => 'textarea',
+		'attributes' => array(
+			'rows' => 2,
+			'style' => 'width:80%;',
+		),
+	));
 }
 
 /**

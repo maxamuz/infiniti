@@ -904,14 +904,18 @@ form.about-description-form span[data-name="acceptance-323"] {
 }
 
 .contacts-grid {
-  padding-top: 50px;
+  padding-top: 70px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 100px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 70px;
 }
 
 .contacts-grid-item {
   width: 100%; /* Растягиваем item на всю ширину ячейки */
+}
+
+.contacts-grid-item a p:hover {
+  color: #fff;
 }
 
 .contact-title {
@@ -924,6 +928,10 @@ form.about-description-form span[data-name="acceptance-323"] {
 
 .contacts-map {
   margin-top: 70px;
+}
+
+.contact-max-img {
+  width: 20px;
 }
 
 .contacts-button {

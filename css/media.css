@@ -990,7 +990,7 @@
   }
 
   .about-title {
-    width: 93%;
+    width: 100%;
   }
 
   .about-difference-block {
@@ -1045,6 +1045,30 @@
 
   .form-title {
     text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  .yandex-map {
+    width: 380px !important;
+  }
+
+  .servises-photo-logo {
+    margin-bottom: 25px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: 44% !important;
+  }
+
+  .floating-contact-widget {
+    bottom: 230px;
+    right: 15px;
+  }
+
+  .contact-button {
+    width: 40px;
+    height: 40px;
     font-size: 18px;
   }
 }

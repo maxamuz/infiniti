@@ -1300,16 +1300,3 @@ form.about-description-form span[data-name="acceptance-323"] {
     font-size: 20px;
   }
 }
-
-@media (max-width: 480px) {
-  .floating-contact-widget {
-    bottom: 10px;
-    right: 10px;
-  }
-
-  .contact-button {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
-}

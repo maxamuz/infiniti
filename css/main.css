@@ -1286,17 +1286,3 @@ form.about-description-form span[data-name="acceptance-323"] {
 .contact-button:hover img {
   animation-play-state: paused;
 }
-
-/* Дополнительно: Можно добавить медиа-запросы для адаптивности */
-@media (max-width: 768px) {
-  .floating-contact-widget {
-    bottom: 15px;
-    right: 15px;
-  }
-
-  .contact-button {
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-  }
-}

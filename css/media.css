@@ -740,6 +740,17 @@
   .tpgb-block-5be3_43 {
     grid-template-columns: minmax(1px, 1fr) minmax(1px, 1fr);
   }
+
+  .floating-contact-widget {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .contact-button {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 576px) {

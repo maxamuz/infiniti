@@ -509,6 +509,12 @@
     align-items: center;
   }
 
+  .contacts-grid-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .contacts-button {
     left: 20%;
   }

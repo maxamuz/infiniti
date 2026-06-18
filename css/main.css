@@ -954,14 +954,16 @@ form.about-description-form span[data-name="acceptance-323"] {
 }
 
 .contacts-grid {
-  padding-top: 70px;
+  padding-top: 55px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 70px;
 }
 
 .contacts-grid-item {
-  width: 100%; /* Растягиваем item на всю ширину ячейки */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contacts-grid-item a p:hover {
@@ -981,7 +983,7 @@ form.about-description-form span[data-name="acceptance-323"] {
 }
 
 .contact-max-img {
-  width: 20px;
+  width: 32px;
 }
 
 .contacts-button {

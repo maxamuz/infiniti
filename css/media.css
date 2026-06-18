@@ -933,6 +933,11 @@
     justify-content: center;
   }
 
+  .free-diagnost-button {
+    padding: 15px 55px;
+    text-align: center;
+  }
+
   .block-models-link {
     font-size: 12px;
   }

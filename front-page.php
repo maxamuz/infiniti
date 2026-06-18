@@ -55,6 +55,8 @@ get_header();
                 <p class="free-diagnost-block-title">Диагностика течей агрегатов</p>
             </div>
         </div>
+        <a href="#about-form" class="info-block-button free-diagnost-button popmake-205">Записаться на бесплатную диагностику</a>
+        <!-- <a href="#about-form" class="info-block-button free-diagnost-button popmake-113">Записаться на бесплатную диагностику</a> -->
     </div>
 
 </section>

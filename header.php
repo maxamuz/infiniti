@@ -112,7 +112,7 @@
 				</div>
 				<div class="header-adress">
 					<p class="adress-description">г. Москва, Загородное шоссе, 7Ас3</p>
-					<a class="adress-link" href="#"><img src="<?php echo get_template_directory_uri() . '/img/gis_route.png' ?>" alt="Иконка маршрута">Начать поездку</a>
+					<a class="adress-link" href="https://yandex.ru/maps/?ll=43.016684%2C55.841551&mode=routes&rtext=~55.695027%2C37.614770&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY3NDkxNRJD0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCX0LDQs9C-0YDQvtC00L3QvtC1INGI0L7RgdGB0LUsIDfQkNGBMyIKDYZ1FkIVtcdeQg%2C%2C&z=7.51" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/gis_route.png' ?>" alt="Иконка маршрута">Начать поездку</a>
 				</div>
 			</div>
 		</div>

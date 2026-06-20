@@ -438,3 +438,51 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modelsSection = document.querySelector(".models"); // Находим секцию .models
+  const items = document.querySelectorAll(".models-grid .models-item");
+  const openButton = document.querySelector(".button-open-infiniti");
+  const closeButton = document.querySelector(".button-close-infiniti");
+
+  if (!modelsSection || !items.length || !openButton || !closeButton) {
+    console.error(
+      "Не найдены элементы для управления отображением карточек моделей.",
+    );
+    return;
+  }
+
+  const initialVisibleCount = 9;
+
+  // Скрываем все карточки, кроме первых 9
+  for (let i = initialVisibleCount; i < items.length; i++) {
+    items[i].style.display = "none";
+  }
+
+  openButton.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    items.forEach((item) => {
+      item.style.display = "";
+    });
+
+    openButton.style.display = "none";
+    closeButton.style.display = "block";
+  });
+
+  closeButton.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    // Скрываем все карточки, кроме первых 9
+    for (let i = initialVisibleCount; i < items.length; i++) {
+      items[i].style.display = "none";
+    }
+
+    // Меняем отображение кнопок
+    openButton.style.display = "block";
+    closeButton.style.display = "none";
+
+    // Прокручиваем к началу секции .models
+    modelsSection.scrollIntoView({ behavior: "smooth" }); // Используем плавную прокрутку
+  });
+});

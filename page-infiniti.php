@@ -31,7 +31,7 @@ get_header();
     </div>
 </section>
 
-<section class="refit-models">
+<!-- <section class="refit-models">
     <div class="container container-refit">
         <div class="refit-models-item">
             <div class="refit-card all-auto">
@@ -58,7 +58,183 @@ get_header();
             </div>
         </div>
     </div>
+</section> -->
+
+<section class="free-diagnost">
+    <div class="container">
+        <div class="free-diagnost-title">
+            <span class="color-accent">Комплекстная диагностика 4 в 1</span> бесплатно*</span>
+        </div>
+        <div class="free-diagnost-description">
+            <span class="color-accent">Узкая специализация автосервиса на моделях INFINITI, NISSAN и 10- летний опыт мастеров позволяет безошибочно находить неисправности автомобилей.
+            </span>*при выполнении любых работ в сервисе.</span>
+        </div>
+        <div class="free-diagnost-block">
+            <div class="free-diagnost-block-item">
+                <img class="free-diagnost-block-img" src="<?php echo get_template_directory_uri() . '/img/d.png' ?>" alt="Иконка">
+                <p class="free-diagnost-block-title">Диагностика двигателя</p>
+            </div>
+            <div class="free-diagnost-block-item">
+                <img class="free-diagnost-block-img" src="<?php echo get_template_directory_uri() . '/img/h.png' ?>" alt="Иконка">
+                <p class="free-diagnost-block-title">Диагностика ходовой части</p>
+            </div>
+            <div class="free-diagnost-block-item">
+                <img class="free-diagnost-block-img" src="<?php echo get_template_directory_uri() . '/img/ps.png' ?>" alt="Иконка">
+                <p class="free-diagnost-block-title">Диагностика тормозной системы</p>
+            </div>
+            <div class="free-diagnost-block-item">
+                <img class="free-diagnost-block-img" src="<?php echo get_template_directory_uri() . '/img/m.jpg' ?>" alt="Иконка">
+                <p class="free-diagnost-block-title">Диагностика течей агрегатов</p>
+            </div>
+        </div>
+        <a href="#about-form" class="info-block-button free-diagnost-button popmake-205">Записаться на бесплатную диагностику</a>
+        <!-- <a href="#about-form" class="info-block-button free-diagnost-button popmake-113">Записаться на бесплатную диагностику</a> -->
+    </div>
+
 </section>
+
+<section class="models">
+    <div class="container">
+        <div class="models-title">
+            <span class="color-accent">Модели</span>
+        </div>
+        <div class="models-grid">
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti EX35"><img src="<?php echo get_template_directory_uri() . '/img/models/EX35.webp' ?>" alt="" title="Infiniti EX35">
+                </a>
+                <p class="models-descrition">Infiniti EX35</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti EX37"><img src="<?php echo get_template_directory_uri() . '/img/models/EX37.webp' ?>" alt="" title="Infiniti EX37">
+                </a>
+                <p class="models-descrition">Infiniti EX37</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti FX25"><img src="<?php echo get_template_directory_uri() . '/img/models/FX25.webp' ?>" alt="" title="Infiniti FX25">
+                </a>
+                <p class="models-descrition">Infiniti FX25</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti FX30D"><img src="<?php echo get_template_directory_uri() . '/img/models/FX30D.webp' ?>" alt="" title="Infiniti FX30D">
+                </a>
+                <p class="models-descrition">Infiniti FX30D</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti FX35"><img src="<?php echo get_template_directory_uri() . '/img/models/FX35.webp' ?>" alt="" title="Infiniti FX35">
+                </a>
+                <p class="models-descrition">Infiniti FX35</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti FX37"><img src="<?php echo get_template_directory_uri() . '/img/models/FX37.webp' ?>" alt="" title="Infiniti FX37">
+                </a>
+                <p class="models-descrition">Infiniti FX37</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti FX45"><img src="<?php echo get_template_directory_uri() . '/img/models/FX45.webp' ?>" alt="" title="Infiniti FX45">
+                </a>
+                <p class="models-descrition">Infiniti FX45</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti FX50"><img src="<?php echo get_template_directory_uri() . '/img/models/FX50.webp' ?>" alt="" title="Infiniti FX50">
+                </a>
+                <p class="models-descrition">Infiniti FX50</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti G25"><img src="<?php echo get_template_directory_uri() . '/img/models/G25.webp' ?>" alt="" title="Infiniti G25">
+                </a>
+                <p class="models-descrition">Infiniti G25</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti G35"><img src="<?php echo get_template_directory_uri() . '/img/models/G35.webp' ?>" alt="" title="Infiniti G35">
+                </a>
+                <p class="models-descrition">Infiniti G35</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti G37"><img src="<?php echo get_template_directory_uri() . '/img/models/G37.webp' ?>" alt="" title="Infiniti G37">
+                </a>
+                <p class="models-descrition">Infiniti G37</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti JX35"><img src="<?php echo get_template_directory_uri() . '/img/models/JX35.webp' ?>" alt="" title="Infiniti JX35">
+                </a>
+                <p class="models-descrition">Infiniti JX35</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti M25"><img src="<?php echo get_template_directory_uri() . '/img/models/M25.webp' ?>" alt="" title="Infiniti M25">
+                </a>
+                <p class="models-descrition">Infiniti M25</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti M35"><img src="<?php echo get_template_directory_uri() . '/img/models/M35.webp' ?>" alt="" title="Infiniti M35">
+                </a>
+                <p class="models-descrition">Infiniti M35</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti M37"><img src="<?php echo get_template_directory_uri() . '/img/models/M37.webp' ?>" alt="" title="Infiniti M37">
+                </a>
+                <p class="models-descrition">Infiniti M37</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti M45"><img src="<?php echo get_template_directory_uri() . '/img/models/M45.webp' ?>" alt="" title="Infiniti M45">
+                </a>
+                <p class="models-descrition">Infiniti M45</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti M56"><img src="<?php echo get_template_directory_uri() . '/img/models/M56.webp' ?>" alt="" title="Infiniti M56">
+                </a>
+                <p class="models-descrition">Infiniti M56</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti Q50"><img src="<?php echo get_template_directory_uri() . '/img/models/Q50.webp' ?>" alt="" title="Infiniti Q50">
+                </a>
+                <p class="models-descrition">Infiniti Q50</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti Q60"><img src="<?php echo get_template_directory_uri() . '/img/models/Q60.webp' ?>" alt="" title="Infiniti Q60">
+                </a>
+                <p class="models-descrition">Infiniti Q60</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti Q70"><img src="<?php echo get_template_directory_uri() . '/img/models/Q70.webp' ?>" alt="" title="Infiniti Q70">
+                </a>
+                <p class="models-descrition">Infiniti Q70</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti QX50"><img src="<?php echo get_template_directory_uri() . '/img/models/QX50.webp' ?>" alt="" title="Infiniti QX50">
+                </a>
+                <p class="models-descrition">Infiniti QX50</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti QX55"><img src="<?php echo get_template_directory_uri() . '/img/models/QX55.webp' ?>" alt="" title="Infiniti QX55">
+                </a>
+                <p class="models-descrition">Infiniti QX55</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti QX56"><img src="<?php echo get_template_directory_uri() . '/img/models/QX56.webp' ?>" alt="" title="Infiniti QX56">
+                </a>
+                <p class="models-descrition">Infiniti QX56</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti QX60"><img src="<?php echo get_template_directory_uri() . '/img/models/QX60.webp' ?>" alt="" title="Infiniti QX60">
+                </a>
+                <p class="models-descrition">Infiniti QX60</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti QX70"><img src="<?php echo get_template_directory_uri() . '/img/models/QX70.webp' ?>" alt="" title="Infiniti QX70">
+                </a>
+                <p class="models-descrition">Infiniti QX70</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Infiniti QX80"><img src="<?php echo get_template_directory_uri() . '/img/models/QX80.webp' ?>" alt="" title="Infiniti QX80">
+                </a>
+                <p class="models-descrition">Infiniti QX80</p>
+            </div>
+        </div>
+        <a href="#" class="button-open-infiniti">Больше моделей</a>
+        <a href="#" class="button-close-infiniti" style="display:none;">Свернуть модели</a>
+    </div>
+</section>
+
 <section class="market">
     <div class="container">
         <div class="title-market">
@@ -434,7 +610,7 @@ get_header();
                 </div>
                 <div id="about-form" class="about-description-form">
                     <p class="form-title"><span class="color-accent">Получите скидку 5%</span>на наши услуги при записи через сайт</p>
-                    <?php echo do_shortcode('[contact-form-7 id="975045c" title="Главная форма"]') ?>
+                    <?php echo do_shortcode('[contact-form-7 id="d0603f7" title="Форма для моделей"]') ?>
                 </div>
             </div>
             <div class="about-difference">
@@ -626,6 +802,41 @@ get_header();
         </div>
     </div>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Находим все ссылки внутри .models-grid, которые ведут к форме
+        const modelLinks = document.querySelectorAll('.models-grid a[href="#about-form"]');
+
+        // Находим само поле формы по его уникальному классу 'text-models'
+        const modelField = document.querySelector('textarea.text-models'); // Используем класс, указанный в CF7
+
+        if (!modelLinks.length || !modelField) {
+            console.warn('Ссылки на модели или поле модели формы не найдены.');
+            // Можно добавить return, если критично
+            // return;
+        }
+
+
+        // Добавляем обработчик клика к каждой ссылке
+        modelLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                // Получаем название модели из data-атрибута
+                const modelName = this.getAttribute('data-model-name');
+
+                // Проверяем, удалось ли получить название
+                if (modelName) {
+                    // Записываем полученное название в поле textarea
+                    modelField.value = 'Модель ' + modelName;
+                    // console.log('Значение модели установлено:', modelName); // Для отладки
+                } else {
+                    console.warn('Атрибут data-model-name не найден в ссылке:', this);
+                }
+            });
+        });
+    });
+</script>
 <?php
 // get_sidebar();
+
 get_footer();

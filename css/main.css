@@ -709,6 +709,26 @@ p {
   color: #fff;
 }
 
+.button-open-infiniti,
+.button-close-infiniti {
+  border: 1px solid #5fc2ff;
+  border-radius: 15px;
+  color: #5fc2ff;
+  padding: 15px 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 75px;
+  display: block;
+  width: 400px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.button-open-infiniti:visited,
+.button-close-infiniti:visited {
+  color: #fff;
+}
+
 /* --- SERVISES PHOTO  --- */
 
 .servises-photo {
@@ -819,7 +839,7 @@ form.about-description-form {
 }
 
 .about-description-form form p {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 form.about-description-form p {
@@ -827,7 +847,7 @@ form.about-description-form p {
 }
 
 .about-description-form form p:nth-of-type(3) {
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 form.about-description-form p:nth-of-type(3) {
@@ -840,6 +860,10 @@ form.about-description-form p:nth-of-type(3) {
 
 form.about-description-form p:last-of-type {
   margin: 0;
+}
+
+textarea {
+  resize: none;
 }
 
 a.link-obr:visited {
@@ -919,6 +943,13 @@ form.about-description-form span[data-name="acceptance-323"] {
 .form-title {
   text-transform: uppercase;
   font-size: 24px;
+}
+
+.text-models {
+  height: 100px;
+  border-radius: 25px;
+  padding-left: 25px;
+  padding-top: 25px;
 }
 
 /* --- FAQ  --- */
@@ -1031,6 +1062,43 @@ form.about-description-form span[data-name="acceptance-323"] {
 
 .page-template-page-servisces h1 {
   font-size: 85px;
+}
+
+.models-title {
+  font-size: 64px;
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px 10px;
+}
+
+.models-item {
+  position: relative;
+  transition: transform 0.4s ease;
+}
+
+.models-item:hover {
+  transform: translateY(-5px);
+}
+
+.models-descrition {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #000;
+  font-weight: 600;
+}
+
+.models-item a img {
+  border-radius: 20px;
+  border: 2px solid #5fc2ff;
 }
 
 /* --- FOOTER  --- */

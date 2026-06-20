@@ -1093,6 +1093,10 @@
     height: 40px;
     font-size: 18px;
   }
+
+  .models-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 375px) {

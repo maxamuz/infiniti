@@ -827,7 +827,7 @@ get_header();
                 // Проверяем, удалось ли получить название
                 if (modelName) {
                     // Записываем полученное название в поле textarea
-                    modelField.value = 'Модель ' + modelName;
+                    modelField.value = 'Сообщение: Модель ' + modelName;
                     // console.log('Значение модели установлено:', modelName); // Для отладки
                 } else {
                     console.warn('Атрибут data-model-name не найден в ссылке:', this);

@@ -610,7 +610,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/img/inf2-4.jpg' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 5" class="services-photo-img">
             </div>
             <div class="slide-item">
-                <img src="<?php echo get_template_directory_uri() . '/img/inf2-5.jpg' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 6" class="services-photo-img">
+                <img src="<?php echo get_template_directory_uri() . '/img/inf2-1.jpg' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 6" class="services-photo-img">
             </div>
             <div class="slide-item">
                 <img src="<?php echo get_template_directory_uri() . '/img/s-62.webp' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 7" class="services-photo-img">
@@ -620,7 +620,7 @@ get_header();
 </section>
 <section class="about">
     <div class="container">
-        <h2 class="about-title"><span class="color-accent">Об </span> автосервисе
+        <h2 class="about-title"><span class="color-accent">Почему </span> выбирают нас
             <span class="servises-arrow">
                 <svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_86_1257)">
@@ -638,8 +638,8 @@ get_header();
         <div class="about-block">
             <div class="about-description">
                 <div class="about-description-text">
-                    <p><span class="color-accent">Infiniti Market</span>- это мультибрендовый (для всех авто) сервис с особенными возможностями <span class="color-accent">для Infiniti и Nissan</span></p>
-                    <p>Особенные возможности - это диллерское диагностическое оборудование Consilt III+, буквально все запчасти в наличии и особая экспертиза, которая позволяет диагностировать и исправлять даже самые непонятные и деликатные ситуации, встречающиеся<span class="color-accent"> на Инфинити и Ниссан</span></p>
+                    <p>Хотите сэконосить на ремонте<span class="color-accent"> Infiniti?</span><br>Начните с профессиональной диагностики в Москве!</p>
+                    <p>Мы выявляем скрытые неисправности на ранней стадии, предотвращаем дорогостоящие поломки и обеспечиваем комплексное обслуживание <span class="color-accent"> Infiniti.</span>Оцените состояние вашего автомобиля и получите рекомендации по ремонту или профилактике.</p>
                 </div>
                 <div id="about-form" class="about-description-form">
                     <p class="form-title"><span class="color-accent">Получите скидку 5%</span>на наши услуги при записи через сайт</p>

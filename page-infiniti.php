@@ -589,8 +589,33 @@ get_header();
 </section>
 <section class="servises-photo">
     <div class="container">
+
         <img src="<?php echo get_template_directory_uri() . '/img/photo-logo.png' ?>" alt="Логотип Автосервиса ИнфинитиМаркет" class="servises-photo-logo">
-        <img src="<?php echo get_template_directory_uri() . '/img/photo-logo-img.png' ?>" alt="Фоторгафии Автосервиса ИнфинитиМаркет" class="servises-photo-img">
+
+        <div class="services-slider"> <!-- Изменил имя класса для соответствия инициализации -->
+            <!-- <div class="slide-item">
+                <img src="<?php // echo get_template_directory_uri() . '/img/photo-logo-img.png' 
+                            ?>" alt="Фотография Автосервиса ИнфинитиМаркет 1" class="services-photo-img">
+            </div> -->
+            <div class="slide-item">
+                <img src="<?php echo get_template_directory_uri() . '/img/inf2-1.jpg' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 2" class="services-photo-img">
+            </div>
+            <div class="slide-item">
+                <img src="<?php echo get_template_directory_uri() . '/img/inf2-2.jpg' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 3" class="services-photo-img">
+            </div>
+            <div class="slide-item">
+                <img src="<?php echo get_template_directory_uri() . '/img/inf2-3.jpg' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 4" class="services-photo-img">
+            </div>
+            <div class="slide-item">
+                <img src="<?php echo get_template_directory_uri() . '/img/inf2-4.jpg' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 5" class="services-photo-img">
+            </div>
+            <div class="slide-item">
+                <img src="<?php echo get_template_directory_uri() . '/img/inf2-5.jpg' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 6" class="services-photo-img">
+            </div>
+            <div class="slide-item">
+                <img src="<?php echo get_template_directory_uri() . '/img/s-62.webp' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 7" class="services-photo-img">
+            </div>
+        </div>
     </div>
 </section>
 <section class="about">

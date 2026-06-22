@@ -669,7 +669,11 @@ get_header();
                         <p class="difference-block-deck">Отвечаем за результат и даем гарантию</p>
                     </div>
                 </div>
-                <img src="<?php echo get_template_directory_uri() . '/img/maps-yandex.png' ?>" alt="ЯндекаКарты" class="mapsyandex">
+                <div class="call-header call-form">
+                    <a class="call-header-link" href="https://t.me/InfinitiMRKT"><img src="<?php echo get_template_directory_uri() . '/img/tg.png' ?>" alt="Иконка мессендера Telegram"></a>
+                    <a class="call-header-link" href="https://max.ru/u/f9LHodD0cOL4nEp-jeXEMKgWVl6s_sKnhIhJ7vBSUHpoWPmTLEFw_nMfTJA"><img src="<?php echo get_template_directory_uri() . '/img/max2.png' ?>" alt="Иконка мессендера NAX"></a>
+                </div>
+                <div class="yandex-map" style="width:560px;height:470px;overflow:hidden;position:relative;border-radius: 30px;margin-top: 55px;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/11681120492?comments"></iframe><a href="https://yandex.ru/maps/org/infiniti_market_servis/11681120492/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Инфинити Маркет Сервис — Яндекс Карты</a></div>
             </div>
         </div>
     </div>
@@ -679,10 +683,17 @@ get_header();
     <div class="container">
         <div class="questions-market">
             <div class="questions-title">
-                <p class="sticky-element"><span class="color-accent">FAQ</span>(Часто задаваемые вопросы) <span class="arrow"><svg width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3891 18.0072L6.37499 26.0213L4.37183 24.0182L11.3843 17.0057L4.37183 9.99316L6.37499 7.98999L14.3891 16.0041C14.6547 16.2697 14.8039 16.63 14.8039 17.0057C14.8039 17.3813 14.6547 17.7416 14.3891 18.0072Z" fill="white" fill-opacity="0.5" />
-                        </svg>
-                    </span> </p>
+                <div class="questions-title-block sticky-element">
+                    <p>
+                        <span class="color-accent">FAQ</span>(Часто задаваемые вопросы)
+                        <span class="arrow">
+                            <svg width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3891 18.0072L6.37499 26.0213L4.37183 24.0182L11.3843 17.0057L4.37183 9.99316L6.37499 7.98999L14.3891 16.0041C14.6547 16.2697 14.8039 16.63 14.8039 17.0057C14.8039 17.3813 14.6547 17.7416 14.3891 18.0072Z" fill="white" fill-opacity="0.5" />
+                            </svg>
+                        </span>
+                    </p>
+                    <img src="<?php echo get_template_directory_uri() . '/img/inf3.jpg' ?>" alt="Мерседес" class="questions-img">
+                </div>
             </div>
             <div class="questions-block">
                 <?php
@@ -724,58 +735,6 @@ get_header();
 
                 <a href="#about-form" class="market-button">Записаться</a>
             </div>
-            <!-- <div class="questions-block">
-                <div class="questions-block-item">
-                    <div class="num color-accent">01</div>
-                    <div class="questions-block-text">
-                        <p class="questions-block-title color-accent">Работаете ли вы с автомобилями других марок, кроме Infiniti и Nissan?</p>
-                        <p class="questions-block-deck">Да, мы оказываем услуги по ремонту и техническому обслуживанию автомобилей всех марок, включая европейские, корейские, китайские и американские. Однако наша специализация — премиальные и надёжные японские марки.</p>
-                    </div>
-                </div>
-                <div class="questions-block-item">
-                    <div class="num color-accent">02</div>
-                    <div class="questions-block-text">
-                        <p class="questions-block-title color-accent">Можете ли вы выполнить ремонт подвески на Infiniti QX56/QX60?</p>
-                        <p class="questions-block-deck">Конечно! Мы располагаем опытом и оборудованием для диагностики и ремонта подвески любых моделей Infiniti. Наши мастера проведут комплексную проверку и заменят изношенные элементы с использованием качественных запасных частей.</p>
-                    </div>
-                </div>
-                <div class="questions-block-item">
-                    <div class="num color-accent">03</div>
-                    <div class="questions-block-text">
-                        <p class="questions-block-title color-accent">Предоставляете ли вы гарантию на выполненные работы?</p>
-                        <p class="questions-block-deck">Да, на все виды работ мы предоставляем официальную гарантию. Срок гарантии зависит от характера неисправности и типа выполняемых работ — уточняйте у менеджера при оформлении заказа.</p>
-                    </div>
-                </div>
-                <div class="questions-block-item">
-                    <div class="num color-accent">04</div>
-                    <div class="questions-block-text">
-                        <p class="questions-block-title color-accent">Как часто нужно проходить ТО на Nissan?</p>
-                        <p class="questions-block-deck">Рекомендуемое межсервисное обслуживание для автомобилей Nissan составляет 10 000–15 000 км пробега или раз в 12 месяцев. Точный интервал указан в сервисной книжке конкретной модели.</p>
-                    </div>
-                </div>
-                <div class="questions-block-item">
-                    <div class="num color-accent">05</div>
-                    <div class="questions-block-text">
-                        <p class="questions-block-title color-accent">Выполняете ли вы чип-тюнинг двигателей?</p>
-                        <p class="questions-block-deck">Да, мы предлагаем услуги по чип-тюнингу двигателей, включая модели Nissan и Infiniti. Это позволяет повысить мощность, улучшить динамику и, при грамотном подходе, снизить расход топлива.</p>
-                    </div>
-                </div>
-                <div class="questions-block-item">
-                    <div class="num color-accent">06</div>
-                    <div class="questions-block-text">
-                        <p class="questions-block-title color-accent">Можно ли записаться на диагностику в выходной день?</p>
-                        <p class="questions-block-deck">Да, мы работаем по предварительной записи, в том числе и в выходные дни. Заблаговременное бронирование позволяет нам выделить нужное время для вашего автомобиля и избежать ожидания .</p>
-                    </div>
-                </div>
-                <div class="questions-block-item">
-                    <div class="num color-accent">07</div>
-                    <div class="questions-block-text">
-                        <p class="questions-block-title color-accent">Используете ли вы оригинальные запчасти?</p>
-                        <p class="questions-block-deck">Мы можем использовать как оригинальные запчасти, так и качественные аналоги, в зависимости от ваших предпочтений и бюджета. При необходимости мы сами закажем запчасти, проконсультировав вас по срокам и стоимости.</p>
-                    </div>
-                </div>
-                <a href="#" class="market-button">Записаться</a>
-            </div> -->
         </div>
     </div>
 </section>
@@ -858,7 +817,9 @@ get_header();
             </div>
         </div>
         <div class="contacts-map">
-            <img src="<?php echo get_template_directory_uri() . '/img/map-contact.webp' ?>" alt="Карта автосервиса Infiniti">
+            <a href="https://yandex.ru/maps/213/moscow/house/zagorodnoye_shosse_7as3/Z04YcAZkTkIHQFtvfXp4dHxhYw==/?ll=37.614770%2C55.695028&z=17" target="_blank">
+                <img src="<?php echo get_template_directory_uri() . '/img/map-contact.webp' ?>" alt="Карта автосервиса Infiniti">
+            </a>
         </div>
         <div class="contacts-button">
             <a href="#" class="contacts-button-start"><img src="<?php echo get_template_directory_uri() . '/img/gis_route.png' ?>" alt="Иконка маршрута">Начать поездку</a>

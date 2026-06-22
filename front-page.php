@@ -464,8 +464,6 @@ get_header();
                     <a class="call-header-link" href="https://t.me/InfinitiMRKT"><img src="<?php echo get_template_directory_uri() . '/img/tg.png' ?>" alt="Иконка мессендера Telegram"></a>
                     <a class="call-header-link" href="https://max.ru/u/f9LHodD0cOL4nEp-jeXEMKgWVl6s_sKnhIhJ7vBSUHpoWPmTLEFw_nMfTJA"><img src="<?php echo get_template_directory_uri() . '/img/max2.png' ?>" alt="Иконка мессендера NAX"></a>
                 </div>
-                <!-- <img src="<?php // echo get_template_directory_uri() . '/img/maps-yandex.png' 
-                                ?>" alt="ЯндекаКарты" class="mapsyandex"> -->
                 <div class="yandex-map" style="width:560px;height:470px;overflow:hidden;position:relative;border-radius: 30px;margin-top: 55px;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/11681120492?comments"></iframe><a href="https://yandex.ru/maps/org/infiniti_market_servis/11681120492/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Инфинити Маркет Сервис — Яндекс Карты</a></div>
             </div>
         </div>
@@ -485,9 +483,7 @@ get_header();
                         </span>
                     </p>
                     <img src="<?php echo get_template_directory_uri() . '/img/inf12.jpg' ?>" alt="Мерседес" class="questions-img">
-
                 </div>
-
             </div>
             <div class="questions-block">
                 <div class="questions-block-item">

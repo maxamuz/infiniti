@@ -501,8 +501,12 @@ p.hero-desctiption-bottom {
   border: 1px solid #fff;
   padding: 5px 25px;
   border-radius: 20px;
-  width: 62%;
+  width: 55%;
   gap: 5px;
+}
+
+.questions-title p span {
+  padding: 0;
 }
 
 .questions-img {

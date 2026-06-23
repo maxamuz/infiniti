@@ -268,11 +268,12 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/img/diagnost.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Диагностика автомобиля</h3>
                 <ul class="servises-card-list">
-                    <li>Диагностика выхлопной системы</li>
-                    <li>Диагностика топливной системы</li>
-                    <li>Диагностика утечки охлаждающей жидкости</li>
-                    <li>Диагностика подвестки</li>
-                    <li>Диагностика кондиционера</li>
+                    <li>Диагностика выхлопной системы: от 1200 руб.</li>
+                    <li>Диагностика топливной системы: от 3000 руб.</li>
+                    <li>Диагностика утечки охлаждающей жидкости: от 1500 руб.</li>
+                    <li>Диагностика подвестки: от 1500 руб.</li>
+                    <li>Диагностика кондиционера: от 3150 руб.</li>
+                    <li>Диагностика электрооборудования: от 2400 руб.</li>
                 </ul>
                 <div class="servises-card-button-block">
                     <a href="#" class="card-button-item">Еще</a>
@@ -283,11 +284,13 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/img/to-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Техническое обслуживание</h3>
                 <ul class="servises-card-list">
-                    <li>Замена масла двигателя и масленного фильтра без защиты картера.</li>
-                    <li>Замена свечей зажигания</li>
-                    <li>Замена топливного фильтра</li>
-                    <li>Замена воздушного фильтра</li>
-                    <li>Замена охлаждающей жидкости</li>
+                    <li>Замена масла двигателя и масленного фильтра без защиты картера: от 1500 руб.</li>
+                    <li>Замена свечей зажигания: от 5000 руб.</li>
+                    <li>Замена топливного фильтра: от 2000 руб.</li>
+                    <li>Замена воздушного фильтра: от 600 руб.</li>
+                    <li>Замена охлаждающей жидкости: от 3000 руб.</li>
+                    <li>Замена тормозной жидкости: от 2000 руб.</li>
+                    <li>Регулировка стояночного тормоза: от 1200 руб.</li>
                 </ul>
                 <div class="servises-card-button-block">
                     <a href="#" class="card-button-item">Еще</a>
@@ -296,13 +299,13 @@ get_header();
             </div>
             <div class="servises-card-item">
                 <img src="<?php echo get_template_directory_uri() . '/img/el-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
-                <h3 class="servises-card-title">Электро -оборудование</h3>
+                <h3 class="servises-card-title">Электро - оборудование</h3>
                 <ul class="servises-card-list">
-                    <li>Замена трапеции стеклоочистителя</li>
-                    <li>Замена мотора омывателя</li>
-                    <li>Замена звукового сигнала</li>
-                    <li>Замена передней фары</li>
-                    <li>Замена блока предохранителей</li>
+                    <li>Замена трапеции стеклоочистителя: от 4000 руб.</li>
+                    <li>Замена мотора омывателя: от 2500 руб.</li>
+                    <li>Замена звукового сигнала: от 1200 руб.</li>
+                    <li>Замена передней фары: от 5000 руб.</li>
+                    <li>Замена блока предохранителей: от 4000 руб.</li>
                 </ul>
                 <div class="servises-card-button-block">
                     <a href="#" class="card-button-item">Еще</a>
@@ -313,11 +316,11 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/img/podves-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Подвеска автомобиля</h3>
                 <ul class="servises-card-list">
-                    <li>Ремонт компрессора пневмоподвески QX80, QX56</li>
-                    <li>Замена сальника привода</li>
-                    <li>Замена привода в сборе</li>
-                    <li>Замена задних пружин</li>
-                    <li>Замена передних пружин</li>
+                    <li>Ремонт компрессора пневмоподвески PATROL</li>
+                    <li>Замена сальника привода: от 4500 руб.</li>
+                    <li>Замена привода в сборе: от 4500 руб.</li>
+                    <li>Замена задних пружин: от 7000 руб.</li>
+                    <li>Замена передних пружин: от 4800 руб.</li>
                 </ul>
                 <div class="servises-card-button-block">
                     <a href="#" class="card-button-item">Еще</a>
@@ -328,11 +331,11 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/img/engin-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Двигатель автомобиля</h3>
                 <ul class="servises-card-list">
-                    <li>Настройка VVEL</li>
-                    <li>Замер компрессии двигателя</li>
-                    <li>Снятие/установка масляного поддона</li>
-                    <li>Снятие/установка двигателя</li>
-                    <li>Замена натяжителя цепи</li>
+                    <li>Настройка VVEL: от 8000 руб.</li>
+                    <li>Замер компрессии двигателя: от 1000 руб.</li>
+                    <li>Снятие/установка масляного поддона: от 6300 руб.</li>
+                    <li>Снятие/установка двигателя: от 90000 руб.</li>
+                    <li>Замена натяжителя цепи: от 57000 руб.</li>
                 </ul>
                 <div class="servises-card-button-block">
                     <a href="#" class="card-button-item">Еще</a>

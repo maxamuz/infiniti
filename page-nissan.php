@@ -733,6 +733,39 @@ get_header();
         </div>
     </div>
 </section>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Находим все ссылки внутри .models-grid, которые ведут к форме
+        const modelLinks = document.querySelectorAll('.models-grid a[href="#about-form"]');
+
+        // Находим само поле формы по его уникальному классу 'text-models'
+        const modelField = document.querySelector('textarea.text-models'); // Используем класс, указанный в CF7
+
+        if (!modelLinks.length || !modelField) {
+            console.warn('Ссылки на модели или поле модели формы не найдены.');
+            // Можно добавить return, если критично
+            // return;
+        }
+
+
+        // Добавляем обработчик клика к каждой ссылке
+        modelLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                // Получаем название модели из data-атрибута
+                const modelName = this.getAttribute('data-model-name');
+
+                // Проверяем, удалось ли получить название
+                if (modelName) {
+                    // Записываем полученное название в поле textarea
+                    modelField.value = 'Сообщение: Модель ' + modelName;
+                    // console.log('Значение модели установлено:', modelName); // Для отладки
+                } else {
+                    console.warn('Атрибут data-model-name не найден в ссылке:', this);
+                }
+            });
+        });
+    });
+</script>
 <?php
 // get_sidebar();
 get_footer();

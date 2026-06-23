@@ -528,7 +528,7 @@ get_header();
                 </div>
                 <div id="about-form" class="about-description-form">
                     <p class="form-title"><span class="color-accent">Получите скидку 5%</span>на наши услуги при записи через сайт</p>
-                    <?php echo do_shortcode('[contact-form-7 id="975045c" title="Главная форма"]') ?>
+                    <?php echo do_shortcode('[contact-form-7 id="d0603f7" title="Форма для моделей"]') ?>
                 </div>
             </div>
             <div class="about-difference">

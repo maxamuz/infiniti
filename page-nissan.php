@@ -570,7 +570,11 @@ get_header();
                         <p class="difference-block-deck">Отвечаем за результат и даем гарантию</p>
                     </div>
                 </div>
-                <img src="<?php echo get_template_directory_uri() . '/img/maps-yandex.png' ?>" alt="ЯндекаКарты" class="mapsyandex">
+                <div class="call-header call-form">
+                    <a class="call-header-link" href="https://t.me/InfinitiMRKT"><img src="<?php echo get_template_directory_uri() . '/img/tg.png' ?>" alt="Иконка мессендера Telegram"></a>
+                    <a class="call-header-link" href="https://max.ru/u/f9LHodD0cOL4nEp-jeXEMKgWVl6s_sKnhIhJ7vBSUHpoWPmTLEFw_nMfTJA"><img src="<?php echo get_template_directory_uri() . '/img/max2.png' ?>" alt="Иконка мессендера NAX"></a>
+                </div>
+                <div class="yandex-map" style="width:560px;height:470px;overflow:hidden;position:relative;border-radius: 30px;margin-top: 55px;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/11681120492?comments"></iframe><a href="https://yandex.ru/maps/org/infiniti_market_servis/11681120492/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Инфинити Маркет Сервис — Яндекс Карты</a></div>
             </div>
         </div>
     </div>
@@ -580,10 +584,17 @@ get_header();
     <div class="container">
         <div class="questions-market">
             <div class="questions-title">
-                <p class="sticky-element"><span class="color-accent">FAQ</span>(Часто задаваемые вопросы) <span class="arrow"><svg width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3891 18.0072L6.37499 26.0213L4.37183 24.0182L11.3843 17.0057L4.37183 9.99316L6.37499 7.98999L14.3891 16.0041C14.6547 16.2697 14.8039 16.63 14.8039 17.0057C14.8039 17.3813 14.6547 17.7416 14.3891 18.0072Z" fill="white" fill-opacity="0.5" />
-                        </svg>
-                    </span> </p>
+                <div class="questions-title-block sticky-element">
+                    <p>
+                        <span class="color-accent">FAQ</span>(Часто задаваемые вопросы)
+                        <span class="arrow">
+                            <svg width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3891 18.0072L6.37499 26.0213L4.37183 24.0182L11.3843 17.0057L4.37183 9.99316L6.37499 7.98999L14.3891 16.0041C14.6547 16.2697 14.8039 16.63 14.8039 17.0057C14.8039 17.3813 14.6547 17.7416 14.3891 18.0072Z" fill="white" fill-opacity="0.5" />
+                            </svg>
+                        </span>
+                    </p>
+                    <img src="<?php echo get_template_directory_uri() . '/img/niss2.jpg' ?>" alt="Мерседес" class="questions-img">
+                </div>
             </div>
             <div class="questions-block">
                 <?php
@@ -714,22 +725,53 @@ get_header();
         </div>
         <div class="contacts-grid">
             <div class="contacts-grid-item">
-                <img src="<?php echo get_template_directory_uri() . '/img/symbols_call.png' ?>" alt="Иконка" class="contact-phone-img">
+                <!-- <img src="<?php echo get_template_directory_uri() . '/img/symbols_call.png' ?>" alt="Иконка" class="contact-phone-img"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <title>Baseline Phone SVG Icon</title>
+                    <path fill="#5fc2ff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z" />
+                </svg>
                 <p class="contact-title">Телефон</p>
                 <p class="contact-content">84991122731</p>
             </div>
             <div class="contacts-grid-item">
-                <img src="<?php echo get_template_directory_uri() . '/img/whatsapp-fill.png' ?>" alt="Иконка" class="contact-wt-img">
+                <!-- <img src="<?php echo get_template_directory_uri() . '/img/whatsapp-fill.png' ?>" alt="Иконка" class="contact-wt-img"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <title>Bxl Whatsapp SVG Icon</title>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977c0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162l-2.824.741l.753-2.753l-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188a7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73c-.205-.075-.354-.112-.504.112s-.58.729-.711.879s-.262.168-.486.056s-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393c.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666c-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008a.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387c.536.231.954.369 1.279.473c.537.171 1.026.146 1.413.089c.431-.064 1.327-.542 1.514-1.066c.187-.524.187-.973.131-1.067c-.056-.094-.207-.151-.43-.263" fill="#5fc2ff" />
+                </svg>
                 <p class="contact-title">WHATSAPP</p>
                 <p class="contact-content">89773337677</p>
             </div>
             <div class="contacts-grid-item">
-                <img src="<?php echo get_template_directory_uri() . '/img/mdi_location.png' ?>" alt="Иконка" class="contact-address-img">
+                <a href="https://t.me/InfinitiMRKT">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <title>Baseline Telegram SVG Icon</title>
+                        <path fill="#5fc2ff" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19c-.14.75-.42 1-.68 1.03c-.58.05-1.02-.38-1.58-.75c-.88-.58-1.38-.94-2.23-1.5c-.99-.65-.35-1.01.22-1.59c.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02c-.09.02-1.49.95-4.22 2.79c-.4.27-.76.41-1.08.4c-.36-.01-1.04-.2-1.55-.37c-.63-.2-1.12-.31-1.08-.66c.02-.18.27-.36.74-.55c2.92-1.27 4.86-2.11 5.83-2.51c2.78-1.16 3.35-1.36 3.73-1.36c.08 0 .27.02.39.12c.1.08.13.19.14.27c-.01.06.01.24 0 .38" />
+                    </svg>
+                    <p class="contact-title">TELEGRAM</p>
+                </a>
+            </div>
+            <div class="contacts-grid-item">
+                <a href="https://max.ru/u/f9LHodD0cOL4nEp-jeXEMKgWVl6s_sKnhIhJ7vBSUHpoWPmTLEFw_nMfTJA">
+                    <img src="<?php echo get_template_directory_uri() . '/img/max3.png' ?>" class="contact-max-img" alt="Иконка мессендера NAX">
+                    <p class="contact-title">MAX</p>
+                </a>
+            </div>
+            <div class="contacts-grid-item">
+                <!-- <img src="<?php echo get_template_directory_uri() . '/img/mdi_location.png' ?>" alt="Иконка" class="contact-address-img"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 48 48">
+                    <title>Geo Location SVG Icon</title>
+                    <path fill="#5fc2ff" fill-rule="evenodd" d="M23.424 41.817L24 41zm1.152 0l.004-.002l.01-.007l.03-.023l.118-.085q.152-.111.43-.324c.368-.282.89-.697 1.513-1.23a43.4 43.4 0 0 0 4.575-4.54C34.564 31.78 38 26.32 38 20.076c0-3.73-1.474-7.31-4.098-9.95A13.96 13.96 0 0 0 24 6a13.96 13.96 0 0 0-9.902 4.125A14.12 14.12 0 0 0 10 20.077c0 6.243 3.436 11.703 6.744 15.529a43.4 43.4 0 0 0 4.575 4.54c.624.533 1.145.948 1.513 1.23a26 26 0 0 0 .547.41l.032.022l.009.007l.004.002c.345.243.807.243 1.152 0M24 41l.576.817zm5-21a5 5 0 1 1-10 0a5 5 0 0 1 10 0" clip-rule="evenodd" />
+                </svg>
                 <p class="contact-title">Адрес</p>
                 <p class="contact-content">Загородное ш., 7А, стр. 3, Москва</p>
             </div>
             <div class="contacts-grid-item">
-                <img src="<?php echo get_template_directory_uri() . '/img/solar_calendar-bold.png' ?>" alt="Иконка" class="contact-works-img">
+                <!-- <img src="<?php echo get_template_directory_uri() . '/img/solar_calendar-bold.png' ?>" alt="Иконка" class="contact-works-img"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <title>Baseline Calendar Month SVG Icon</title>
+                    <path fill="#5fc2ff" d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V10h14zM9 14H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2zm-8 4H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2z" />
+                </svg>
                 <p class="contact-title">Режим работы</p>
                 <p class="contact-content">
                     <?php
@@ -741,7 +783,9 @@ get_header();
             </div>
         </div>
         <div class="contacts-map">
-            <img src="<?php echo get_template_directory_uri() . '/img/map-contact.webp' ?>" alt="Карта автосервиса Infiniti">
+            <a href="https://yandex.ru/maps/213/moscow/house/zagorodnoye_shosse_7as3/Z04YcAZkTkIHQFtvfXp4dHxhYw==/?ll=37.614770%2C55.695028&z=17" target="_blank">
+                <img src="<?php echo get_template_directory_uri() . '/img/map-contact.webp' ?>" alt="Карта автосервиса Infiniti">
+            </a>
         </div>
         <div class="contacts-button">
             <a href="#" class="contacts-button-start"><img src="<?php echo get_template_directory_uri() . '/img/gis_route.png' ?>" alt="Иконка маршрута">Начать поездку</a>

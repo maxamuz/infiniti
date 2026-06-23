@@ -34,34 +34,83 @@ get_header();
     </div>
 </section>
 
-<!-- <section class="refit-models">
-    <div class="container container-refit">
-        <div class="refit-models-item">
-            <div class="refit-card all-auto">
-                <h2 class="refit-card-title">Ремонт любых авто</h2>
-                <hr>
-                <p class="refit-card-desc">Ремонт и полное обслуживание всех марок автомобилей</p>
-                <a href="#" class="refit-card-buttom">Подробнее</a>
-            </div>
+<section class="models">
+    <div class="container">
+        <div class="models-title">
+            <span class="color-accent">Модели</span>
         </div>
-        <div class="refit-models-item">
-            <div class="refit-card infiniti-auto">
-                <h2 class="refit-card-title">Ремонт Infiniti</h2>
-                <hr>
-                <p class="refit-card-desc">Ремонт и полное обслуживание <span class="color-accent">Infiniti</span> с особыми возможностями</p>
-                <a href="#" class="refit-card-buttom">Подробнее</a>
+        <div class="models-grid">
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Juke"><img src="<?php echo get_template_directory_uri() . '/img/models/juke.webp' ?>" alt="" title="Nissan Juke">
+                </a>
+                <p class="models-descrition">Nissan Juke</p>
             </div>
-        </div>
-        <div class="refit-models-item three">
-            <div class="refit-card nissan-auto">
-                <h2 class="refit-card-title">Ремонт Nissan</h2>
-                <hr>
-                <p class="refit-card-desc">Ремонт и полное обслуживание <span class="color-accent">Nissan</span> с особыми возможностями</p>
-                <a href="#" class="refit-card-buttom">Подробнее</a>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Kicks"><img src="<?php echo get_template_directory_uri() . '/img/models/kicks.webp' ?>" alt="" title="Nissan Kicks">
+                </a>
+                <p class="models-descrition">Nissan Kicks</p>
             </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Murano"><img src="<?php echo get_template_directory_uri() . '/img/models/murano.webp' ?>" alt="" title="Nissan Murano">
+                </a>
+                <p class="models-descrition">Nissan Murano</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Navara"><img src="<?php echo get_template_directory_uri() . '/img/models/navara.webp' ?>" alt="" title="Nissan Navara">
+                </a>
+                <p class="models-descrition">Nissan Navara</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Note"><img src="<?php echo get_template_directory_uri() . '/img/models/note.webp' ?>" alt="" title="Nissan Note">
+                </a>
+                <p class="models-descrition">Nissan Note</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Pathfinder"><img src="<?php echo get_template_directory_uri() . '/img/models/pathfinder.webp' ?>" alt="" title="Nissan Pathfinder">
+                </a>
+                <p class="models-descrition">Nissan Pathfinder</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Patrol"><img src="<?php echo get_template_directory_uri() . '/img/models/patrol.webp' ?>" alt="" title="Nissan Patrol">
+                </a>
+                <p class="models-descrition">Infiniti FX45</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Qashqai"><img src="<?php echo get_template_directory_uri() . '/img/models/qashqai.webp' ?>" alt="" title="Nissan Qashqai">
+                </a>
+                <p class="models-descrition">Nissan Qashqai</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Sentra"><img src="<?php echo get_template_directory_uri() . '/img/models/sentra.webp' ?>" alt="" title="Nissan Sentra">
+                </a>
+                <p class="models-descrition">Nissan Sentra</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Teana"><img src="<?php echo get_template_directory_uri() . '/img/models/teana.webp' ?>" alt="" title="Nissan Teana">
+                </a>
+                <p class="models-descrition">Nissan Teana</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Terrano"><img src="<?php echo get_template_directory_uri() . '/img/models/terrano.webp' ?>" alt="" title="Nissan Terrano">
+                </a>
+                <p class="models-descrition">Nissan Terrano</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Tiida"><img src="<?php echo get_template_directory_uri() . '/img/models/tiida.webp' ?>" alt="" title="Nissan Tiida">
+                </a>
+                <p class="models-descrition">Nissan Tiida</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissasn X-trail"><img src="<?php echo get_template_directory_uri() . '/img/models/x-trail.webp' ?>" alt="" title="Nissasn X-trail">
+                </a>
+                <p class="models-descrition">Nissasn X-trail</p>
+            </div>
+
         </div>
+        <a href="#" class="button-open-infiniti">Больше моделей</a>
+        <a href="#" class="button-close-infiniti" style="display:none;">Свернуть модели</a>
     </div>
-</section> -->
+</section>
 
 <section class="market">
     <div class="container">

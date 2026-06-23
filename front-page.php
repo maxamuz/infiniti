@@ -411,7 +411,7 @@ get_header();
 </section>
 <section class="about">
     <div class="container">
-        <h2 class="about-title"><span class="color-accent">Об </span> автосервисе
+        <h2 class="about-title"><span class="color-accent">Стандарты </span> сервиса
             <span class="servises-arrow">
                 <svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_86_1257)">

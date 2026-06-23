@@ -17,6 +17,9 @@ get_header();
             <h1 class="hero-title">
                 <?php the_title(); ?>
             </h1>
+            <p class="hero-desctiption-bottom">
+                Одно из лучших соотношений по цене и качеству в Москве
+            </p>
         </div>
         <div class="hero-info-block">
             <div class="info-block-models">
@@ -31,7 +34,7 @@ get_header();
     </div>
 </section>
 
-<section class="refit-models">
+<!-- <section class="refit-models">
     <div class="container container-refit">
         <div class="refit-models-item">
             <div class="refit-card all-auto">
@@ -58,7 +61,8 @@ get_header();
             </div>
         </div>
     </div>
-</section>
+</section> -->
+
 <section class="market">
     <div class="container">
         <div class="title-market">

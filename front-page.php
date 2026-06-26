@@ -75,7 +75,7 @@ get_header();
                             </svg>
                         </span>
                     </p>
-                    <img src="<?php echo get_template_directory_uri() . '/img/orig.jpg' ?>" alt="Мерседес" class="questions-img">
+                    <img src="<?php echo get_template_directory_uri() . '/img/merin.jpg' ?>" alt="Мерседес" class="questions-img">
                 </div>
             </div>
             <div class="questions-block">
@@ -401,10 +401,13 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/img/s-4.webp' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 5" class="services-photo-img">
             </div>
             <div class="slide-item">
-                <img src="<?php echo get_template_directory_uri() . '/img/s-5.webp' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 6" class="services-photo-img">
+                <img src="<?php echo get_template_directory_uri() . '/img/s-51.jpg' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 6" class="services-photo-img">
             </div>
             <div class="slide-item">
                 <img src="<?php echo get_template_directory_uri() . '/img/s-62.webp' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 7" class="services-photo-img">
+            </div>
+            <div class="slide-item">
+                <img src="<?php echo get_template_directory_uri() . '/img/s-52.jpg' ?>" alt="Фотография Автосервиса ИнфинитиМаркет 7" class="services-photo-img">
             </div>
         </div>
     </div>

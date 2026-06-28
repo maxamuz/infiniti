@@ -236,9 +236,6 @@
 }
 
 @media (max-width: 768px) {
-  /*  Здесь стили мобального меню */
-
-  /* Скрываем десктопное меню, показываем мобильное */
   .container-header {
     display: none;
   }
@@ -523,9 +520,29 @@
     gap: 20px;
   }
 
-  /* Footer Menu*/
+  .free-diagnost-button {
+    width: 100%;
+  }
 
-  /* Стили для футера */
+  .servises-card-item {
+    width: 100%;
+  }
+
+  .yandex-map {
+    width: 100% !important;
+  }
+
+  .questions-title p {
+    justify-content: center;
+  }
+
+  .models-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  p.hero-desctiption-bottom {
+    padding-bottom: 20px;
+  }
 
   .container-footer {
     display: none;
@@ -760,6 +777,11 @@
 
   .hero-description {
     width: 60%;
+  }
+
+  p.hero-desctiption-bottom,
+  .info-block-desc {
+    text-align: center;
   }
 
   .container-header-mobile #primary-menu {

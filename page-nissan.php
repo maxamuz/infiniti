@@ -18,7 +18,7 @@ get_header();
                 <?php the_title(); ?>
             </h1>
             <p class="hero-desctiption-bottom">
-                Одно из лучших соотношений по цене и качеству в Москве
+                Ваш Nissan ещё многое проедет
             </p>
         </div>
         <div class="hero-info-block">
@@ -27,7 +27,7 @@ get_header();
                 <a href="#" class="block-models-link">Nissan</a>
             </div>
             <p class="info-block-desc">
-                Ремонт и полное обслуживание автомобилей марки <span class="color-accent">NISSAN</span> в сервисе уровня диллера по адекватным ценам
+                Проверим автомобиль на профильном оборудовании, покажем причину неисправности и составим понятный план ремонта: что сделать сейчас, что можно отложить, а что достаточно наблюдать. <span class="color-accent">Запчасти подберём по VIN.</span>
             </p>
             <a href="#about-form" class="info-block-button">Записаться</a>
         </div>
@@ -37,7 +37,7 @@ get_header();
 <section class="free-diagnost">
     <div class="container">
         <div class="free-diagnost-title">
-            <span class="color-accent">Комплекстная диагностика 4 в 1</span> бесплатно*</span>
+            <span class="color-accent">Комплексный осмотр четырёх систем</span><br> — в подарок при выполнении ремонта*</span>
         </div>
         <div class="free-diagnost-description">
             <span class="color-accent">Узкая специализация автосервиса на моделях INFINITI, NISSAN и 10- летний опыт мастеров позволяет безошибочно находить неисправности автомобилей.
@@ -74,54 +74,39 @@ get_header();
         </div>
         <div class="models-grid">
             <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Qashqai J10/J11"><img src="<?php echo get_template_directory_uri() . '/img/models/qashqai.webp' ?>" alt="" title="Nissan Qashqai J10/J11">
+                </a>
+                <p class="models-descrition">Nissan Qashqai J10/J11</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan X‑Trail T31/T32"><img src="<?php echo get_template_directory_uri() . '/img/models/x-trail.webp' ?>" alt="" title="Nissan X‑Trail T31/T32">
+                </a>
+                <p class="models-descrition">Nissan X‑Trail T31/T32</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Murano Z51/Z52"><img src="<?php echo get_template_directory_uri() . '/img/models/murano.webp' ?>" alt="" title="Nissan Murano Z51/Z52">
+                </a>
+                <p class="models-descrition">Nissan Murano Z51/Z52</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Teana J32/L33"><img src="<?php echo get_template_directory_uri() . '/img/models/teana.webp' ?>" alt="" title="Nissan Teana J32/L33">
+                </a>
+                <p class="models-descrition">Nissan Teana J32/L33</p>
+            </div>
+            <div class="models-item">
                 <a href="#about-form" data-model-name="Nissan Juke"><img src="<?php echo get_template_directory_uri() . '/img/models/juke.webp' ?>" alt="" title="Nissan Juke">
                 </a>
                 <p class="models-descrition">Nissan Juke</p>
             </div>
             <div class="models-item">
-                <a href="#about-form" data-model-name="Nissan Kicks"><img src="<?php echo get_template_directory_uri() . '/img/models/kicks.webp' ?>" alt="" title="Nissan Kicks">
+                <a href="#about-form" data-model-name="Nissan Pathfinder R51/R52"><img src="<?php echo get_template_directory_uri() . '/img/models/pathfinder.webp' ?>" alt="" title="Nissan Pathfinder R51/R52">
                 </a>
-                <p class="models-descrition">Nissan Kicks</p>
+                <p class="models-descrition">Nissan Pathfinder R51/R52</p>
             </div>
             <div class="models-item">
-                <a href="#about-form" data-model-name="Nissan Murano"><img src="<?php echo get_template_directory_uri() . '/img/models/murano.webp' ?>" alt="" title="Nissan Murano">
+                <a href="#about-form" data-model-name="Nissan Patrol Y62"><img src="<?php echo get_template_directory_uri() . '/img/models/patrol.webp' ?>" alt="" title="Nissan Patrol Y62">
                 </a>
-                <p class="models-descrition">Nissan Murano</p>
-            </div>
-            <div class="models-item">
-                <a href="#about-form" data-model-name="Nissan Navara"><img src="<?php echo get_template_directory_uri() . '/img/models/navara.webp' ?>" alt="" title="Nissan Navara">
-                </a>
-                <p class="models-descrition">Nissan Navara</p>
-            </div>
-            <div class="models-item">
-                <a href="#about-form" data-model-name="Nissan Note"><img src="<?php echo get_template_directory_uri() . '/img/models/note.webp' ?>" alt="" title="Nissan Note">
-                </a>
-                <p class="models-descrition">Nissan Note</p>
-            </div>
-            <div class="models-item">
-                <a href="#about-form" data-model-name="Nissan Pathfinder"><img src="<?php echo get_template_directory_uri() . '/img/models/pathfinder.webp' ?>" alt="" title="Nissan Pathfinder">
-                </a>
-                <p class="models-descrition">Nissan Pathfinder</p>
-            </div>
-            <div class="models-item">
-                <a href="#about-form" data-model-name="Nissan Patrol"><img src="<?php echo get_template_directory_uri() . '/img/models/patrol.webp' ?>" alt="" title="Nissan Patrol">
-                </a>
-                <p class="models-descrition">Infiniti FX45</p>
-            </div>
-            <div class="models-item">
-                <a href="#about-form" data-model-name="Nissan Qashqai"><img src="<?php echo get_template_directory_uri() . '/img/models/qashqai.webp' ?>" alt="" title="Nissan Qashqai">
-                </a>
-                <p class="models-descrition">Nissan Qashqai</p>
-            </div>
-            <div class="models-item">
-                <a href="#about-form" data-model-name="Nissan Sentra"><img src="<?php echo get_template_directory_uri() . '/img/models/sentra.webp' ?>" alt="" title="Nissan Sentra">
-                </a>
-                <p class="models-descrition">Nissan Sentra</p>
-            </div>
-            <div class="models-item">
-                <a href="#about-form" data-model-name="Nissan Teana"><img src="<?php echo get_template_directory_uri() . '/img/models/teana.webp' ?>" alt="" title="Nissan Teana">
-                </a>
-                <p class="models-descrition">Nissan Teana</p>
+                <p class="models-descrition">Nissan Patrol Y62</p>
             </div>
             <div class="models-item">
                 <a href="#about-form" data-model-name="Nissan Terrano"><img src="<?php echo get_template_directory_uri() . '/img/models/terrano.webp' ?>" alt="" title="Nissan Terrano">
@@ -129,14 +114,29 @@ get_header();
                 <p class="models-descrition">Nissan Terrano</p>
             </div>
             <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Note"><img src="<?php echo get_template_directory_uri() . '/img/models/note.webp' ?>" alt="" title="Nissan Note">
+                </a>
+                <p class="models-descrition">Nissan Note</p>
+            </div>
+            <div class="models-item">
                 <a href="#about-form" data-model-name="Nissan Tiida"><img src="<?php echo get_template_directory_uri() . '/img/models/tiida.webp' ?>" alt="" title="Nissan Tiida">
                 </a>
                 <p class="models-descrition">Nissan Tiida</p>
             </div>
             <div class="models-item">
-                <a href="#about-form" data-model-name="Nissasn X-trail"><img src="<?php echo get_template_directory_uri() . '/img/models/x-trail.webp' ?>" alt="" title="Nissasn X-trail">
+                <a href="#about-form" data-model-name="Nissan Kicks"><img src="<?php echo get_template_directory_uri() . '/img/models/kicks.webp' ?>" alt="" title="Nissan Kicks">
                 </a>
-                <p class="models-descrition">Nissasn X-trail</p>
+                <p class="models-descrition">Nissan Kicks</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Navara"><img src="<?php echo get_template_directory_uri() . '/img/models/navara.webp' ?>" alt="" title="Nissan Navara">
+                </a>
+                <p class="models-descrition">Nissan Navara</p>
+            </div>
+            <div class="models-item">
+                <a href="#about-form" data-model-name="Nissan Sentra"><img src="<?php echo get_template_directory_uri() . '/img/models/sentra.webp' ?>" alt="" title="Nissan Sentra">
+                </a>
+                <p class="models-descrition">Nissan Sentra</p>
             </div>
 
         </div>
@@ -154,7 +154,7 @@ get_header();
             <div class="questions-title">
                 <div class="questions-title-block sticky-element">
                     <p>
-                        <span class="color-accent">6 причин,</span> почему вам к нам? <span class="arrow"><svg width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <span class="color-accent">6 причин,</span> обратиться к нам <span class="arrow"><svg width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3891 18.0072L6.37499 26.0213L4.37183 24.0182L11.3843 17.0057L4.37183 9.99316L6.37499 7.98999L14.3891 16.0041C14.6547 16.2697 14.8039 16.63 14.8039 17.0057C14.8039 17.3813 14.6547 17.7416 14.3891 18.0072Z" fill="white" fill-opacity="0.5" />
                             </svg>
                         </span>
@@ -248,6 +248,48 @@ get_header();
         </div>
     </div>
 </section>
+<section class="scaner">
+    <div class="container">
+        <div class="scaner-title">
+            <span class="color-accent">Видим больше,</span><br> чем обычный универсальный сканер
+        </div>
+        <div class="scaner-container">
+            <div class="scaner-content">
+                <p>
+                    Для диагностики автомобилей Nissan мы используем <strong>Consult III Plus</strong> — специализированный диагностический комплекс Nissan, применяемый для углублённой проверки электронных систем автомобиля.
+                </p>
+                <p>
+                    Обычный сканер может показать код ошибки. Consult III Plus помогает специалисту получить более полную информацию: увидеть текущие параметры работы систем, проверить связанные блоки управления и провести предусмотренные производителем сервисные процедуры.
+                </p>
+                <span class="scaner-content-desc color-accent">
+                    Что позволяет Consult III Plus
+                </span>
+                <ul>
+                    <li>диагностировать электронные блоки и поддерживаемые системы Nissan;</li>
+                    <li>считывать и расшифровывать ошибки с учётом особенностей конкретной модели;</li>
+                    <li>анализировать параметры автомобиля в реальном времени;</li>
+                    <li>выполнять активные тесты отдельных компонентов;</li>
+                    <li>проводить предусмотренные производителем адаптации и сервисные процедуры;</li>
+                    <li>проверять результат после ремонта и сбрасывать ошибки после устранения их причины.</li>
+                </ul>
+            </div>
+            <div class="scaner-rigth-content">
+                <img src="https://infiniti.loc/wp-content/themes/infiniti/img/s-51.jpg" alt="Ниссан" class="questions-img">
+                <span class="scaner-content-desc color-accent">
+                    Не просто читаем ошибки — ищем причину
+                </span>
+                <p>
+                    После диагностики вы получите понятное заключение и план дальнейших действий. До начала ремонта мы объясним результаты, предложим возможные решения и согласуем стоимость работ.
+                </p>
+            </div>
+        </div>
+        <div class="scaner-button-block">
+            <a href="#about-form" class="info-block-button scaner-button">Записаться на диагностику</a>
+        </div>
+
+    </div>
+
+</section>
 <section class="servises">
     <div class="container">
         <p class="servises-title"><span class="color-accent">Наши</span> услуги <span class="servises-arrow">
@@ -284,7 +326,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/img/to-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Техническое обслуживание</h3>
                 <ul class="servises-card-list">
-                    <li>Замена масла двигателя и масленного фильтра без защиты картера: от 1500 руб.</li>
+                    <li>Замена масла двигателя и масляного фильтра без защиты картера: от 1500 руб.</li>
                     <li>Замена свечей зажигания: от 5000 руб.</li>
                     <li>Замена топливного фильтра: от 2000 руб.</li>
                     <li>Замена воздушного фильтра: от 600 руб.</li>
@@ -316,7 +358,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/img/podves-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Подвеска автомобиля</h3>
                 <ul class="servises-card-list">
-                    <li>Ремонт компрессора пневмоподвески PATROL</li>
+                    <li>Ремонт компрессора пневмо подвески PATROL</li>
                     <li>Замена сальника привода: от 4500 руб.</li>
                     <li>Замена привода в сборе: от 4500 руб.</li>
                     <li>Замена задних пружин: от 7000 руб.</li>
@@ -566,7 +608,7 @@ get_header();
                     </div>
                     <div class="difference-block-item">
                         <img src="<?php echo get_template_directory_uri() . '/img/about-icon4.png' ?>" alt="Иконка">
-                        <p class="difference-block-title">Безопастность</p>
+                        <p class="difference-block-title">Безопасность</p>
                         <p class="difference-block-deck">Отвечаем за результат и даем гарантию</p>
                     </div>
                 </div>
@@ -788,7 +830,7 @@ get_header();
             </a>
         </div>
         <div class="contacts-button">
-            <a href="#" class="contacts-button-start"><img src="<?php echo get_template_directory_uri() . '/img/gis_route.png' ?>" alt="Иконка маршрута">Начать поездку</a>
+            <a href="https://yandex.ru/maps/?ll=43.016684%2C55.841551&mode=routes&rtext=~55.695027%2C37.614770&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY3NDkxNRJD0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCX0LDQs9C-0YDQvtC00L3QvtC1INGI0L7RgdGB0LUsIDfQkNGBMyIKDYZ1FkIVtcdeQg%2C%2C&z=7.51" target="_blank" class="contacts-button-start"><img src="<?php echo get_template_directory_uri() . '/img/gis_route.png' ?>" alt="Иконка маршрута">Начать поездку</a>
             <a href="#about-form" class="contacts-button-action">Записаться</a>
         </div>
     </div>

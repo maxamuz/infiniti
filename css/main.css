@@ -48,7 +48,7 @@ p {
 }
 
 .page-template-page-nissan h1 {
-  font-size: 85px;
+  font-size: 76px;
 }
 
 p.hero-desctiption-bottom {
@@ -184,6 +184,10 @@ p.hero-desctiption-bottom {
   display: flex;
 }
 
+.page-template-page-nissan .container-hero {
+  top: 450px;
+}
+
 .hero-title-block {
   flex: 1;
 }
@@ -220,7 +224,6 @@ p.hero-desctiption-bottom {
 
 .info-block-desc {
   text-align: end;
-  font-size: 20px;
   padding-left: 250px;
 }
 
@@ -283,7 +286,7 @@ p.hero-desctiption-bottom {
 }
 
 .free-diagnost-title {
-  font-size: 74px;
+  font-size: 46px;
   text-align: center;
   font-family: "Exo 2", sans-serif;
   text-transform: uppercase;
@@ -497,11 +500,12 @@ p.hero-desctiption-bottom {
 .questions-title p {
   display: flex;
   align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   border: 1px solid #fff;
   padding: 5px 25px;
   border-radius: 20px;
-  width: 60%;
+  width: 52%;
   gap: 5px;
 }
 
@@ -566,6 +570,69 @@ p.hero-desctiption-bottom {
 .market-button:hover {
   color: #212121;
   transform: scale(1.01);
+}
+
+/* --- SCANER --- */
+
+.scaner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.scaner-container {
+  display: flex;
+  gap: 50px;
+}
+
+.scaner-content {
+  width: 50%;
+}
+
+.scaner-rigth-content {
+  width: 50%;
+}
+
+.scaner-rigth-content img {
+  margin-top: 0;
+}
+
+.scaner-title {
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  font-size: 46px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.scaner-content p,
+.scaner-rigth-content p {
+  margin-bottom: 20px;
+}
+
+.scaner-content-desc {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.scaner-content ul {
+  margin: 0;
+}
+
+.scaner-rigth-content .scaner-content-desc {
+  padding-top: 20px;
+}
+
+.scaner-button-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.info-block-button.scaner-button {
+  padding: 15px 35px;
 }
 
 /* --- SERVISES  --- */
@@ -1076,7 +1143,7 @@ form.about-description-form span[data-name="acceptance-323"] {
 }
 
 .models-title {
-  font-size: 64px;
+  font-size: 46px;
   font-family: "Exo 2", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -1354,8 +1421,8 @@ form.about-description-form span[data-name="acceptance-323"] {
 /* Стили для плавающего виджета */
 .floating-contact-widget {
   position: fixed; /* Фиксируем положение относительно окна браузера */
-  bottom: 210px; /* Отступ от нижнего края окна */
-  right: 260px; /* Отступ от правого края окна */
+  bottom: 60px; /* Отступ от нижнего края окна */
+  right: 60px; /* Отступ от правого края окна */
   display: flex; /* Располагаем кнопки в ряд */
   flex-direction: column; /* Вертикально */
   gap: 15px; /* Расстояние между кнопками */

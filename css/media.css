@@ -214,6 +214,15 @@
   .contacts-title p {
     width: 17%;
   }
+
+  .scaner-container {
+    flex-wrap: wrap;
+  }
+
+  .scaner-content,
+  .scaner-rigth-content {
+    width: 100%;
+  }
 }
 
 /* Десктопная версия скрытия меню*/
@@ -1107,7 +1116,6 @@
   }
 
   .floating-contact-widget {
-    bottom: 230px;
     right: 15px;
   }
 

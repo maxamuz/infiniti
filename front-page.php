@@ -30,7 +30,7 @@ get_header();
 
 <section class="free-diagnost">
     <div class="container">
-        <div class="free-diagnost-title">
+        <div id="4v1" class="free-diagnost-title">
             <span class="color-accent">Комплекстная диагностика 4 в 1</span> бесплатно*</span>
         </div>
         <div class="free-diagnost-description">
@@ -67,7 +67,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri() . '/img/title-market.png' ?>" alt="Заголовок Инфинити Маркет">
         </div>
         <div class="questions-market">
-            <div class="questions-title">
+            <div id="why" class="questions-title">
                 <div class="questions-title-block sticky-element">
                     <p>
                         <span class="color-accent">6 причин,</span> почему вам к нам? <span class="arrow"><svg width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +128,7 @@ get_header();
 </section>
 <section class="servises">
     <div class="container">
-        <p class="servises-title"><span class="color-accent">Наши</span> услуги <span class="servises-arrow">
+        <p id="uslugi" class="servises-title"><span class="color-accent">Наши</span> услуги <span class="servises-arrow">
                 <svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_86_1257)">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9928 14.3891L7.97868 6.37499L9.98184 4.37183L16.9943 11.3843L24.0068 4.37183L26.01 6.37499L17.9959 14.3891C17.7303 14.6547 17.37 14.8039 16.9943 14.8039C16.6187 14.8039 16.2584 14.6547 15.9928 14.3891Z" fill="white" fill-opacity="0.5" />
@@ -414,7 +414,7 @@ get_header();
 </section>
 <section class="about">
     <div class="container">
-        <h2 class="about-title"><span class="color-accent">Стандарты </span> сервиса
+        <h2 id="standart" class="about-title"><span class="color-accent">Стандарты </span> сервиса
             <span class="servises-arrow">
                 <svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_86_1257)">

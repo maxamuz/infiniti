@@ -63,11 +63,11 @@ get_header();
 
 <section class="market">
     <div class="container">
-        <div class="title-market">
+        <div id="why" class="title-market">
             <img src="<?php echo get_template_directory_uri() . '/img/title-market.png' ?>" alt="Заголовок Инфинити Маркет">
         </div>
         <div class="questions-market">
-            <div id="why" class="questions-title">
+            <div class="questions-title">
                 <div class="questions-title-block sticky-element">
                     <p>
                         <span class="color-accent">6 причин,</span> почему вам к нам? <span class="arrow"><svg width="17" height="34" viewBox="0 0 17 34" fill="none" xmlns="http://www.w3.org/2000/svg">

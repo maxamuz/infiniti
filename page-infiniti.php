@@ -24,7 +24,7 @@ get_header();
                 <a href="#" class="block-models-link">Infiniti</a>
             </div>
             <p class="info-block-desc">
-                Ремонт и полное обслуживание автомобилей марки <span class="color-accent">INFINITI</span> в сервисе уровня диллера по адекватным ценам
+                Ремонт и техническое обслуживание автомобилей Infiniti. <span class="color-accent">Профильные мастера, дилерское диагностическое оборудование и прозрачное согласование стоимости до начала работ.</span>
             </p>
             <a href="#about-form" class="info-block-button">Записаться</a>
         </div>
@@ -63,11 +63,12 @@ get_header();
 <section class="free-diagnost">
     <div class="container">
         <div class="free-diagnost-title">
-            <span class="color-accent">Комплекстная диагностика 4 в 1</span> бесплатно*</span>
+            <span class="color-accent">Комплекстная диагностика 4 в 1</span><br> — бесплатно при выполнении работ в сервисе
+            </span>
         </div>
         <div class="free-diagnost-description">
-            <span class="color-accent">Узкая специализация автосервиса на моделях INFINITI, NISSAN и 10- летний опыт мастеров позволяет безошибочно находить неисправности автомобилей.
-            </span>*при выполнении любых работ в сервисе.</span>
+            <span class="color-accent">Узкая специализация на автомобилях Infiniti и Nissan и более чем 10-летний опыт мастеров позволяют точно определять причины неисправностей и предлагать обоснованный вариант ремонта.
+                <!-- </span>*при выполнении любых работ в сервисе.</span> -->
         </div>
         <div class="free-diagnost-block">
             <div class="free-diagnost-block-item">

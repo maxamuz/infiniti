@@ -639,8 +639,8 @@ get_header();
         <div class="about-block">
             <div class="about-description">
                 <div class="about-description-text">
-                    <p>Хотите сэконосить на ремонте<span class="color-accent"> Infiniti?</span><br>Начните с профессиональной диагностики в Москве!</p>
-                    <p>Мы выявляем скрытые неисправности на ранней стадии, предотвращаем дорогостоящие поломки и обеспечиваем комплексное обслуживание <span class="color-accent"> Infiniti.</span>Оцените состояние вашего автомобиля и получите рекомендации по ремонту или профилактике.</p>
+                    <p>Проведём комплексную диагностику<span class="color-accent"> Infiniti</span><br>оценим состояние основных систем и подготовим рекомендации.</p>
+                    <p>Вы узнаете, какие работы необходимы сейчас, а какие можно запланировать на будущее.</p>
                 </div>
                 <div id="about-form" class="about-description-form">
                     <p class="form-title"><span class="color-accent">Получите скидку 5%</span>на наши услуги при записи через сайт</p>
@@ -656,8 +656,8 @@ get_header();
                     </div>
                     <div class="difference-block-item">
                         <img src="<?php echo get_template_directory_uri() . '/img/about-icon2.png' ?>" alt="Иконка">
-                        <p class="difference-block-title">Доступность</p>
-                        <p class="difference-block-deck">Оптимальное сочетание стоимости и качества</p>
+                        <p class="difference-block-title">Запчасти на складе</p>
+                        <p class="difference-block-deck">Востребованные детали для Infiniti доступны без длительного ожидания</p>
                     </div>
                     <div class="difference-block-item">
                         <img src="<?php echo get_template_directory_uri() . '/img/about-icon3.png' ?>" alt="Иконка">
@@ -666,8 +666,8 @@ get_header();
                     </div>
                     <div class="difference-block-item">
                         <img src="<?php echo get_template_directory_uri() . '/img/about-icon4.png' ?>" alt="Иконка">
-                        <p class="difference-block-title">Безопастность</p>
-                        <p class="difference-block-deck">Отвечаем за результат и даем гарантию</p>
+                        <p class="difference-block-title">Гарантия</p>
+                        <p class="difference-block-deck">Фиксируем работы и гарантийные условия в заказ-наряде</p>
                     </div>
                 </div>
                 <div class="call-header call-form">

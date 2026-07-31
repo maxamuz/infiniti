@@ -856,7 +856,7 @@ p.hero-desctiption-bottom {
 .about-difference-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 75px;
+  gap: 30px 75px;
   margin-bottom: 50px;
 }
 

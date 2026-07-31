@@ -44,7 +44,7 @@ p {
 /* --- Header --- */
 
 .page-template-page-infiniti h1 {
-  font-size: 90px;
+  font-size: 72px;
 }
 
 .page-template-page-nissan h1 {
@@ -505,8 +505,12 @@ p.hero-desctiption-bottom {
   border: 1px solid #fff;
   padding: 5px 25px;
   border-radius: 20px;
-  width: 60%;
+  width: 72%;
   gap: 5px;
+}
+
+.page-template-page-nissan .questions-title p {
+  width: 60%;
 }
 
 .questions-title p span {

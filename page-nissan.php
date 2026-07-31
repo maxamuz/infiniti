@@ -58,7 +58,7 @@ get_header();
             </div>
             <div class="free-diagnost-block-item">
                 <img class="free-diagnost-block-img" src="<?php echo get_template_directory_uri() . '/img/m.jpg' ?>" alt="Иконка">
-                <p class="free-diagnost-block-title">Диагностика течей агрегатов</p>
+                <p class="free-diagnost-block-title">Диагностика утечек технических жидкостей</p>
             </div>
         </div>
         <a href="#about-form" class="info-block-button free-diagnost-button popmake-205">Записаться на бесплатную диагностику</a>

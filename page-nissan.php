@@ -358,7 +358,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/img/podves-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Подвеска автомобиля</h3>
                 <ul class="servises-card-list">
-                    <li>Ремонт компрессора пневмо подвески PATROL</li>
+                    <li>Ремонт компрессора пневмо подвески PATROL: от 5400 руб.</li>
                     <li>Замена сальника привода: от 4500 руб.</li>
                     <li>Замена привода в сборе: от 4500 руб.</li>
                     <li>Замена задних пружин: от 7000 руб.</li>

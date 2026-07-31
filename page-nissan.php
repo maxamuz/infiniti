@@ -274,7 +274,7 @@ get_header();
                 </ul>
             </div>
             <div class="scaner-rigth-content">
-                <img src="https://infiniti.loc/wp-content/themes/infiniti/img/s-51.jpg" alt="Ниссан" class="questions-img">
+                <img src="<?php echo get_template_directory_uri() . '/img/s-51.jpg' ?>" alt="Ниссан" class="questions-img">
                 <span class="scaner-content-desc color-accent">
                     Не просто читаем ошибки — ищем причину
                 </span>

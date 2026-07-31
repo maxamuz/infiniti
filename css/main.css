@@ -1091,6 +1091,10 @@ form.about-description-form span[data-name="acceptance-323"] {
   color: #5fc2ff;
 }
 
+.contact-content {
+  text-align: center;
+}
+
 .contacts-map {
   margin-top: 70px;
 }

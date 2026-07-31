@@ -1070,7 +1070,7 @@ form.about-description-form span[data-name="acceptance-323"] {
   padding-top: 55px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 70px;
+  gap: 55px;
 }
 
 .contacts-grid-item {

@@ -41,7 +41,7 @@ get_header();
         </div>
         <div class="free-diagnost-description">
             <span class="color-accent">Узкая специализация автосервиса на моделях INFINITI, NISSAN и 10- летний опыт мастеров позволяет безошибочно находить неисправности автомобилей.
-            </span>*при выполнении любых работ в сервисе.</span>
+                <!-- </span>*при выполнении любых работ в сервисе.</span> -->
         </div>
         <div class="free-diagnost-block">
             <div class="free-diagnost-block-item">

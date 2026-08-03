@@ -44,7 +44,7 @@ p {
 /* --- Header --- */
 
 .page-template-page-infiniti h1 {
-  font-size: 72px;
+  font-size: 60px;
 }
 
 .page-template-page-nissan h1 {
@@ -180,7 +180,7 @@ p.hero-desctiption-bottom {
 .container-hero {
   position: relative;
   z-index: 999;
-  top: 350px;
+  top: 450px;
   display: flex;
 }
 

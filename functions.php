@@ -144,6 +144,8 @@ add_action('widgets_init', 'infiniti_widgets_init');
 function infiniti_scripts()
 {
 	wp_enqueue_style('infiniti-style', get_stylesheet_uri(), array(), _S_VERSION);
+	wp_enqueue_style('infiniti-google-fonts', 'https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap', array(), null);
+	wp_enqueue_style('infiniti-google-fonts', 'https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap', array(), null);
 	wp_enqueue_style('infiniti-main-style', get_template_directory_uri() . '/css/main.css');
 	wp_enqueue_style('infiniti-media-style', get_template_directory_uri() . '/css/media.css');
 	wp_style_add_data('infiniti-style', 'rtl', 'replace');

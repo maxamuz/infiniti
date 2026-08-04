@@ -10,6 +10,8 @@ get_header();
 
 <main id="primary" class="site-main page-about">
 
+    <!-- ================= HERO ================= -->
+
     <section class="hero">
         <div class="wrap hero-grid">
             <div class="reveal">
@@ -47,6 +49,32 @@ get_header();
         <circle cx="140" cy="80" r="11" stroke="#63a6ff" stroke-width="2"/>
         <path d="M56 40 L62 54 H120 L126 40" stroke="#3f8dff" stroke-width="1.4"/>
       </svg> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="stats">
+        <div class="wrap">
+            <div class="stats-grid reveal">
+                <div class="stat-card">
+                    <div class="num">16 лет</div>
+                    <div class="lbl">опыта в обслуживании и ремонте автомобилей</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">5 000+</div>
+                    <div class="lbl">автомобилей прошли обслуживание в сервисе</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">Infiniti и Nissan</div>
+                    <div class="lbl">профильная специализация команды</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">Consult III Plus</div>
+                    <div class="lbl">
+                        оборудование для диагностики Infiniti и Nissan
+                    </div>
+                </div>
             </div>
         </div>
     </section>

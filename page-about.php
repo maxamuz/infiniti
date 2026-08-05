@@ -344,6 +344,143 @@ get_header();
         </div>
     </section>
 
+    <!-- ================= SERVICES ================= -->
+    <section class="services" id="services">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <div class="eyebrow">Наши услуги</div>
+                <h2>Комплексное обслуживание Infiniti и Nissan</h2>
+                <p>
+                    Точную стоимость озвучиваем после диагностики — до начала работ
+                    ничего не делаем без вашего согласования.
+                </p>
+            </div>
+            <div class="service-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M13 3 4 14h7l-1 7 9-11h-7l1-7Z"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Диагностика автомобиля</h3>
+                    <p>
+                        Проверка выхлопной системы, топливной системы, охлаждающей
+                        жидкости, подвески и кондиционера.
+                    </p>
+                    <div class="price-note">Стоимость — по итогам осмотра</div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="3"
+                                stroke="currentColor"
+                                stroke-width="1.6" />
+                            <path
+                                d="M12 3v2m0 14v2m9-9h-2M5 12H3m14.5-6.5-1.4 1.4M6.9 17.1l-1.4 1.4m0-13 1.4 1.4M17.1 17.1l1.4 1.4"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Техническое обслуживание</h3>
+                    <p>
+                        Замена масла двигателя и фильтра, свечей зажигания, топливного и
+                        воздушного фильтров, охлаждающей жидкости.
+                    </p>
+                    <div class="price-note">Плановый регламент по модели</div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M7 3v6M17 3v6M4 9h16l-1 8a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3L4 9Z"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Электрооборудование</h3>
+                    <p>
+                        Замена стеклоочистителей, моторов омывателя, звуковых сигналов,
+                        фар и блока предохранителей.
+                    </p>
+                    <div class="price-note">Диагностика цепей включена</div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="8"
+                                stroke="currentColor"
+                                stroke-width="1.6" />
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="2.4"
+                                stroke="currentColor"
+                                stroke-width="1.6" />
+                            <path
+                                d="M12 4v2m0 12v2m8-8h-2M6 12H4"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Подвеска автомобиля</h3>
+                    <p>
+                        Ремонт компрессора пневмоподвески, замена сайлентблоков привода,
+                        пружин и амортизаторов.
+                    </p>
+                    <div class="price-note">Проверка геометрии в комплекте</div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M4 12h4l2-4 4 8 2-4h4"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Двигатель автомобиля</h3>
+                    <p>
+                        Замер компрессии, снятие и установка ГБЦ, замена натяжителя цепи,
+                        настройка VVEL.
+                    </p>
+                    <div class="price-note">Профильное оборудование Consult III</div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 3 4 7v6c0 5 3.5 7.5 8 8 4.5-.5 8-3 8-8V7l-8-4Z"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Тормозная система</h3>
+                    <p>
+                        Переборка суппорта, замена колодок (передних и задних), тормозного
+                        шланга и пыльника суппорта.
+                    </p>
+                    <div class="price-note">Тест-драйв после ремонта</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <?php

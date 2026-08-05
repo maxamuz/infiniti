@@ -1512,6 +1512,21 @@ form.about-description-form span[data-name="acceptance-323"] {
 
 /* --- PAGE ABOUT --- */
 
+/* ---------- section heading shared ---------- */
+.section-head {
+  max-width: 680px;
+  margin-bottom: 52px;
+}
+.section-head h2 {
+  font-size: clamp(28px, 3.2vw, 40px);
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.section-head p {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
 /* ---------- buttons ---------- */
 
 .page-about .btn {
@@ -1870,4 +1885,63 @@ form.about-description-form span[data-name="acceptance-323"] {
 .process-step p {
   font-size: 14px;
   color: var(--text-muted);
+}
+
+/* ---------- services ---------- */
+
+.services {
+  padding: 100px 0;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px 26px;
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
+}
+.service-card:hover {
+  border-color: var(--accent-line);
+  transform: translateY(-4px);
+}
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1.5px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  margin-bottom: 20px;
+}
+.service-icon svg {
+  width: 23px;
+  height: 23px;
+  color: var(--accent-bright);
+}
+.service-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.service-card p {
+  color: var(--text-muted);
+  font-size: 14.5px;
+  margin-bottom: 18px;
+}
+.service-card .price-note {
+  font-size: 13px;
+  color: var(--text-dim);
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
 }

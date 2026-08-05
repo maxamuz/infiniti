@@ -693,7 +693,11 @@ get_header();
                     <?php echo do_shortcode('[contact-form-7 id="975045c" title="Главная форма"]'); ?>
                 </div>
                 <div class="map-panel">
-                    <svg viewBox="0 0 24 24" fill="none">
+                    <div class="map-ya">
+                        <div style="position:relative;overflow:hidden;border-radius: 20px;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/zagorodnoye_shosse_7as3/Z04YcAZkTkIHQFtvfXp4dHxhYw==/?ll=37.614770%2C55.695028&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Загородное шоссе, 7Ас3 на карте Москвы, ближайшее метро Крымская — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.614770%2C55.695028&mode=whatshere&whatshere%5Bpoint%5D=37.614770%2C55.695027&whatshere%5Bzoom%5D=17&z=17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+
+                    <!-- <svg viewBox="0 0 24 24" fill="none">
                         <path
                             d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"
                             stroke="currentColor"
@@ -704,7 +708,7 @@ get_header();
                             r="2.6"
                             stroke="currentColor"
                             stroke-width="1.6" />
-                    </svg>
+                    </svg> -->
                     <div class="addr">Москва, Загородное шоссе, д. 7А, стр. 3</div>
                     <div class="hrs">Ежедневно с 10:00 до 20:00</div>
                 </div>

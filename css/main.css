@@ -1813,3 +1813,61 @@ form.about-description-form span[data-name="acceptance-323"] {
 .reasons .btn {
   margin-top: 44px;
 }
+
+/* ---------- process (signature) ---------- */
+.process {
+  padding: 110px 0;
+}
+.process-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+.process-track::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 5%;
+  right: 5%;
+  height: 1.5px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent-line) 10%,
+    var(--accent-line) 90%,
+    transparent
+  );
+}
+.process-step {
+  position: relative;
+  padding-top: 0;
+}
+.process-node {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1.5px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--accent-bright);
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0 6px var(--bg);
+}
+.process-step h4 {
+  font-size: 16.5px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+.process-step p {
+  font-size: 14px;
+  color: var(--text-muted);
+}

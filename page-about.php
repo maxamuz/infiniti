@@ -292,6 +292,58 @@ get_header();
         </div>
     </section>
 
+    <!-- ================= PROCESS ================= -->
+    <section class="process">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <div class="eyebrow">Порядок работы</div>
+                <h2>Как проходит обслуживание</h2>
+                <p>
+                    Пять этапов — от первой заявки до выдачи автомобиля с готовыми
+                    документами.
+                </p>
+            </div>
+            <div class="process-track">
+                <div class="process-step reveal">
+                    <div class="process-node">01</div>
+                    <h4>Запись</h4>
+                    <p>
+                        Уточняем модель автомобиля, симптомы и удобное время посещения.
+                    </p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-node">02</div>
+                    <h4>Приёмка</h4>
+                    <p>
+                        Мастер задаёт вопросы, фиксирует обращение и согласовывает
+                        первоначальную диагностику.
+                    </p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-node">03</div>
+                    <h4>Диагностика</h4>
+                    <p>Проверяем автомобиль и определяем причину неисправности.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-node">04</div>
+                    <h4>Согласование</h4>
+                    <p>
+                        Показываем результаты, предлагаем варианты и предварительно
+                        согласовываем стоимость.
+                    </p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-node">05</div>
+                    <h4>Ремонт и выдача</h4>
+                    <p>
+                        Выполняем утверждённые работы, проводим проверку и выдаём
+                        документы.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <?php

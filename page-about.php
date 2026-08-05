@@ -79,6 +79,121 @@ get_header();
         </div>
     </section>
 
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+        <div class="wrap about-grid">
+            <div class="reveal">
+                <div class="eyebrow">О сервисе</div>
+                <h2
+                    style="
+              font-size: clamp(26px, 3vw, 36px);
+              font-weight: 700;
+              margin-bottom: 20px;
+            ">
+                    Техническая точность и человеческое отношение
+                </h2>
+                <p>
+                    Infiniti Market Service вырос из любви к японской инженерии и
+                    желания сделать ремонт автомобилей более понятным и предсказуемым.
+                </p>
+                <p>
+                    Для нас хороший сервис — это не только устранённая неисправность.
+                    Важно, чтобы владелец автомобиля понимал:
+                </p>
+                <ul class="checklist">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5 13l4 4L19 7"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        что именно обнаружено при диагностике
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5 13l4 4L19 7"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>какие работы действительно необходимы
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5 13l4 4L19 7"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>какие варианты ремонта существуют
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5 13l4 4L19 7"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>сколько это будет стоить
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5 13l4 4L19 7"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>когда автомобиль будет готов
+                    </li>
+                </ul>
+                <p style="margin-top: 22px">
+                    Мы не хотим, чтобы посещение автосервиса превращалось в источник
+                    тревоги. Поэтому показываем выявленные неисправности, объясняем
+                    рекомендации и согласовываем работы до их начала.
+                </p>
+            </div>
+            <div class="img-master visual-frame reveal" style="aspect-ratio: 4/5">
+                <span class="tag">фото мастера</span>
+                <img src=" <?php echo get_template_directory_uri() . '/img/master.jpg' ?> " alt="Фото мастера с клиентом" />
+                <!-- <svg
+            class="car-glyph"
+            viewBox="0 0 120 120"
+            fill="none"
+            style="width: 52%"
+          >
+            <circle cx="60" cy="38" r="18" stroke="#3f8dff" stroke-width="2" />
+            <path
+              d="M30 100c0-18 13-30 30-30s30 12 30 30"
+              stroke="#3f8dff"
+              stroke-width="2"
+            />
+            <path
+              d="M70 55 L84 62"
+              stroke="#63a6ff"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <rect
+              x="82"
+              y="58"
+              width="14"
+              height="9"
+              rx="2"
+              stroke="#63a6ff"
+              stroke-width="1.6"
+            />
+          </svg> -->
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <?php

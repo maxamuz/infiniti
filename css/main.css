@@ -1579,6 +1579,12 @@ form.about-description-form span[data-name="acceptance-323"] {
   padding: 0 20px;
 }
 
+.page-about h2 {
+  font-size: 36px;
+  line-height: 1.1;
+  font-family: "Unbounded", sans-serif;
+}
+
 .page-about .hero {
   padding: 250px 0 76px;
   background:
@@ -1712,4 +1718,39 @@ form.about-description-form span[data-name="acceptance-323"] {
 .stat-card .lbl {
   font-size: 14px;
   color: var(--text-muted);
+}
+
+/* ---------- about ---------- */
+.page-about .about {
+  padding: 100px 0;
+}
+.page-about .about-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 64px;
+  align-items: center;
+}
+.page-about .about p {
+  color: var(--text-muted);
+  margin-bottom: 18px;
+  font-size: 15.5px;
+}
+.checklist {
+  margin-top: 26px;
+  display: grid;
+  gap: 14px;
+}
+.checklist li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 15px;
+  color: var(--text);
+}
+.checklist svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  width: 19px;
+  height: 19px;
+  color: var(--accent-bright);
 }

@@ -38,7 +38,7 @@ h1 {
   margin: 0;
   padding: 0;
   font-family: "Exo 2", sans-serif;
-  font-weight: normal;
+  font-weight: 800;
   line-height: 1;
   font-size: 110px;
 }
@@ -215,6 +215,7 @@ p.hero-desctiption-bottom {
   display: inline-block;
   border-radius: 15px;
   font-weight: 500;
+  margin-bottom: 40px;
 }
 
 .hero-info-block {
@@ -303,11 +304,11 @@ p.hero-desctiption-bottom {
 }
 
 .free-diagnost-title {
-  font-size: 46px;
+  font-size: 40px;
   text-align: center;
   font-family: "Exo 2", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .free-diagnost-description {
@@ -1511,6 +1512,19 @@ form.about-description-form span[data-name="acceptance-323"] {
 }
 
 /* --- PAGE ABOUT --- */
+
+/* ---------- reveal on scroll ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* ---------- section heading shared ---------- */
 .section-head {

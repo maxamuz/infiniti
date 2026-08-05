@@ -237,7 +237,7 @@
     padding: 88px 0 76px;
     margin-top: 0px;
     height: auto;
-    background-size: cover;
+    /* background-size: cover; */
     position: relative;
   }
   .page-about .hero::after {

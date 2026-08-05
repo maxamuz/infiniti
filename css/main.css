@@ -1754,3 +1754,62 @@ form.about-description-form span[data-name="acceptance-323"] {
   height: 19px;
   color: var(--accent-bright);
 }
+
+/* ---------- reasons ---------- */
+.reasons {
+  padding: 100px 0;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.reasons-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+}
+.reasons-head .display-big {
+  font-size: clamp(40px, 6vw, 74px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  background: linear-gradient(180deg, #fff, #6f8cc4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.reasons-list {
+  display: grid;
+  gap: 0;
+}
+.reason-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 28px;
+  padding: 30px 0;
+  border-top: 1px solid var(--border);
+}
+.reason-row:last-child {
+  border-bottom: 1px solid var(--border);
+}
+.reason-num {
+  font-family: "Unbounded", sans-serif;
+  font-size: 15px;
+  color: var(--accent-bright);
+  font-weight: 600;
+  padding-top: 4px;
+}
+.reason-body h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.reason-body p {
+  color: var(--text-muted);
+  font-size: 15px;
+  max-width: 640px;
+}
+.reasons .btn {
+  margin-top: 44px;
+}

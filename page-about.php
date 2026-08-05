@@ -653,6 +653,33 @@ get_header();
         </div>
     </section>
 
+    <!-- ================= TRUST / CTA ================= -->
+    <section class="trust">
+        <div class="wrap">
+            <div class="reveal">
+                <div class="stars">★★★★★</div>
+                <div class="eyebrow">Более 50 отзывов 5*</div>
+                <h2>
+                    Нам доверяют владельцы автомобилей — и об этом говорят наши отзывы
+                </h2>
+                <p class="lead">
+                    Доверьте автомобиль специалистам, которые знают его особенности.
+                    Проведём диагностику, объясним результаты и предложим понятный план
+                    ремонта — без технического жаргона и работ, не согласованных с вами.
+                </p>
+                <button
+                    class="btn"
+                    onclick="
+              document
+                .getElementById('contacts')
+                .scrollIntoView({ behavior: 'smooth' })
+            ">
+                    Записаться в сервис
+                </button>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <?php

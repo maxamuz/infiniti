@@ -1990,3 +1990,43 @@ form.about-description-form span[data-name="acceptance-323"] {
   object-fit: cover;
   height: 100%;
 }
+
+/* ---------- trust / testimonial cta ---------- */
+.trust {
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+}
+.trust::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 700px 400px at 50% 0%,
+    rgba(63, 141, 255, 0.14),
+    transparent 65%
+  );
+  pointer-events: none;
+}
+.trust .stars {
+  color: var(--accent-bright);
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-bottom: 22px;
+}
+.trust .eyebrow {
+  margin-left: auto;
+  margin-right: auto;
+}
+.trust h2 {
+  font-size: clamp(28px, 3.4vw, 42px);
+  font-weight: 700;
+  max-width: 760px;
+  margin: 0 auto 20px;
+}
+.trust p.lead {
+  color: var(--text-muted);
+  max-width: 560px;
+  margin: 0 auto 34px;
+  font-size: 16px;
+}

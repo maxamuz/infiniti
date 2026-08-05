@@ -680,6 +680,69 @@ get_header();
         </div>
     </section>
 
+    <!-- ================= CONTACT FORM ================= -->
+    <section class="cta-form" id="contacts">
+        <div class="wrap">
+            <div class="form-grid reveal">
+                <div class="form-panel">
+                    <h3>Получите скидку 5% на наши услуги при записи через сайт</h3>
+                    <p>
+                        Оставьте имя и телефон — перезвоним, чтобы уточнить модель
+                        автомобиля и подобрать удобное время.
+                    </p>
+                    <form
+                        onsubmit="
+                event.preventDefault();
+                this.querySelector('.form-success').style.display = 'block';
+                this.querySelector('.btn-block').style.display = 'none';
+              ">
+                        <div class="field">
+                            <input type="text" placeholder="Имя*" required />
+                        </div>
+                        <div class="field">
+                            <input type="tel" placeholder="Телефон*" required />
+                        </div>
+                        <label class="consent"><input type="checkbox" required />Нажимая «Отправить», вы
+                            соглашаетесь на обработку персональных данных (ФЗ-152) в
+                            соответствии с
+                            <a href="#" style="text-decoration: underline">условиями</a></label>
+                        <label class="consent"><input type="checkbox" />Согласие на обработку персональных
+                            данных</label>
+                        <label class="consent"><input type="checkbox" />Согласие на информирование и
+                            уведомления</label>
+                        <button type="submit" class="btn btn-block">Записаться</button>
+                        <p
+                            class="form-success"
+                            style="
+                  display: none;
+                  color: var(--accent-bright);
+                  font-size: 13.5px;
+                  margin-top: 12px;
+                ">
+                            Заявка отправлена — мы свяжемся с вами в ближайшее время.
+                        </p>
+                    </form>
+                </div>
+                <div class="map-panel">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"
+                            stroke="currentColor"
+                            stroke-width="1.6" />
+                        <circle
+                            cx="12"
+                            cy="9"
+                            r="2.6"
+                            stroke="currentColor"
+                            stroke-width="1.6" />
+                    </svg>
+                    <div class="addr">Москва, Загородное шоссе, д. 7А, стр. 3</div>
+                    <div class="hrs">Ежедневно с 10:00 до 20:00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <?php

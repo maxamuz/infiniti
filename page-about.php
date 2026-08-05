@@ -592,6 +592,67 @@ get_header();
         </div>
     </section>
 
+    <!-- ================= OTHER BRANDS ================= -->
+    <section class="other-brands">
+        <div class="wrap other-grid">
+            <div class="reveal">
+                <div class="eyebrow">Другие марки</div>
+                <h2
+                    style="
+              font-size: clamp(26px, 3vw, 36px);
+              font-weight: 700;
+              margin-bottom: 20px;
+            ">
+                    Мы работаем не только с Infiniti и Nissan
+                </h2>
+                <p>
+                    Infiniti и Nissan — наша профильная специализация. При этом опыт
+                    команды и оснащение сервиса позволяют обслуживать автомобили других
+                    марок.
+                </p>
+                <p>
+                    Если для выполнения работы требуется узкоспециализированное
+                    оборудование или технология, мастер заранее сообщит, сможем ли мы
+                    качественно решить задачу.
+                </p>
+            </div>
+            <div class="visual-frame reveal" style="aspect-ratio: 16/10">
+                <span class="tag">фото ряда автомобилей на площадке</span>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/no-infiniti.jpg" alt="Фото ряда автомобилей на площадке" />
+                <!-- <svg
+            class="car-glyph"
+            viewBox="0 0 220 90"
+            fill="none"
+            style="width: 70%"
+          >
+            <path
+              d="M6 62 L18 44 Q22 40 30 40 L58 40 Q64 40 68 44 L80 62"
+              stroke="#3f8dff"
+              stroke-width="1.8"
+            />
+            <path
+              d="M74 62 L86 44 Q90 40 98 40 L126 40 Q132 40 136 44 L148 62"
+              stroke="#63a6ff"
+              stroke-width="1.8"
+            />
+            <path
+              d="M142 62 L154 44 Q158 40 166 40 L194 40 Q200 40 204 44 L214 62"
+              stroke="#3f8dff"
+              stroke-width="1.8"
+            />
+            <line
+              x1="4"
+              y1="62"
+              x2="216"
+              y2="62"
+              stroke="#232d47"
+              stroke-width="1.6"
+            />
+          </svg> -->
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <?php

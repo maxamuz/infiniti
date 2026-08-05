@@ -481,6 +481,117 @@ get_header();
         </div>
     </section>
 
+    <!-- ================= CLARITY ================= -->
+    <section class="clarity">
+        <div class="wrap clarity-grid">
+            <div class="visual-frame reveal" style="aspect-ratio: 4/5">
+                <span class="tag">фото ремонта</span>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/inf-rem.jpg" alt="Фото машина на подъёмнике" />
+                <!-- <svg
+            class="car-glyph"
+            viewBox="0 0 100 120"
+            fill="none"
+            style="width: 46%"
+          >
+            <rect
+              x="14"
+              y="8"
+              width="72"
+              height="104"
+              rx="6"
+              stroke="#3f8dff"
+              stroke-width="2"
+            />
+            <path
+              d="M28 32h44M28 46h44M28 60h30"
+              stroke="#63a6ff"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M30 80l10 10 22-22"
+              stroke="#63a6ff"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg> -->
+            </div>
+            <div class="reveal">
+                <div class="eyebrow">Понятный результат</div>
+                <h2
+                    style="
+              font-size: clamp(26px, 3vw, 36px);
+              font-weight: 700;
+              margin-bottom: 20px;
+            ">
+                    Ремонт не должен быть непонятным
+                </h2>
+                <p>
+                    Многие владельцы приезжают в сервис с одной главной тревогой:
+                    неизвестно, насколько серьёзна неисправность и во сколько обойдётся
+                    ремонт.
+                </p>
+                <p>
+                    Наша задача — заменить эту неизвестность понятным планом действий.
+                    После диагностики вы будете знать:
+                </p>
+                <ul class="checklist">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5 13l4 4L19 7"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>в чём причина проблемы
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5 13l4 4L19 7"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>что необходимо сделать в первую очередь
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5 13l4 4L19 7"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>какие работы можно запланировать
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5 13l4 4L19 7"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>какие запчасти подойдут
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5 13l4 4L19 7"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>какова согласованная стоимость ремонта
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <?php

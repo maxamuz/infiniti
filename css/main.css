@@ -1754,6 +1754,8 @@ form.about-description-form span[data-name="acceptance-323"] {
   margin-top: 26px;
   display: grid;
   gap: 14px;
+  padding-left: 0;
+  margin-left: 0;
 }
 .checklist li {
   display: flex;
@@ -1944,4 +1946,24 @@ form.about-description-form span[data-name="acceptance-323"] {
   color: var(--text-dim);
   border-top: 1px solid var(--border);
   padding-top: 14px;
+}
+
+/* ---------- honest / clarity split section ---------- */
+.clarity {
+  padding: 100px 0;
+}
+.clarity-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 64px;
+  align-items: center;
+}
+.clarity p {
+  color: var(--text-muted);
+  margin-bottom: 18px;
+  font-size: 15.5px;
+}
+.clarity img {
+  object-fit: cover;
+  height: 100%;
 }

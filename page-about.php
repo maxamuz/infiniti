@@ -690,38 +690,7 @@ get_header();
                         Оставьте имя и телефон — перезвоним, чтобы уточнить модель
                         автомобиля и подобрать удобное время.
                     </p>
-                    <form
-                        onsubmit="
-                event.preventDefault();
-                this.querySelector('.form-success').style.display = 'block';
-                this.querySelector('.btn-block').style.display = 'none';
-              ">
-                        <div class="field">
-                            <input type="text" placeholder="Имя*" required />
-                        </div>
-                        <div class="field">
-                            <input type="tel" placeholder="Телефон*" required />
-                        </div>
-                        <label class="consent"><input type="checkbox" required />Нажимая «Отправить», вы
-                            соглашаетесь на обработку персональных данных (ФЗ-152) в
-                            соответствии с
-                            <a href="#" style="text-decoration: underline">условиями</a></label>
-                        <label class="consent"><input type="checkbox" />Согласие на обработку персональных
-                            данных</label>
-                        <label class="consent"><input type="checkbox" />Согласие на информирование и
-                            уведомления</label>
-                        <button type="submit" class="btn btn-block">Записаться</button>
-                        <p
-                            class="form-success"
-                            style="
-                  display: none;
-                  color: var(--accent-bright);
-                  font-size: 13.5px;
-                  margin-top: 12px;
-                ">
-                            Заявка отправлена — мы свяжемся с вами в ближайшее время.
-                        </p>
-                    </form>
+                    <?php echo do_shortcode('[contact-form-7 id="975045c" title="Главная форма"]'); ?>
                 </div>
                 <div class="map-panel">
                     <svg viewBox="0 0 24 24" fill="none">

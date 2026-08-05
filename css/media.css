@@ -225,6 +225,58 @@
   }
 }
 
+@media (max-width: 980px) {
+  nav.primary,
+  .topbar-left {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  .page-about .hero {
+    padding: 88px 0 76px;
+    margin-top: 0px;
+    height: auto;
+    background-size: cover;
+    position: relative;
+  }
+  .page-about .hero::after {
+    height: 100%;
+  }
+  .page-about .hero-grid,
+  .page-about .about-grid,
+  .page-about .clarity-grid,
+  .page-about .other-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-about .visual-frame {
+    order: -1;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process-track {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 34px;
+  }
+  .process-track::before {
+    display: none;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reasons-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 /* Десктопная версия скрытия меню*/
 @media screen and (min-width: 769px) {
   .container-header {
@@ -776,6 +828,25 @@
     width: 45px;
     height: 45px;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    padding: 0 20px;
+  }
+  .stats-grid,
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .reason-row {
+    grid-template-columns: 56px 1fr;
+  }
+  .form-panel {
+    padding: 32px 24px;
   }
 }
 

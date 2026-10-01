@@ -63,7 +63,7 @@ get_header();
 <section class="free-diagnost">
     <div class="container">
         <div class="free-diagnost-title">
-            <span class="color-accent">Комплекстная диагностика 4 в 1</span><br> — бесплатно при выполнении работ в сервисе
+            <span class="color-accent">Комплексная диагностика 4 в 1</span><br> — бесплатно при выполнении работ в сервисе
             </span>
         </div>
         <div class="free-diagnost-description">
@@ -302,7 +302,7 @@ get_header();
                 <div class="questions-block-item">
                     <div class="num color-accent">02</div>
                     <div class="questions-block-text">
-                        <p class="questions-block-title color-accent">Собственный большой скалад запчастей</p>
+                        <p class="questions-block-title color-accent">Собственный большой склад запчастей</p>
                         <p class="questions-block-deck">В 92% случаев не придется искать/ждать запчасти. На нашем складе есть всё для большинства марок и моделей автомобилей.</p>
                     </div>
                 </div>
@@ -310,7 +310,7 @@ get_header();
                     <div class="num color-accent">03</div>
                     <div class="questions-block-text">
                         <p class="questions-block-title color-accent">Внушительный опыт мастеров</p>
-                        <p class="questions-block-deck">Наши мастера находят решения даже в самых не понятных ситуациях, за счет внушительного опыта каждого от 5 до 15 лет</p>
+                        <p class="questions-block-deck">Наши мастера находят решения даже в самых непонятных ситуациях, за счет внушительного опыта каждого от 5 до 15 лет</p>
                     </div>
                 </div>
                 <div class="questions-block-item">
@@ -404,7 +404,7 @@ get_header();
                     <li>Диагностика выхлопной системы: от 1200 руб.</li>
                     <li>Диагностика топливной системы: от 3000 руб.</li>
                     <li>Диагностика утечки охлаждающей жидкости: от 1500 руб.</li>
-                    <li>Диагностика подвестки: от 1500 руб.</li>
+                    <li>Диагностика подвески: от 1500 руб.</li>
                     <li>Диагностика кондиционера: от 3750 руб.</li>
                     <li>Диагностика электрооборудования: от 2400 руб.</li>
                 </ul>
@@ -417,7 +417,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/img/to-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Техническое обслуживание</h3>
                 <ul class="servises-card-list">
-                    <li>Замена масла двигателя и масленного фильтра без защиты картера: от 1500 руб.</li>
+                    <li>Замена масла двигателя и масляного фильтра без защиты картера: от 1500 руб.</li>
                     <li>Замена свечей зажигания: от 5400 руб.</li>
                     <li>Замена топливного фильтра: от 2400 руб.</li>
                     <li>Замена воздушного фильтра: от 600 руб.</li>
@@ -432,7 +432,7 @@ get_header();
             </div>
             <div class="servises-card-item">
                 <img src="<?php echo get_template_directory_uri() . '/img/el-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
-                <h3 class="servises-card-title">Электро -оборудование</h3>
+                <h3 class="servises-card-title">Электрооборудование</h3>
                 <ul class="servises-card-list">
                     <li>Замена трапеции стеклоочистителя: от 6000 руб.</li>
                     <li>Замена мотора омывателя: от 3000 руб.</li>
@@ -694,7 +694,7 @@ get_header();
                     <div class="difference-block-item">
                         <img src="<?php echo get_template_directory_uri() . '/img/about-icon1.png' ?>" alt="Иконка">
                         <p class="difference-block-title">Высокий уровень</p>
-                        <p class="difference-block-deck">Сервис уровня диллера по разумной цене</p>
+                        <p class="difference-block-deck">Сервис уровня дилера по разумной цене</p>
                     </div>
                     <div class="difference-block-item">
                         <img src="<?php echo get_template_directory_uri() . '/img/about-icon2.png' ?>" alt="Иконка">

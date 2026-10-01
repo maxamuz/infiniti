@@ -31,7 +31,7 @@ get_header();
 <section class="free-diagnost">
     <div class="container">
         <div id="4v1" class="free-diagnost-title">
-            <span class="color-accent">Комплекстная диагностика 4 в 1</span> бесплатно*</span>
+            <span class="color-accent">Комплексная диагностика 4 в 1</span> бесплатно*</span>
         </div>
         <div class="free-diagnost-description">
             <span class="color-accent">Узкая специализация автосервиса на моделях INFINITI, NISSAN и 10- летний опыт мастеров позволяет безошибочно находить неисправности автомобилей.
@@ -89,7 +89,7 @@ get_header();
                 <div class="questions-block-item">
                     <div class="num color-accent">02</div>
                     <div class="questions-block-text">
-                        <p class="questions-block-title color-accent">Собственный большой скалад запчастей</p>
+                        <p class="questions-block-title color-accent">Собственный большой склад запчастей</p>
                         <p class="questions-block-deck">В 92% случаев не придется искать/ждать запчасти. На нашем складе есть всё для большинства марок и моделей автомобилей.</p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ get_header();
                     <div class="num color-accent">03</div>
                     <div class="questions-block-text">
                         <p class="questions-block-title color-accent">Внушительный опыт мастеров</p>
-                        <p class="questions-block-deck">Наши мастера находят решения даже в самых не понятных ситуациях, за счет внушительного опыта каждого от 5 до 15 лет</p>
+                        <p class="questions-block-deck">Наши мастера находят решения даже в самых непонятных ситуациях, за счет внушительного опыта каждого от 5 до 15 лет</p>
                     </div>
                 </div>
                 <div class="questions-block-item">
@@ -149,7 +149,7 @@ get_header();
                     <li>Диагностика выхлопной системы: от 1200 руб.</li>
                     <li>Диагностика топливной системы: от 3000 руб.</li>
                     <li>Диагностика утечки охлаждающей жидкости: от 1500руб.</li>
-                    <li>Диагностика подвестки: от 1500 руб.</li>
+                    <li>Диагностика подвески: от 1500 руб.</li>
                     <li>Диагностика кондиционера: от 3150 руб.</li>
                     <li>Диагностика электрооборудования: от 2400 руб.</li>
                     <li>Диагностика ходовой части</li>
@@ -164,7 +164,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/img/to-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Техническое обслуживание</h3>
                 <ul class="servises-card-list">
-                    <li>Замена масла двигателя и масленного фильтра без защиты картера: от 1500 руб.</li>
+                    <li>Замена масла двигателя и масляного фильтра без защиты картера: от 1500 руб.</li>
                     <li>Замена свечей зажигания: от 2400 руб.</li>
                     <li>Замена топливного фильтра: от 2000 руб.</li>
                     <li>Замена воздушного фильтра: от 450 руб.</li>
@@ -180,7 +180,7 @@ get_header();
             </div>
             <div class="servises-card-item">
                 <img src="<?php echo get_template_directory_uri() . '/img/el-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
-                <h3 class="servises-card-title">Электро -оборудование</h3>
+                <h3 class="servises-card-title">Электрооборудование</h3>
                 <ul class="servises-card-list">
                     <li>Замена трапеции стеклоочистителя: от 4000 руб.</li>
                     <li>Замена мотора омывателя: от 2500 руб.</li>
@@ -433,7 +433,7 @@ get_header();
             <div class="about-description">
                 <div class="about-description-text">
                     <p><span class="color-accent">Infiniti Market</span>- это мультибрендовый (для всех авто) сервис с особенными возможностями <span class="color-accent">для Infiniti и Nissan</span></p>
-                    <p>Особенные возможности - это диллерское диагностическое оборудование Consilt III+, буквально все запчасти в наличии и особая экспертиза, которая позволяет диагностировать и исправлять даже самые непонятные и деликатные ситуации, встречающиеся<span class="color-accent"> на Инфинити и Ниссан</span></p>
+                    <p>Особенные возможности - это дилерское диагностическое оборудование Consult III+, буквально все запчасти в наличии и особая экспертиза, которая позволяет диагностировать и исправлять даже самые непонятные и деликатные ситуации, встречающиеся<span class="color-accent"> на Инфинити и Ниссан</span></p>
                 </div>
                 <div id="about-form" class="about-description-form">
                     <p class="form-title"><span class="color-accent">Получите скидку 5%</span>на наши услуги при записи через сайт</p>
@@ -445,7 +445,7 @@ get_header();
                     <div class="difference-block-item">
                         <img src="<?php echo get_template_directory_uri() . '/img/about-icon1.png' ?>" alt="Иконка">
                         <p class="difference-block-title">Высокий уровень</p>
-                        <p class="difference-block-deck">Сервис уровня диллера по разумной цене</p>
+                        <p class="difference-block-deck">Сервис уровня дилера по разумной цене</p>
                     </div>
                     <div class="difference-block-item">
                         <img src="<?php echo get_template_directory_uri() . '/img/about-icon2.png' ?>" alt="Иконка">
@@ -459,7 +459,7 @@ get_header();
                     </div>
                     <div class="difference-block-item">
                         <img src="<?php echo get_template_directory_uri() . '/img/about-icon4.png' ?>" alt="Иконка">
-                        <p class="difference-block-title">Безопастность</p>
+                        <p class="difference-block-title">Безопасность</p>
                         <p class="difference-block-deck">Отвечаем за результат и даем гарантию</p>
                     </div>
                 </div>

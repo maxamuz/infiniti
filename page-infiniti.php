@@ -108,12 +108,12 @@ get_header();
             <div class="models-item">
                 <a href="#about-form" data-model-name="Infiniti EX37"><img src="<?php echo get_template_directory_uri() . '/img/models/EX37.webp' ?>" alt="" title="Infiniti EX37">
                 </a>
-                <p class="models-descrition">Infiniti EX37</p>
+                <p class="models-descrition">Infiniti JX37</p>
             </div>
             <div class="models-item">
                 <a href="#about-form" data-model-name="Infiniti FX25"><img src="<?php echo get_template_directory_uri() . '/img/models/FX25.webp' ?>" alt="" title="Infiniti FX25">
                 </a>
-                <p class="models-descrition">Infiniti FX25</p>
+                <p class="models-descrition">Infiniti EX25</p>
             </div>
             <div class="models-item">
                 <a href="#about-form" data-model-name="Infiniti FX30D"><img src="<?php echo get_template_directory_uri() . '/img/models/FX30D.webp' ?>" alt="" title="Infiniti FX30D">

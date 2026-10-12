@@ -1087,11 +1087,17 @@ form.about-description-form span[data-name="acceptance-323"] {
 .contacts-grid {
   padding-top: 55px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 55px;
 }
 
 .contacts-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts-grid-item a {
   display: flex;
   flex-direction: column;
   align-items: center;

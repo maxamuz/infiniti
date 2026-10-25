@@ -62,7 +62,7 @@ get_header();
 
 <section class="free-diagnost">
     <div class="container">
-        <div class="free-diagnost-title">
+        <div class="free-diagnost-title" id="diagnostika-4-v-1">
             <span class="color-accent">Комплексная диагностика 4 в 1</span><br> — бесплатно при выполнении работ в сервисе
             </span>
         </div>
@@ -259,6 +259,18 @@ get_header();
                 // Получаем данные из TOP группы
                 $top_items = get_post_meta(get_the_ID(), 'infiniti_faq_top_group', true);
 
+                /**
+                 * Якоря для рекламных ссылок (см. ТЗ «Якоря для 8 быстрых ссылок»).
+                 * Ключ — порядковый номер пункта в блоке «6 причин»:
+                 * 01 — профильная диагностика, 02 — собственный склад, 03 — мастера.
+                 * При изменении порядка пунктов в админке id нужно поправить.
+                 */
+                $top_anchor_ids = array(
+                    1 => 'diagnostika-consult',
+                    2 => 'zapchasti',
+                    3 => 'mastera-infiniti',
+                );
+
                 if (! empty($top_items) && is_array($top_items)) :
                     $counter = 1;
                     foreach ($top_items as $item) :
@@ -267,7 +279,7 @@ get_header();
 
                         if (! empty($question) && ! empty($answer)) :
                 ?>
-                            <div class="questions-block-item">
+                            <div class="questions-block-item"<?php echo isset($top_anchor_ids[$counter]) ? ' id="' . esc_attr($top_anchor_ids[$counter]) . '"' : ''; ?>>
                                 <div class="num color-accent"><?php echo str_pad($counter, 2, '0', STR_PAD_LEFT); ?></div>
                                 <div class="questions-block-text">
                                     <p class="questions-block-title color-accent"><?php echo esc_html($question); ?></p>
@@ -342,7 +354,7 @@ get_header();
 
 <section class="scaner">
     <div class="container">
-        <div class="scaner-title">
+        <div class="scaner-title" id="glubokaya-diagnostika">
             <span class="color-accent">Видим больше,</span><br> чем обычный универсальный сканер
         </div>
         <div class="scaner-container">
@@ -413,7 +425,7 @@ get_header();
                     <a href="#about-form" class="card-button-offer">Записаться</a>
                 </div>
             </div>
-            <div class="servises-card-item">
+            <div class="servises-card-item" id="to-infiniti">
                 <img src="<?php echo get_template_directory_uri() . '/img/to-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Техническое обслуживание</h3>
                 <ul class="servises-card-list">
@@ -445,7 +457,7 @@ get_header();
                     <a href="#about-form" class="card-button-offer">Записаться</a>
                 </div>
             </div>
-            <div class="servises-card-item">
+            <div class="servises-card-item" id="podveska-i-tormoza">
                 <img src="<?php echo get_template_directory_uri() . '/img/podves-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Подвеска автомобиля</h3>
                 <ul class="servises-card-list">
@@ -614,7 +626,7 @@ get_header();
                     <a href="#about-form" class="card-button-offer">Записаться</a>
                 </div>
             </div>
-            <div class="servises-card-item">
+            <div class="servises-card-item" id="vvel">
                 <img src="<?php echo get_template_directory_uri() . '/img/vvel-icon.png' ?>" alt="Изображение на карточке" class="servises-card-img">
                 <h3 class="servises-card-title">Настройка VVEL (Вивэл) авто</h3>
                 <ul class="servises-card-list">

@@ -828,6 +828,34 @@ p.hero-desctiption-bottom {
   color: #fff;
 }
 
+/* --- Якорные ссылки (быстрые ссылки из рекламы) --- */
+
+/*
+ * Отступ прокрутки для якорей страницы «Ремонт Infiniti».
+ * --anchor-offset вычисляется в js/main.js: для липкой/фиксированной шапки —
+ * её фактическая высота плюс отступ, иначе 20px.
+ * Значение 120px — резервное, если скрипт не выполнился.
+ */
+#to-infiniti,
+#podveska-i-tormoza,
+#diagnostika-consult,
+#vvel,
+#zapchasti,
+#diagnostika-4-v-1,
+#mastera-infiniti,
+#glubokaya-diagnostika {
+  scroll-margin-top: var(--anchor-offset, 120px);
+}
+
+/*
+ * У карточек услуг иконка вынесена над контейнером (top: -80px),
+ * поэтому для них нужен дополнительный отступ, чтобы иконка не обрезалась.
+ */
+#to-infiniti,
+#podveska-i-tormoza {
+  scroll-margin-top: calc(var(--anchor-offset, 120px) + 90px);
+}
+
 /* --- SERVISES PHOTO  --- */
 
 .servises-photo {

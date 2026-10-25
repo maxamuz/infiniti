@@ -487,6 +487,230 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/**
+ * Якорные ссылки страницы «Ремонт Infiniti» (быстрые ссылки из рекламы).
+ *
+ * Блок расположен после логики скрытия карточек услуг, поэтому обработчик
+ * DOMContentLoaded выполняется уже после hideExtraCards() и может корректно
+ * раскрыть скрытую карточку «Настройка VVEL» перед прокруткой.
+ */
+document.addEventListener("DOMContentLoaded", function () {
+  const anchorIds = [
+    "to-infiniti",
+    "podveska-i-tormoza",
+    "diagnostika-consult",
+    "vvel",
+    "zapchasti",
+    "diagnostika-4-v-1",
+    "mastera-infiniti",
+    "glubokaya-diagnostika",
+  ];
+  const vvelId = "vvel";
+  const serviceCardSelector = ".servises-cards .servises-card-item";
+  const defaultOffset = 20; // Отступ от верха экрана, если якорь без липкой шапки
+  const cardIconOffset = 90; // Иконка карточки вынесена над контейнером (top: -80px)
+  const imageWaitTimeout = 1200;
+
+  const anchorsExist = anchorIds.some(function (id) {
+    return document.getElementById(id) !== null;
+  });
+
+  if (!anchorsExist) {
+    return;
+  }
+
+  const serviceCards = document.querySelectorAll(serviceCardSelector);
+  const buttonOpen = document.querySelector(".button-open");
+  const buttonClose = document.querySelector(".button-close");
+
+  // Видимая на текущем разрешении шапка (десктопная или мобильная)
+  function getVisibleHeader() {
+    const headers = document.querySelectorAll(
+      ".container-header, .container-header-mobile",
+    );
+
+    for (let i = 0; i < headers.length; i++) {
+      const styles = window.getComputedStyle(headers[i]);
+      if (styles.display !== "none" && headers[i].offsetHeight > 0) {
+        return headers[i];
+      }
+    }
+
+    return null;
+  }
+
+  // Высота липкой/фиксированной шапки + базовый отступ
+  function getAnchorOffset() {
+    const header = getVisibleHeader();
+
+    if (!header) {
+      return defaultOffset;
+    }
+
+    const position = window.getComputedStyle(header).position;
+
+    if (position !== "fixed" && position !== "sticky") {
+      return defaultOffset;
+    }
+
+    return header.getBoundingClientRect().height + defaultOffset;
+  }
+
+  // Значение дублируем в CSS-переменную, чтобы scroll-margin-top совпадал с JS
+  function updateAnchorOffset() {
+    const offset = getAnchorOffset();
+    document.documentElement.style.setProperty(
+      "--anchor-offset",
+      offset + "px",
+    );
+    return offset;
+  }
+
+  // Раскрываем все категории услуг (повторяет showAllCards из блока выше)
+  function openAllServices() {
+    serviceCards.forEach(function (card) {
+      card.style.display = "block";
+    });
+
+    if (buttonOpen) {
+      buttonOpen.style.display = "none";
+    }
+
+    if (buttonClose) {
+      buttonClose.style.display = "block";
+    }
+  }
+
+  function isServiceCard(element) {
+    return element.classList.contains("servises-card-item");
+  }
+
+  function isHidden(element) {
+    return (
+      element.offsetParent === null ||
+      window.getComputedStyle(element).display === "none"
+    );
+  }
+
+  function nextFrame() {
+    return new Promise(function (resolve) {
+      window.requestAnimationFrame(function () {
+        window.requestAnimationFrame(resolve);
+      });
+    });
+  }
+
+  // Ждём загрузки изображений, влияющих на высоту блока
+  function waitForImages(container) {
+    const images = Array.prototype.slice
+      .call(container.querySelectorAll("img"))
+      .filter(function (img) {
+        return !img.complete;
+      });
+
+    if (!images.length) {
+      return Promise.resolve();
+    }
+
+    const imagesLoaded = Promise.all(
+      images.map(function (img) {
+        return new Promise(function (resolve) {
+          img.addEventListener("load", resolve, { once: true });
+          img.addEventListener("error", resolve, { once: true });
+        });
+      }),
+    );
+
+    const timeout = new Promise(function (resolve) {
+      window.setTimeout(resolve, imageWaitTimeout);
+    });
+
+    return Promise.race([imagesLoaded, timeout]);
+  }
+
+  function scrollToTarget(target) {
+    let offset = updateAnchorOffset();
+
+    if (isServiceCard(target)) {
+      offset += cardIconOffset;
+    }
+
+    const top =
+      target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+    window.scrollTo({
+      top: Math.max(0, top),
+      behavior: "auto",
+    });
+  }
+
+  // Прокрутка к якорю с учётом раскрытия скрытых карточек и высоты шапки
+  function handleAnchor(hash) {
+    const rawHash = String(hash || "").replace(/^#/, "");
+    let id = rawHash;
+
+    try {
+      id = decodeURIComponent(rawHash);
+    } catch (error) {
+      // Некорректная escape-последовательность в hash — используем как есть
+      id = rawHash;
+    }
+
+    if (anchorIds.indexOf(id) === -1) {
+      return;
+    }
+
+    const target = document.getElementById(id);
+
+    if (!target) {
+      return;
+    }
+
+    // Скрытую карточку VVEL сначала показываем, затем ждём пересчёта высоты
+    if (id === vvelId && isHidden(target)) {
+      openAllServices();
+
+      nextFrame()
+        .then(function () {
+          return waitForImages(target);
+        })
+        .then(nextFrame)
+        .then(function () {
+          scrollToTarget(target);
+        });
+
+      return;
+    }
+
+    scrollToTarget(target);
+  }
+
+  updateAnchorOffset();
+  handleAnchor(window.location.hash);
+
+  window.addEventListener("hashchange", function () {
+    handleAnchor(window.location.hash);
+  });
+
+  // Повторная прокрутка после загрузки изображений, чтобы позиция не смещалась
+  window.addEventListener("load", function () {
+    handleAnchor(window.location.hash);
+  });
+
+  // Шрифты также меняют высоту блоков — корректируем позицию после их загрузки
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () {
+      handleAnchor(window.location.hash);
+    });
+  }
+
+  let resizeTimer = null;
+  window.addEventListener("resize", function () {
+    window.clearTimeout(resizeTimer);
+    resizeTimer = window.setTimeout(updateAnchorOffset, 200);
+  });
+});
+
 // reveal on scroll
 const revealEls = document.querySelectorAll(".reveal");
 const io = new IntersectionObserver(

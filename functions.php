@@ -139,6 +139,22 @@ function infiniti_widgets_init()
 add_action('widgets_init', 'infiniti_widgets_init');
 
 /**
+ * Версия ассета по времени изменения файла.
+ *
+ * Сбрасывает кэш браузера при каждой правке файла. Если файл недоступен,
+ * возвращается версия темы — чтобы не ломать подключение ассетов.
+ *
+ * @param string $relative_path Путь к файлу относительно каталога темы.
+ * @return int|string
+ */
+function infiniti_asset_version($relative_path)
+{
+	$file = get_template_directory() . $relative_path;
+
+	return file_exists($file) ? filemtime($file) : _S_VERSION;
+}
+
+/**
  * Enqueue scripts and styles.
  */
 function infiniti_scripts()
@@ -146,13 +162,13 @@ function infiniti_scripts()
 	wp_enqueue_style('infiniti-style', get_stylesheet_uri(), array(), _S_VERSION);
 	wp_enqueue_style('infiniti-google-fonts', 'https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap', array(), null);
 	wp_enqueue_style('infiniti-google-fonts', 'https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap', array(), null);
-	wp_enqueue_style('infiniti-main-style', get_template_directory_uri() . '/css/main.css');
-	wp_enqueue_style('infiniti-media-style', get_template_directory_uri() . '/css/media.css');
+	wp_enqueue_style('infiniti-main-style', get_template_directory_uri() . '/css/main.css', array(), infiniti_asset_version('/css/main.css'));
+	wp_enqueue_style('infiniti-media-style', get_template_directory_uri() . '/css/media.css', array(), infiniti_asset_version('/css/media.css'));
 	wp_style_add_data('infiniti-style', 'rtl', 'replace');
 
 	wp_enqueue_script('infiniti-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 	wp_enqueue_script('slider-init', get_template_directory_uri() . '/js/slider-init.js', array('jquery', 'slick-js'), '1.0.0', true);
-	wp_enqueue_script('infiniti-js', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true);
+	wp_enqueue_script('infiniti-js', get_template_directory_uri() . '/js/main.js', array(), infiniti_asset_version('/js/main.js'), true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');

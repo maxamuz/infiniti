@@ -51,7 +51,7 @@
             </nav><!-- #site-navigation-footer -->
 
             <div class="call-header">
-                <a class="call-header-link" href="tel:+74951234567" aria-label="<?php esc_attr_e('Call us', 'infiniti'); ?>">
+                <a class="call-header-link" href="tel:+74991122731" aria-label="<?php esc_attr_e('Call us', 'infiniti'); ?>">
                     <img src="<?php echo get_template_directory_uri() . '/img/icon-call.png'; ?>" alt="<?php esc_attr_e('Phone icon', 'infiniti'); ?>">
                 </a>
             </div>
